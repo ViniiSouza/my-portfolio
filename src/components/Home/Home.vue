@@ -9,7 +9,7 @@
       <h3 id="header-subtitle">Bem-vindo ao meu portfólio!</h3>
     </div>
     <div id="intro-section">
-      <h3 id="intro-title">Introdução</h3>
+      <h3 id="intro-title">Sobre mim</h3>
       <p id="intro-text">
         Meu nome é Vinícius, tenho 19 anos e moro em Blumenau/SC. Sempre gostei
         de computadores e tecnologia. Encontrei uma área em que posso
@@ -31,6 +31,7 @@ export default {};
 <style>
 #home-content {
   font-family: Calibri, sans-serif;
+ 
 }
 #author-section {
   font-family: "Staatliches", sans-serif;
@@ -44,37 +45,37 @@ export default {};
   transition: background-color 0.8s;
 }
 #author-name {
-  font-size: 15rem;
+  font-size: 13em;
 }
 
 #author-subtitle {
   font-family: "Raleway", sans-serif;
   font-style: italic;
-  font-size: 4rem;
-  margin-top: -100px;
+  font-size: 3.5rem;
+  margin-top: -4vh;
 }
 #header-section {
   text-align: center;
   color: white;
   background-color: rebeccapurple;
-  padding: 10rem 0 10rem 0;
+  padding: 20vh 0 20vh 0;
 }
 #header-title {
   font-family: "Raleway", sans-serif;
-  font-size: 7rem;
+  font-size: 7em;
   font-weight: bold;
 }
 #header-subtitle {
   font-family: "Raleway", sans-serif;
   font-style: italic;
-  font-size: 4rem;
+  font-size: 6em;
 }
 
 #intro-section {
   background-color: white;
   color: rebeccapurple;
   transition: 1.5s;
-  padding: 6rem 0 6rem 0;
+  padding: 10vh 0 10vh 0;
 }
 #intro-section:hover {
   background-color: #9f76c752;
@@ -82,13 +83,66 @@ export default {};
 }
 #intro-title {
   font-family: "Staatliches", sans-serif;
-  font-size: 3rem;
+  font-size: 4em;
   text-align: center;
 }
 #intro-text {
   font-family: "Montserrat", sans-serif;
   text-align: justify;
-  margin: 0 8rem 0 8rem;
+  margin: 0 8vw 0 8vw;
+  font-size: 1.1rem;
+}   
+
+@media screen and (max-width: 1024px) {
+ #author-name {
+  font-size: 4em;
+}
+#author-subtitle {
+  font-size: 1.5rem;
+}
+#header-section {
+  padding: 10vh 0 10vh 0;
+}
+#header-title {
+  font-size: 3em;
+}
+#header-subtitle {
+  font-size: 2em;
+}
+#intro-section {
+  padding: 7vh 0 7vh 0;
+}
+#intro-title {
+  font-size: 2.5em;
+}
+#intro-text {
+  font-size: 1.1em;
+}
+}
+@media screen and (max-width: 480px) {
+ #author-name {
+  font-size: 3em;
+}
+#author-subtitle {
   font-size: 1.2rem;
+}
+#header-section {
+  padding: 11vh 0 11vh 0;
+}
+#header-title {
+  font-size: 2.3em;
+}
+#header-subtitle {
+  font-size: 1.5em;
+}
+#intro-section {
+  padding: 6vh 0 6vh 0;
+}
+#intro-title {
+  font-size: 2em;
+}
+#intro-text {
+  font-size: 1em;
+}
 }
 </style>
