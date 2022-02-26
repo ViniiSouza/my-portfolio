@@ -31,7 +31,6 @@ export default {};
 <style>
 #home-content {
   font-family: Calibri, sans-serif;
- 
 }
 #author-section {
   font-family: "Staatliches", sans-serif;

@@ -1,11 +1,11 @@
 <template>
-  <b-icon class="star-margin" icon="star" :scale="starScale" />
+  <b-icon class="star-margin" icon="star-half" :scale="starScale" />
 </template>
 <script>
 export default {
   props: {
     starScale: {
-      default: 3,
+      default: 4,
     },
   },
 };

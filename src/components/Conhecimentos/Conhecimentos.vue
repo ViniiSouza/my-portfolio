@@ -6,195 +6,92 @@
         Estou sempre em busca de aprendizado, me aprimorando em tecnologias que
         já conheço e aprendendo novas tecnologias necessárias para o meu dia a
         dia. Minha atuação atual é como fullstack, com ênfase em backend. Abaixo
-        estão as tecnologias que mais utilizo e nível de conhecimento de 1 a 10.
+        estão as tecnologias que mais utilizo.
       </p>
-      <div class="knowledge-language">
-        <span
-          >C Sharp<img
-            class="knowledge-language-logo"
-            src="../shared/icons/csharp-icon.png"
-        /></span>
-        <div class="knowledge-star">
-          <filled-star /><filled-star /><filled-star /><filled-star /><filled-star /><filled-star /><filled-star /><star /><star /><star />
-        </div>
-        <div class="knowledge-language-description">
-          <p>
-            Conhecimento em classes e objetos, encapsulamento, herança,
-            polimorfismo, abstração, interfaces, tratamento de exceções.
-            Experiência com Entity Framework, trabalhando code first(ou não),
-            com criação de CRUD's, múltiplas tabelas, conexões entre tabelas,
-            etc.
-          </p>
-        </div>
-        <hr />
-      </div>
 
-      <div class="knowledge-language">
-        <span
-          >VueJS<img
-            class="knowledge-language-logo"
-            src="../shared/icons/vuejs-icon.png"
-        /></span>
-        <div class="knowledge-star">
-          <filled-star /><filled-star /><filled-star /><filled-star /><filled-star /><filled-star /><filled-star /><star /><star /><star />
-        </div>
-        <div class="knowledge-language-description">
-          <p>
-            Conhecimento em criação e manutenção de componentes, gerenciamento
+      <Stack
+        imgSrc="https://i.imgur.com/FXkCnmH.png"
+        stackTitle="C Sharp"
+        stackDescription="Conhecimento em classes, POO (objetos, encapsulamento, herança,
+        polimorfismo, abstração, etc), interfaces, tratamento de exceções. Uso do Entity Framework
+        trabalhando code first(ou não), com criação e manutenção de CRUD's, tabelas, vínculo entre tabelas 1:1, N:1, N:N, etc."
+      />
+
+      <Stack
+        imgSrc="https://i.imgur.com/VOQvATc.png"
+        stackTitle="VueJS"
+        stackDescription="Criação e manutenção de componentes, gerenciamento
             de rotas, requisições HTTP, estilizações de componentes,
-            propriedades, métodos, etc
-          </p>
-        </div>
-        <hr />
-      </div>
+            propriedades, métodos, diretivas, vuex, etc"
+      />
 
-      <div class="knowledge-language">
-        <span
-          >HTML e CSS
-          <img
-            class="knowledge-language-logo"
-            src="../shared/icons/html-icon.png"
-          />
-          <img
-            class="knowledge-language-logo"
-            src="../shared/icons/css-icon.png"
-          />
-        </span>
-        <div class="knowledge-star">
-          <filled-star /><filled-star /><filled-star /><filled-star /><filled-star /><filled-star /><filled-star /><star /><star /><star />
-        </div>
-        <div class="knowledge-language-description">
-          <p>
-            Conhecimento HTML: tags semânticas, criações de formulários,
-            acessibilidade Conhecimento CSS: estilizações de elementos,
-            animações, pseudo-elementos, seletores avançados, etc
-          </p>
-        </div>
-        <hr />
-      </div>
+      <Stack
+        imgSrc="https://i.imgur.com/pSYaNdY.png"
+        stackTitle="JavaScript"
+        stackDescription="Funções, classes, loops, condições, destructuring,
+            manipulações de DOM, etc"
+      />
 
-      <div class="knowledge-language">
-        <span
-          >Bootstrap<img
-            class="knowledge-language-logo"
-            src="../shared/icons/bootstrap-icon.png"
-        /></span>
-        <div class="knowledge-star">
-          <filled-star /><filled-star /><filled-star /><filled-star /><filled-star /><filled-star /><filled-star /><star /><star /><star />
-        </div>
-        <div class="knowledge-language-description">
-          <p>
-            Conhecimento em utilização de elementos bootstrap, estilizações de
+      <Stack
+        imgSrc="https://i.imgur.com/esMeynM.png"
+        stackTitle="SQLServer"
+        stackDescription="Manipulações de banco de dados, tabelas, colunas e
+            dados. Filtros em geral, relacionamento de tabelas, chaves primárias
+            e estrangeiras, joins, etc"
+      />
+
+      <Stack
+        imgSrc="https://i.imgur.com/iUV9fDa.png"
+        stackTitle="React"
+        stackDescription="Conhecimento em componentes, props, renderização condicional,
+            eventos, hooks, contextAPI, react-router-dom, formulários com formik, yup, etc"
+      />
+
+      <Stack
+        imgSrc="https://i.imgur.com/QcoruCz.png"
+        stackTitle="Bootstrap"
+        stackDescription="Utilização de elementos bootstrap, estilizações de
             elementos únicos, utilização de classes bootstrap para estilização
             do documento, utilização de bibliotecas conjuntas (vue-bootstrap,
-            angular-bootstrap)
-          </p>
-        </div>
-        <hr />
-      </div>
+            angular-bootstrap), etc"
+      />
 
-      <div class="knowledge-language">
-        <span
-          >JavaScript<img
-            class="knowledge-language-logo"
-            src="../shared/icons/javascript-icon.png"
-        /></span>
-        <div class="knowledge-star">
-          <filled-star /><filled-star /><filled-star /><filled-star /><filled-star /><filled-star /><star /><star /><star /><star />
-        </div>
-        <div class="knowledge-language-description">
-          <p>
-            Conhecimento em funções, classes, loops, condições, destructuring,
-            manipulações de DOM, etc
-          </p>
-        </div>
-        <hr />
-      </div>
+      <Stack
+        imgSrc="https://i.imgur.com/UKCDmJf.png"
+        stackTitle="HTML"
+        stackDescription="Estruturas com tags semânticas, criações de formulários,
+            acessibilidade, etc"
+      />
 
-      <div class="knowledge-language">
-        <span
-          >SQLServer<img
-            class="knowledge-language-logo"
-            src="../shared/icons/sql-icon.png"
-        /></span>
-        <div class="knowledge-star">
-          <filled-star /><filled-star /><filled-star /><filled-star /><filled-star /><filled-star /><star /><star /><star /><star />
-        </div>
-        <div class="knowledge-language-description">
-          <p>
-            Conhecimento em manipulações de banco de dados, tabelas, colunas e
-            dados. Filtros em geral, relacionamento de tabelas, chaves primárias
-            e estrangeiras, joins, etc
-          </p>
-        </div>
-        <hr />
-      </div>
+      <Stack
+        imgSrc="https://i.imgur.com/QyM1XAK.png"
+        stackTitle="CSS"
+        stackDescription="Estilizações de elementos,
+            animações, pseudo-elementos, seletores avançados, media queries, etc"
+      />
 
-      <div class="knowledge-language">
-        <span
-          >TypeScript<img
-            class="knowledge-language-logo"
-            src="../shared/icons/typescript-icon.png"
-        /></span>
-        <div class="knowledge-star">
-          <filled-star /><filled-star /><filled-star /><filled-star /><filled-star /><star /><star /><star /><star /><star />
-        </div>
-        <div class="knowledge-language-description">
-          <p>
-            Conhecimento em usos junto ao Angular com gerenciamento de
-            componentes, criações de métodos, etc
-          </p>
-        </div>
-        <hr />
-      </div>
+      <Stack
+        imgSrc="https://i.imgur.com/t4grEz4.png"
+        stackTitle="TypeScript"
+        stackDescription="Usos junto ao Angular com gerenciamento de
+            componentes, criações de métodos, etc"
+      />
 
-      <div class="knowledge-language">
-        <span
-          >Angular<img
-            class="knowledge-language-logo"
-            src="../shared/icons/angular-icon.png"
-        /></span>
-        <div class="knowledge-star">
-          <filled-star /><filled-star /><filled-star /><filled-star /><filled-star /><star /><star /><star /><star /><star />
-        </div>
-        <div class="knowledge-language-description">
-          <p>
-            Conhecimento em criação e manutenção de componentes, gerenciamento
-            de rotas, SPA, requisições HTTP, ngModel, etc
-          </p>
-        </div>
-        <hr />
-      </div>
+      <Stack
+        imgSrc="https://i.imgur.com/nxWWeEy.png"
+        stackTitle="Angular"
+        stackDescription="Conhecimento em criação e manutenção de componentes, gerenciamento
+            de rotas, SPA, requisições HTTP, ngModel, etc"
+      />
 
-      <div class="knowledge-language">
-        <span
-          >React<img
-            class="knowledge-language-logo"
-            src="../shared/icons/react-icon.png"
-        /></span>
-        <div class="knowledge-star">
-          <filled-star /><filled-star /><filled-star /><filled-star /><star /><star /><star /><star /><star /><star />
-        </div>
-        <div class="knowledge-language-description">
-          <p>
-            Conhecimento em componentes, props, renderização condicional,
-            eventos, hooks, etc (aprendendo atualmente)
-          </p>
-        </div>
-      </div>
     </div>
   </div>
 </template>
 <script>
-import FilledStar from "../shared/Star/FilledStar.vue";
-import Star from "../shared/Star/Star.vue";
+import Stack from "./Stack/Stack.vue";
 export default {
-  data() {
-    return {
-      cSharp: [{ filled: "star-fill" }],
-    };
-  },
-  components: { Star, FilledStar },
+  data() {},
+  components: { Stack },
 };
 </script>
 <style>
@@ -214,34 +111,38 @@ export default {
   text-align: center;
   margin: 1rem 8rem 2rem 8rem;
 }
-.knowledge-language {
+
+.knowledge-container {
   font-family: "Raleway";
   font-size: 2.5rem;
   vertical-align: middle;
   margin-left: 2rem;
   margin-right: 2rem;
+  display: flex;
+  flex-direction: row;
 }
-.knowledge-star {
-  display: inline;
-  position: absolute;
-  left: 28rem;
+@media screen and (max-width: 1024px) {
+  #knowledge-section {
+  padding: 5rem 0 5rem 0;
 }
-.knowledge-language-description {
-  font-family: "Montserrat";
+  #knowledge-title {
+  font-size: 2.2rem;
+}
+#knowledge-text {
+  font-size: 1.2rem;
+  margin: 1rem 2.5rem 2rem 2.5rem;
+}
+}
+@media screen and (max-width: 480px) {
+  #knowledge-section {
+  padding: 3rem 0 3rem 0;
+}
+  #knowledge-title {
+  font-size: 2.2rem;
+}
+#knowledge-text {
   font-size: 1rem;
-  position: relative;
-  left: 76rem;
-  max-width: 38rem;
-  top: -50px;
-  margin-bottom: -3rem;
+  margin: 1rem 1.1rem 2rem 1.1rem;
 }
-.knowledge-language-logo {
-  position: relative;
-  width: 4rem;
-  left: 10px;
-}
-.star-margin {
-  margin: 1.8rem;
-  font-size: 1rem;
 }
 </style>
