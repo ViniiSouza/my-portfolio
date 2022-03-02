@@ -18,6 +18,7 @@
     <Home />
     <Conhecimentos />
     <Projetos />
+    <AppInfo />
 
     <p>Falta seção de projetos</p>
     <p>Organizar navbar</p>
@@ -26,9 +27,10 @@
 </template>
 
 <script>
-import Conhecimentos from "./components/Conhecimentos/Conhecimentos.vue";
-import Home from "./components/Home/Home.vue";
+import Conhecimentos from './components/Conhecimentos/Conhecimentos.vue';
+import Home from './components/Home/Home.vue';
 import Projetos from './components/Projetos/Projetos.vue';
+import AppInfo from './components/AppInfo/AppInfo.vue';
 
 export default {
   name: "App",
@@ -36,6 +38,7 @@ export default {
     Home,
     Conhecimentos,
     Projetos,
+    AppInfo
   },
 };
 </script>
