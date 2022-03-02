@@ -59,6 +59,7 @@ export default {
   max-height: 170px;
   min-width: 250px;
   max-width: 296px;
+  overflow: hidden;
 }
 
 #card-image {
@@ -84,5 +85,33 @@ export default {
   text-align: center;
   font-size: 1.3rem;
   padding: 0;
+}
+@media screen and (max-width: 1024px) {
+  #card {
+    display: block;
+    width: 300px;
+    height: 350px;
+    margin: 1.5rem auto;
+  }
+  #card-title {
+    font-size: 2rem;
+    margin-bottom: -20px;
+  }
+  #card-technologies {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  #card {
+    width: 280px;
+    height: 350px;
+    margin: 2rem auto;
+  }
+  #card-title {
+    margin-bottom: -20px;
+  }
+  #card-technologies {
+    font-size: 1.15rem;
+  }
 }
 </style>

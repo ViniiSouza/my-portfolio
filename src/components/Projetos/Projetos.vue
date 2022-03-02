@@ -9,9 +9,20 @@
       </p>
     </div>
     <div id="projects-content">
-      <Project-card projectName="MercadoMania" techOne="C Sharp" techTwo="Entity Framework" techThree="Angular" imgSrc="https://i.imgur.com/SSH3szN.png"/>
+      <Project-card
+        projectName="MercadoMania"
+        techOne="C Sharp"
+        techTwo="Entity Framework"
+        techThree="Angular"
+        imgSrc="https://i.imgur.com/SSH3szN.png"
+      />
       <Project-card projectName="To Do List" techOne="JavaScript" />
-      <Project-card projectName="Crédito para todxs" techOne="Javascript" techTwo="Bootstrap" imgSrc="" />
+      <Project-card
+        projectName="Crédito para todxs"
+        techOne="Javascript"
+        techTwo="Bootstrap"
+        imgSrc=""
+      />
     </div>
   </div>
 </template>
@@ -40,5 +51,32 @@ export default {
 
 #projects-content {
   margin: 0 2rem 0 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  #projects-section {
+    margin: 4rem 2.5rem 4rem 2.5rem;
+  }
+
+  #projects-title {
+    font-size: 2.3rem;
+  }
+
+  #projects-text {
+    font-size: 1.2rem;
+  }
+
+  #projects-content {
+    margin: 1rem 0 1rem 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #projects-title {
+    font-size: 2.2rem;
+  }
+  #projects-text {
+    font-size: 1rem;
+  }
 }
 </style>
