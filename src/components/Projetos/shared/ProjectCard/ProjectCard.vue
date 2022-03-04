@@ -1,5 +1,5 @@
 <template>
-  <div id="card">
+  <div id="card" @click="modalShow = !modalShow">
     <div id="card-image-section">
       <img id="card-image" :src="imgSrc" />
     </div>
@@ -13,6 +13,18 @@
         <p>{{ techThree }}</p>
       </div>
     </div>
+
+    <b-modal size="xl" :title="projectName" v-model="modalShow" ok-only>
+      <p>{{projectDescription}}</p>
+      <div class="iframe-container">
+        <iframe :src="videoSrc" width="720" height="480">
+        </iframe>
+        </div>
+        <p class="text-center mt-5" ><a style="color: inherit" :href="gitSrc">Link do projeto</a></p>
+    </b-modal>
+
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/D6srf-43vGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    
   </div>
 </template>
 <script>
@@ -34,6 +46,13 @@ export default {
       default:
         "https://rockcontent.com/br/wp-content/uploads/sites/2/2020/02/entrega-de-projeto.png",
     },
+    modalShow: {
+      default: false
+    },
+    projectDescription: { },
+    demoSrc: { },
+    videoSrc: {},
+    gitSrc: {}
   },
 };
 </script>
@@ -86,6 +105,19 @@ export default {
   font-size: 1.3rem;
   padding: 0;
 }
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 @media screen and (max-width: 1024px) {
   #card {
     display: block;
@@ -114,4 +146,5 @@ export default {
     font-size: 1.15rem;
   }
 }
+
 </style>

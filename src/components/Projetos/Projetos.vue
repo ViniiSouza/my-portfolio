@@ -15,6 +15,9 @@
         techTwo="Entity Framework"
         techThree="Angular"
         imgSrc="https://i.imgur.com/SSH3szN.png"
+        projectDescription="Sistema de controle de estoque de um mercado. É possível adicionar produtos, categorias e alterar estoque. Os produtos podem ser vinculados às categorias. Projeto feito com Angular, e C Sharp (Entity Framework)"
+        videoSrc="https://www.youtube.com/embed/D6srf-43vGY"
+        gitSrc="https://github.com/ViniiSouza/controle_estoque_mercado"
       />
       <Project-card projectName="To Do List" techOne="JavaScript" />
       <Project-card
