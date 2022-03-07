@@ -15,16 +15,18 @@
     </div>
 
     <b-modal size="xl" :title="projectName" v-model="modalShow" ok-only>
-      <p>{{projectDescription}}</p>
-      <div class="iframe-container">
-        <iframe :src="videoSrc" width="720" height="480">
-        </iframe>
-        </div>
-        <p class="text-center mt-5" ><a style="color: inherit" :href="gitSrc">Link do projeto</a></p>
+      <p>{{ projectDescription }}</p>
+      <div v-if="videoSrc != ''" class="iframe-container">
+        <p>Teste</p>
+        <iframe :src="videoSrc" width="720" height="480"> </iframe>
+      </div>
+      <div v-else class="text-center">
+        <p>Site do projeto:<a target="_blank" style="color: inherit" :href="projectSrc">{{projectName}}</a></p>
+      </div>
+      <p class="text-center mt-5">
+        <a style="color: inherit" :href="gitSrc">Link do projeto</a>
+      </p>
     </b-modal>
-
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/D6srf-43vGY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-    
   </div>
 </template>
 <script>
@@ -43,16 +45,16 @@ export default {
       default: "",
     },
     imgSrc: {
-      default:
-        "https://rockcontent.com/br/wp-content/uploads/sites/2/2020/02/entrega-de-projeto.png",
+      default: "",
     },
     modalShow: {
-      default: false
+      default: false,
     },
-    projectDescription: { },
-    demoSrc: { },
+    projectDescription: {},
+    demoSrc: {},
     videoSrc: {},
-    gitSrc: {}
+    gitSrc: {},
+    projectSrc: {}
   },
 };
 </script>
@@ -105,15 +107,15 @@ export default {
   font-size: 1.3rem;
   padding: 0;
 }
-.iframe-container{
+.iframe-container {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; 
+  padding-bottom: 56.25%;
   height: 0;
 }
-.iframe-container iframe{
+.iframe-container iframe {
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -146,5 +148,4 @@ export default {
     font-size: 1.15rem;
   }
 }
-
 </style>

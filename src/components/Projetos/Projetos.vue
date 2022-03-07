@@ -19,12 +19,32 @@
         videoSrc="https://www.youtube.com/embed/D6srf-43vGY"
         gitSrc="https://github.com/ViniiSouza/controle_estoque_mercado"
       />
-      <Project-card projectName="To Do List" techOne="JavaScript" />
+      <Project-card
+      projectName="To Do List"
+      techOne="JavaScript"
+      imgSrc="https://i.imgur.com/FcB84MT.jpg"
+      projectDescription="Projeto do curso DevInHouse, To-do list. Sistema para incluir e remover atividades, marcá-las como concluídas, etc."
+      videoSrc=""
+      projectSrc="https://viniisouza.github.io/To-Do_List/"
+      gitSrc="https://github.com/ViniiSouza/To-Do_List"
+      />
       <Project-card
         projectName="Crédito para todxs"
         techOne="Javascript"
         techTwo="Bootstrap"
-        imgSrc=""
+        projectDescription="Sistema de análise de perfil para disponibilização de crédito. Conforme pontuação do usuário, era gerada uma taxa de aprovação do empréstimo solicitado. Usuário tem a opção de fornecer uma garantia de pagamento, aumentado a chance de aprovação do empréstimo."
+        videoSrc=""
+        projectSrc="https://viniisouza.github.io/analise_emprestimo/index.html"
+        imgSrc="https://i.imgur.com/pk8xkKH.png"
+      />
+      <Project-card
+        projectName="DevInMMO"
+        techOne="React"
+        techTwo="JavaScript"
+        imgSrc="https://i.imgur.com/mcQVr9U.png"
+        projectDescription="Projeto do curso DevInHouse, site de informações de jogos e notícias sobre jogos. Criado utilizando React e recebendo informações de uma API com os jogos e notícias. Sistema de busca por palavras e paginação. Sistema de comentários armazenados em localStorage."
+        videoSrc="https://www.youtube.com/embed/zUj2zDuplOI"
+        gitSrc="https://github.com/ViniiSouza/DevInMMO"
       />
     </div>
   </div>

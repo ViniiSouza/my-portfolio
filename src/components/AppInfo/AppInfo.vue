@@ -65,6 +65,28 @@
     transform: translatey(30px);
   }
 }
+@media screen and (max-width: 1024px) {
+  #info-title {
+    font-size: 2rem;
+  }
+  #info-text {
+    font-size: 1.1rem;
+  }
+  #info-project-ref {
+    font-size: 1.1rem;
+  }
+  #info-image {
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  #info-title {
+    font-size: 1.7rem;
+  }
+  #info-image {
+    width: 12rem;
+  }
+}
 </style>
 
 <script>
