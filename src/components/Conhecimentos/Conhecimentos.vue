@@ -83,7 +83,6 @@
         stackDescription="Conhecimento em criação e manutenção de componentes, gerenciamento
             de rotas, SPA, requisições HTTP, ngModel, etc"
       />
-
     </div>
   </div>
 </template>
@@ -121,28 +120,30 @@ export default {
   display: flex;
   flex-direction: row;
 }
+@media screen and (max-width: 1500px) {
+}
 @media screen and (max-width: 1024px) {
   #knowledge-section {
-  padding: 5rem 0 5rem 0;
-}
+    padding: 5rem 0 5rem 0;
+  }
   #knowledge-title {
-  font-size: 2.2rem;
-}
-#knowledge-text {
-  font-size: 1.2rem;
-  margin: 1rem 2.5rem 2rem 2.5rem;
-}
+    font-size: 2.2rem;
+  }
+  #knowledge-text {
+    font-size: 1.2rem;
+    margin: 1rem 2.5rem 2rem 2.5rem;
+  }
 }
 @media screen and (max-width: 480px) {
   #knowledge-section {
-  padding: 3rem 0 3rem 0;
-}
+    padding: 3rem 0 3rem 0;
+  }
   #knowledge-title {
-  font-size: 2.2rem;
-}
-#knowledge-text {
-  font-size: 1rem;
-  margin: 1rem 1.1rem 2rem 1.1rem;
-}
+    font-size: 2.2rem;
+  }
+  #knowledge-text {
+    font-size: 1rem;
+    margin: 1rem 1.1rem 2rem 1.1rem;
+  }
 }
 </style>

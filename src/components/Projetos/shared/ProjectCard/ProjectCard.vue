@@ -21,7 +21,14 @@
         <iframe :src="videoSrc" width="720" height="480"> </iframe>
       </div>
       <div v-else class="text-center">
-        <p>Site do projeto:<a target="_blank" style="color: inherit" :href="projectSrc">{{projectName}}</a></p>
+        <p>
+          Site do projeto:<a
+            target="_blank"
+            style="color: inherit"
+            :href="projectSrc"
+            >{{ projectName }}</a
+          >
+        </p>
       </div>
       <p class="text-center mt-5">
         <a style="color: inherit" :href="gitSrc">Link do projeto</a>
@@ -54,7 +61,7 @@ export default {
     demoSrc: {},
     videoSrc: {},
     gitSrc: {},
-    projectSrc: {}
+    projectSrc: {},
   },
 };
 </script>
@@ -119,6 +126,19 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
+}
+@media screen and (max-width: 1500px) {
+  #card {
+    width: 270px;
+    height: 350px;
+  }
+  #card-title {
+    font-size: 1.8rem;
+    margin-bottom: -20px;
+  }
+  #card-technologies {
+    font-size: 1.1rem;
+  }
 }
 @media screen and (max-width: 1024px) {
   #card {

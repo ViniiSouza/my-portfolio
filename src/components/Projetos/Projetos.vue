@@ -20,13 +20,13 @@
         gitSrc="https://github.com/ViniiSouza/controle_estoque_mercado"
       />
       <Project-card
-      projectName="To Do List"
-      techOne="JavaScript"
-      imgSrc="https://i.imgur.com/FcB84MT.jpg"
-      projectDescription="Projeto do curso DevInHouse, To-do list. Sistema para incluir e remover atividades, marcá-las como concluídas, etc."
-      videoSrc=""
-      projectSrc="https://viniisouza.github.io/To-Do_List/"
-      gitSrc="https://github.com/ViniiSouza/To-Do_List"
+        projectName="To Do List"
+        techOne="JavaScript"
+        imgSrc="https://i.imgur.com/FcB84MT.jpg"
+        projectDescription="Projeto do curso DevInHouse, To-do list. Sistema para incluir e remover atividades, marcá-las como concluídas, etc."
+        videoSrc=""
+        projectSrc="https://viniisouza.github.io/To-Do_List/"
+        gitSrc="https://github.com/ViniiSouza/To-Do_List"
       />
       <Project-card
         projectName="Crédito para todxs"

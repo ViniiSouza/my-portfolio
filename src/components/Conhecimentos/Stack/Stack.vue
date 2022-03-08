@@ -1,36 +1,34 @@
 <template>
-<div>
-  <hr />
-  <div class="stack-container">
-    <div class="stack-language">
-      <span
-        >{{ stackTitle }}<img
-          class="stack-language-logo"
-          :src="imgSrc"
-      /></span>
-    </div>
-    <div class="stack-language-description">
-      <p>{{ stackDescription }}</p>
+  <div>
+    <hr />
+    <div class="stack-container">
+      <div class="stack-language">
+        <span
+          >{{ stackTitle }}<img class="stack-language-logo" :src="imgSrc"
+        /></span>
+      </div>
+      <div class="stack-language-description">
+        <p>{{ stackDescription }}</p>
+      </div>
     </div>
   </div>
-    </div>
 </template>
 <script>
 export default {
-    props: {
-        imgSrc: {
-            default: "vazio",
-            type: String
-        },
-        stackTitle: {
-            default: "vazio",
-            type: String
-        },
-        stackDescription: {
-            default: "vazio",
-            type: String
-        }
-    }
+  props: {
+    imgSrc: {
+      default: "vazio",
+      type: String,
+    },
+    stackTitle: {
+      default: "vazio",
+      type: String,
+    },
+    stackDescription: {
+      default: "vazio",
+      type: String,
+    },
+  },
 };
 </script>
 <style>
@@ -63,8 +61,8 @@ export default {
 }
 @media screen and (max-width: 1024px) {
   .stack-container:hover {
-  background-color: transparent;
-}
+    background-color: transparent;
+  }
   .stack-language-description {
     font-size: 0.4em;
     max-width: 80%;
@@ -75,7 +73,7 @@ export default {
     font-size: 0.4em;
   }
   .stack-language-logo {
-  width: 3.5rem;
-}
+    width: 3.5rem;
+  }
 }
 </style>
