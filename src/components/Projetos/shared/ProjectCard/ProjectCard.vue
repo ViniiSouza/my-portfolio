@@ -16,8 +16,8 @@
 
     <b-modal size="xl" :title="projectName" v-model="modalShow" ok-only>
       <p>{{ projectDescription }}</p>
+      <p v-if="usedConcepts != ''">Conceitos: {{ usedConcepts }}</p>
       <div v-if="videoSrc != ''" class="iframe-container">
-        <p>Teste</p>
         <iframe :src="videoSrc" width="720" height="480"> </iframe>
       </div>
       <div v-else class="text-center">
@@ -31,7 +31,7 @@
         </p>
       </div>
       <p class="text-center mt-5">
-        <a style="color: inherit" :href="gitSrc">Link do projeto</a>
+        <a style="color: inherit" target="_blank" :href="gitSrc">Link do projeto</a>
       </p>
     </b-modal>
   </div>
@@ -57,11 +57,14 @@ export default {
     modalShow: {
       default: false,
     },
+    usedConcepts: {
+      default: ""
+    },
     projectDescription: {},
     demoSrc: {},
     videoSrc: {},
     gitSrc: {},
-    projectSrc: {},
+    projectSrc: {}
   },
 };
 </script>
