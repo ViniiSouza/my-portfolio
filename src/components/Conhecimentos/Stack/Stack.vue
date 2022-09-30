@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <hr />
+  <div class="full-container">
+    <hr style="margin: 0; padding: 0" />
     <div class="stack-container">
       <div class="stack-language">
         <span
@@ -32,6 +32,10 @@ export default {
 };
 </script>
 <style>
+  .full-container {
+    transition: 0.5s;
+
+  }
 .stack-container {
   font-family: "Raleway";
   font-size: 2.5rem;
@@ -39,10 +43,10 @@ export default {
   display: flex;
   flex-direction: column;
   text-align: center;
-  transition: 0.5s;
+  padding: 1.3rem 0;
 }
-.stack-container:hover {
-  background-color: rgb(115, 36, 189);
+.full-container:hover {
+  background-color: rgb(84, 19, 145);
   transition: 0.5s;
 }
 .stack-language {

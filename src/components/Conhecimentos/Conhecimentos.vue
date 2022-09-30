@@ -14,22 +14,22 @@
         stackTitle="C Sharp"
         stackDescription="Conhecimento em classes, POO (objetos, encapsulamento, herança,
         polimorfismo, abstração, etc), interfaces, tratamento de exceções. Uso do Entity Framework
-        trabalhando code first(ou não), com criação e manutenção de CRUD's, tabelas, vínculo entre tabelas 1:1, N:1, N:N, etc."
+        trabalhando code first(ou não), classes herdadas, com criação e manutenção de CRUD's, tabelas, vínculo entre tabelas 1:1, N:1, N:N, etc."
       />
 
       <Stack
         imgSrc="https://i.imgur.com/VOQvATc.png"
         stackTitle="VueJS"
         stackDescription="Criação e manutenção de componentes, gerenciamento
-            de rotas, requisições HTTP, estilizações de componentes,
-            propriedades, métodos, diretivas, vuex, etc"
+            de rotas, requisições HTTP, renderizações condicionais, componentes dinâmicos,
+            estilizações de componentes, propriedades, métodos, diretivas, vuex, etc - com Vue2 e introduzindo os conhecimentos em Vue3"
       />
 
       <Stack
         imgSrc="https://i.imgur.com/pSYaNdY.png"
         stackTitle="JavaScript"
         stackDescription="Funções, classes, loops, condições, destructuring,
-            manipulações de DOM, etc"
+            manipulações de DOM, axios, etc"
       />
 
       <Stack

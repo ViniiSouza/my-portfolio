@@ -78,7 +78,9 @@ export default {
 }
 
 #projects-content {
-  margin: 0 2rem 0 2rem;
+  width: 100%;
+  margin: auto;
+  text-align: center;
 }
 
 @media screen and (max-width: 1024px) {
