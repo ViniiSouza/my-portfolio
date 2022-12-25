@@ -1,0 +1,35 @@
+<template>
+  <div id="app">
+    <Home />
+    <Conhecimentos />
+    <Projetos />
+    <AppInfo />
+    <Footer />
+  </div>
+</template>
+
+<script>
+import Conhecimentos from './components/conhecimentos/Conhecimentos.vue';
+import Home from './components/home/Home.vue';
+import Projetos from './components/projetos/Projetos.vue';
+import AppInfo from './components/app-info/AppInfo.vue';
+import Footer from './components/footer/Footer.vue';
+
+export default {
+  name: 'App',
+  components: {
+    Home,
+    Conhecimentos,
+    Projetos,
+    AppInfo,
+    Footer,
+  },
+};
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css');
+</style>
