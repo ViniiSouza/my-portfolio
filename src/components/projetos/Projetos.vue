@@ -18,7 +18,7 @@
         projectDescription="Sistema de chat instantâneo, onde é possível conversar com outros usuários, com um bate-papo síncrono e atualizado em tempo real. A demonstração é feita em apenas um dispositivo, mas é implementado para o uso entre vários dispositivos e em diferentes lugares. Projeto feito com Vue 3, C Sharp e SignalR"
         videoSrc="https://www.youtube.com/embed/fGrdTVUfvjw"
         gitSrc="https://github.com/ViniiSouza/chat-instantaneo"
-        usedConcepts="Uso do SignalR para a atualização das mensagens em tempo real, configurando no ambiente .NET 6. FrontEnd com VueJS 3, integração do SignalR, bootstrap e sweetalert para estilos e alertas"
+        usedConcepts="Uso do SignalR para a atualização das mensagens em tempo real, configurado no ambiente .NET 6. FrontEnd com VueJS 3, integração do SignalR, bootstrap para estilos e sweetalert para alertas estilizados"
       />
       <Project-card
         projectName="MercadoMania"

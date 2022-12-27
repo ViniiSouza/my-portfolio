@@ -5,7 +5,7 @@
       <p id="knowledge-text">
         Estou sempre em busca de aprendizado, me aprimorando em tecnologias que
         já conheço e aprendendo novas tecnologias necessárias para o meu dia a
-        dia. Minha atuação atual é como fullstack, com ênfase em backend. Abaixo
+        dia. Minha atuação hoje é como fullstack, com ênfase em backend. Abaixo
         estão as tecnologias que mais utilizo.
       </p>
 
@@ -14,7 +14,7 @@
         stackTitle="C Sharp"
         stackDescription="Conhecimento em classes, POO (objetos, encapsulamento, herança,
         polimorfismo, abstração, etc), interfaces, tratamento de exceções. Uso do Entity Framework
-        trabalhando code first(ou não), classes herdadas, com criação e manutenção de CRUD's, tabelas, vínculo entre tabelas 1:1, N:1, N:N, etc."
+        trabalhando code first(ou não), classes herdadas, com criação e manutenção de CRUD's, tabelas, vínculo entre tabelas 1:1, N:1, N:N; Uso do LINQ, com projeções performáticas em bancos de dados e diversos outros usos. SignalR para conexões contínuas e atualizações em tempo real. Uso de bibliotecas externas nos projetos trabalhados, etc."
       />
 
       <Stack
@@ -22,19 +22,19 @@
         stackTitle="VueJS"
         stackDescription="Criação e manutenção de componentes, gerenciamento
             de rotas, requisições HTTP, renderizações condicionais, componentes dinâmicos,
-            estilizações de componentes, propriedades, métodos, diretivas, vuex, etc - com Vue2 e introduzindo os conhecimentos em Vue3"
+            estilizações de componentes, propriedades, métodos, diretivas, vuex, e demais integrações com o backend; Uso diário de CompositionAPI e OptionsAPI; Vue2 e introduzindo os conhecimentos em Vue3;"
       />
 
       <Stack
         imgSrc="https://i.imgur.com/pSYaNdY.png"
         stackTitle="JavaScript"
         stackDescription="Funções, classes, loops, condições, destructuring,
-            manipulações de DOM, axios, etc"
+            manipulações de DOM, axios e outros usos gerais juntamente com os frameworks que utilizo."
       />
 
       <Stack
         imgSrc="https://i.imgur.com/esMeynM.png"
-        stackTitle="SQLServer"
+        stackTitle="SQLServer/Postgre"
         stackDescription="Manipulações de banco de dados, tabelas, colunas e
             dados. Filtros em geral, relacionamento de tabelas, chaves primárias
             e estrangeiras, joins, etc"
