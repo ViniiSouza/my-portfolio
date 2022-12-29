@@ -1,2 +1,2 @@
 # Meu portfólio
-Link: https://vinicius-portfolio-app.herokuapp.com/
+Link: https://viniisouza.github.io/my-portfolio/
