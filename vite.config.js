@@ -6,7 +6,7 @@ import vue2 from '@vitejs/plugin-vue2'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/portfolio/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/my-portfolio/' : '/',
   plugins: [
     vue2(),
     legacy({
