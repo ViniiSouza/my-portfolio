@@ -2,29 +2,41 @@
   <div id="home-content">
     <div id="author-section">
       <p id="author-name">Vinícius G. de Souza</p>
-      <p id="author-subtitle">Desenvolvedor de Software</p>
+      <p id="author-subtitle">{{ texts[language].home.profession }}</p>
     </div>
     <div id="header-section">
-      <h1 id="header-title">Olá!</h1>
-      <h3 id="header-subtitle">Bem-vindo ao meu portfólio!</h3>
+      <h1 id="header-title">{{ texts[language].home.sectionTitle }}</h1>
+      <h3 id="header-subtitle">{{ texts[language].home.sectionSubtitle }}</h3>
     </div>
     <div id="intro-section">
-      <h3 id="intro-title">Sobre mim</h3>
+      <h3 id="intro-title">{{ texts[language].home.introTitle }}</h3>
       <p id="intro-text">
-        Meu nome é Vinícius, tenho 20 anos e moro em Blumenau/SC. Sempre gostei
-        de computadores e tecnologia. Encontrei uma área em que posso
-        transformar algo que gosto em trabalho. Estudo programação desde o início de
-        2021. Desde lá, procuro sempre aprender tecnologias novas para estar
-        pronto para o mercado de trabalho. Sou um pouco tímido, mas com 5
-        minutos de conversa já consigo me soltar. 
-        Atualmente estou cursando Bacharelado em Ciências da Computação, na <a style="color: inherit" href="https://www.furb.br/pt/graduacao/ciencia-da-computacao" target="_blank">FURB</a>.
-        Estou sempre em busca de evolução e de novos conhecimentos.
+        {{ texts[language].home.introText }}
+        <a style="color: inherit" href="https://www.furb.br/pt/graduacao/ciencia-da-computacao" target="_blank">{{ texts[language].home.introCollege }}</a>.
       </p>
     </div>
   </div>
 </template>
 <script>
-export default {};
+import texts from "../../assets/texts/texts";
+
+export default {
+  data() {
+    return {
+      language: this.$route.path.replace("/", ""),
+      texts
+    }
+  },
+  watch: {
+    "$route.params.search": {
+      handler: function (search) {
+        this.language = this.$route.path.replace("/", "");
+      },
+      deep: true,
+      immediate: true,
+    },
+  },
+}
 </script>
 <style>
 #home-content {

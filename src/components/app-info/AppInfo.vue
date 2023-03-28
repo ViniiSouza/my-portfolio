@@ -1,13 +1,17 @@
 <template>
   <div id="info-section">
     <div id="info-header">
-      <h3 id="info-title">Este site foi desenvolvido com Vuejs</h3>
+      <h3 id="info-title">
+        {{ texts[language].appInfo.description }}
+      </h3>
     </div>
     <div id="info-content">
       <img id="info-image" src="https://i.imgur.com/VOQvATc.png" />
       <p id="info-text">v.2</p>
-      <a id="info-project-ref" href="https://github.com/ViniiSouza/my-portfolio"
-        >Projeto no GitHub</a
+      <a
+        id="info-project-ref"
+        href="https://github.com/ViniiSouza/my-portfolio"
+        >{{ texts[language].appInfo.projectLink }}</a
       >
     </div>
   </div>
@@ -90,4 +94,23 @@
 </style>
 
 <script>
+import texts from "../../assets/texts/texts";
+
+export default {
+  data() {
+    return {
+      language: this.$route.path.replace('/', ''),
+      texts,
+    };
+  },
+  watch: {
+    "$route.params.search": {
+      handler: function (search) {
+        this.language = this.$route.path.replace("/", "");
+      },
+      deep: true,
+      immediate: true,
+    },
+  },
+}
 </script>

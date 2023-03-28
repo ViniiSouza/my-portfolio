@@ -62,15 +62,16 @@ export default {
           img: "https://recreio.uol.com.br/media/uploads/historia/brasil_e_portugal_capa.jpg",
           name: "Português",
           value: "pt",
-        };
+        }
       } else {
         this.languageSelected = {
           img: "https://cdn.w600.comps.canstockphoto.com.br/bandeira-l%C3%ADngua-ingl%C3%AAs-banco-de-ilustra%C3%A7%C3%A3o_csp8895196.jpg",
           name: "English",
           value: "en",
-        };
+        }
       }
       this.open = false
+      if (this.$route.path != `/${language}`) this.$router.push(`/${language}`)
     },
   },
 };

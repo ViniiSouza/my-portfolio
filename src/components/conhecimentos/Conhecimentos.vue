@@ -1,100 +1,94 @@
 <template>
   <div>
     <div id="knowledge-section">
-      <h3 id="knowledge-title">Conhecimentos</h3>
+      <h3 id="knowledge-title">{{ texts[language].knowledge.title }}</h3>
       <p id="knowledge-text">
-        Estou sempre em busca de aprendizado, me aprimorando em tecnologias que
-        já conheço e aprendendo novas tecnologias necessárias para o meu dia a
-        dia. Minha atuação hoje é com ênfase em backend, mas já trabalhei como fullstack. Abaixo
-        estão as tecnologias que mais utilizo.
+        {{ texts[language].knowledge.text }}
       </p>
 
       <Stack
         imgSrc="https://i.imgur.com/FXkCnmH.png"
         stackTitle="C Sharp"
-        stackDescription="Conhecimento em classes, POO (objetos, encapsulamento, herança,
-        polimorfismo, abstração, etc), partial classes, interfaces, tratamento de exceções. Uso do Entity Framework
-        trabalhando code first(ou não), classes herdadas, com criação e manutenção de CRUD's, tabelas,
-        vínculo entre tabelas 1:1, N:1, N:N; Uso do LINQ, com projeções performáticas em bancos de dados
-        e diversos outros usos. SignalR para conexões contínuas e atualizações em tempo real.
-        Uso de bibliotecas externas nos projetos trabalhados, etc. Projetos de API, bibliotecas de classes, console, windows forms, etc."
+        :stackDescription="texts[language].knowledge.techs.cSharp"
       />
 
       <Stack
         imgSrc="https://i.imgur.com/VOQvATc.png"
         stackTitle="VueJS"
-        stackDescription="Criação e manutenção de componentes, gerenciamento
-            de rotas, requisições HTTP, renderizações condicionais, componentes dinâmicos,
-            estilizações de componentes, propriedades, métodos, diretivas, vuex, e demais integrações com o backend;
-            Uso diário de CompositionAPI e OptionsAPI; Vue2 e conhecimentos em Vue3;"
+        :stackDescription="texts[language].knowledge.techs.vue"
       />
 
       <Stack
         imgSrc="https://i.imgur.com/pSYaNdY.png"
         stackTitle="JavaScript"
-        stackDescription="Funções, classes, loops, condições, destructuring,
-            manipulações de DOM, axios e outros usos gerais juntamente com os frameworks que utilizo."
+        :stackDescription="texts[language].knowledge.techs.javaScript"
       />
 
       <Stack
         imgSrc="https://i.imgur.com/esMeynM.png"
         stackTitle="SQLServer/Postgre"
-        stackDescription="Manipulações de banco de dados, tabelas, colunas e
-            dados. Filtros em geral, relacionamento de tabelas, chaves primárias
-            e estrangeiras, joins, etc"
+        :stackDescription="texts[language].knowledge.techs.sql"
       />
 
       <Stack
         imgSrc="https://i.imgur.com/iUV9fDa.png"
         stackTitle="React"
-        stackDescription="Conhecimento em componentes, props, renderização condicional,
-            eventos, hooks, contextAPI, react-router-dom, formulários com formik, yup, etc"
+        :stackDescription="texts[language].knowledge.techs.react"
       />
 
       <Stack
         imgSrc="https://i.imgur.com/QcoruCz.png"
         stackTitle="Bootstrap"
-        stackDescription="Utilização de elementos bootstrap, estilizações de
-            elementos únicos, utilização de classes bootstrap para estilização
-            do documento, utilização de bibliotecas conjuntas (vue-bootstrap,
-            angular-bootstrap), etc"
+        :stackDescription="texts[language].knowledge.techs.bootstrap"
       />
 
       <Stack
         imgSrc="https://i.imgur.com/UKCDmJf.png"
         stackTitle="HTML"
-        stackDescription="Estruturas com tags semânticas, criações de formulários,
-            acessibilidade, etc"
+        :stackDescription="texts[language].knowledge.techs.html"
       />
 
       <Stack
         imgSrc="https://i.imgur.com/QyM1XAK.png"
         stackTitle="CSS"
-        stackDescription="Estilizações de elementos,
-            animações, pseudo-elementos, seletores avançados, media queries, etc"
+        :stackDescription="texts[language].knowledge.techs.css"
       />
 
       <Stack
         imgSrc="https://i.imgur.com/t4grEz4.png"
         stackTitle="TypeScript"
-        stackDescription="Usos junto ao Angular com gerenciamento de
-            componentes, criações de métodos, etc"
+        :stackDescription="texts[language].knowledge.techs.typeScript"
       />
 
       <Stack
         imgSrc="https://i.imgur.com/nxWWeEy.png"
         stackTitle="Angular"
-        stackDescription="Conhecimento em criação e manutenção de componentes, gerenciamento
-            de rotas, SPA, requisições HTTP, ngModel, etc"
+        :stackDescription="texts[language].knowledge.techs.angular"
       />
     </div>
   </div>
 </template>
 <script>
 import Stack from "./shared/stack/Stack.vue";
+import texts from "../../assets/texts/texts";
+
 export default {
-  data() {},
+  data() {
+    return {
+      language: this.$route.path.replace("/", ""),
+      texts,
+    };
+  },
   components: { Stack },
+  watch: {
+    "$route.params.search": {
+      handler: function (search) {
+        this.language = this.$route.path.replace("/", "");
+      },
+      deep: true,
+      immediate: true,
+    },
+  },
 };
 </script>
 <style>
