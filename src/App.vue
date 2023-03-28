@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <Language />
-    <Home />
-    <Conhecimentos />
-    <Projetos />
-    <AppInfo />
-    <Footer />
+    <Home :language="language" />
+    <Conhecimentos :language="language" />
+    <Projetos :language="language" />
+    <AppInfo :language="language" />
+    <Footer :language="language" />
   </div>
 </template>
 
@@ -19,6 +19,11 @@ import Footer from './components/footer/Footer.vue';
 
 export default {
   name: 'App',
+  data() {
+    return {
+      language: this.$route.path.replace("/", "")
+    }
+  },
   components: {
     Home,
     Language,
@@ -27,7 +32,16 @@ export default {
     AppInfo,
     Footer,
   },
-};
+  watch: {
+    "$route.params.search": {
+      handler: function (search) {
+        this.language = this.$route.path.replace("/", "");
+      },
+      deep: true,
+      immediate: true,
+    },
+  },
+}
 </script>
 
 <style>

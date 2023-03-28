@@ -99,17 +99,13 @@ import texts from "../../assets/texts/texts";
 export default {
   data() {
     return {
-      language: this.$route.path.replace('/', ''),
       texts,
     };
   },
-  watch: {
-    "$route.params.search": {
-      handler: function (search) {
-        this.language = this.$route.path.replace("/", "");
-      },
-      deep: true,
-      immediate: true,
+  props: {
+    language: {
+      type: String,
+      default: 'pt'
     },
   },
 }
