@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Language />
     <Home />
     <Conhecimentos />
     <Projetos />
@@ -11,6 +12,7 @@
 <script>
 import Conhecimentos from './components/conhecimentos/Conhecimentos.vue';
 import Home from './components/home/Home.vue';
+import Language from './components/language/Language.vue';
 import Projetos from './components/projetos/Projetos.vue';
 import AppInfo from './components/app-info/AppInfo.vue';
 import Footer from './components/footer/Footer.vue';
@@ -19,6 +21,7 @@ export default {
   name: 'App',
   components: {
     Home,
+    Language,
     Conhecimentos,
     Projetos,
     AppInfo,
