@@ -5,7 +5,7 @@
       <p id="knowledge-text">
         Estou sempre em busca de aprendizado, me aprimorando em tecnologias que
         já conheço e aprendendo novas tecnologias necessárias para o meu dia a
-        dia. Minha atuação hoje é como fullstack, com ênfase em backend. Abaixo
+        dia. Minha atuação hoje é com ênfase em backend, mas já trabalhei como fullstack. Abaixo
         estão as tecnologias que mais utilizo.
       </p>
 
@@ -13,8 +13,11 @@
         imgSrc="https://i.imgur.com/FXkCnmH.png"
         stackTitle="C Sharp"
         stackDescription="Conhecimento em classes, POO (objetos, encapsulamento, herança,
-        polimorfismo, abstração, etc), interfaces, tratamento de exceções. Uso do Entity Framework
-        trabalhando code first(ou não), classes herdadas, com criação e manutenção de CRUD's, tabelas, vínculo entre tabelas 1:1, N:1, N:N; Uso do LINQ, com projeções performáticas em bancos de dados e diversos outros usos. SignalR para conexões contínuas e atualizações em tempo real. Uso de bibliotecas externas nos projetos trabalhados, etc."
+        polimorfismo, abstração, etc), partial classes, interfaces, tratamento de exceções. Uso do Entity Framework
+        trabalhando code first(ou não), classes herdadas, com criação e manutenção de CRUD's, tabelas,
+        vínculo entre tabelas 1:1, N:1, N:N; Uso do LINQ, com projeções performáticas em bancos de dados
+        e diversos outros usos. SignalR para conexões contínuas e atualizações em tempo real.
+        Uso de bibliotecas externas nos projetos trabalhados, etc. Projetos de API, bibliotecas de classes, console, windows forms, etc."
       />
 
       <Stack
@@ -22,7 +25,8 @@
         stackTitle="VueJS"
         stackDescription="Criação e manutenção de componentes, gerenciamento
             de rotas, requisições HTTP, renderizações condicionais, componentes dinâmicos,
-            estilizações de componentes, propriedades, métodos, diretivas, vuex, e demais integrações com o backend; Uso diário de CompositionAPI e OptionsAPI; Vue2 e introduzindo os conhecimentos em Vue3;"
+            estilizações de componentes, propriedades, métodos, diretivas, vuex, e demais integrações com o backend;
+            Uso diário de CompositionAPI e OptionsAPI; Vue2 e conhecimentos em Vue3;"
       />
 
       <Stack

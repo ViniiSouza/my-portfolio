@@ -16,10 +16,9 @@
         transformar algo que gosto em trabalho. Estudo programação desde o início de
         2021. Desde lá, procuro sempre aprender tecnologias novas para estar
         pronto para o mercado de trabalho. Sou um pouco tímido, mas com 5
-        minutos de conversa já consigo me soltar. Sou engraçado, parceiro e
-        amigo para todas as horas. O útlimo curso que fiz foi uma extensão profissional
-        Full-stack, pelo SENAI (DevInHouse). Aprendi sobre React, C-Sharp, Docker e mensageria.
-        Estou sempre em busca de evolução e de novos conhecimentos. Em 2023, vou começar a faculdade de Ciências da Computação, na FURB.
+        minutos de conversa já consigo me soltar. 
+        Atualmente estou cursando Bacharelado em Ciências da Computação, na <a style="color: inherit" href="https://www.furb.br/pt/graduacao/ciencia-da-computacao" target="_blank">FURB</a>.
+        Estou sempre em busca de evolução e de novos conhecimentos.
       </p>
     </div>
   </div>
