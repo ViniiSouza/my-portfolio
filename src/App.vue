@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Language />
+    <Language @languageChanged="changeLanguage"/>
     <Home :language="language" />
     <Conhecimentos :language="language" />
     <Projetos :language="language" />
@@ -21,7 +21,7 @@ export default {
   name: 'App',
   data() {
     return {
-      language: this.$route.path.replace("/", "")
+      language: localStorage.language
     }
   },
   components: {
@@ -32,15 +32,11 @@ export default {
     AppInfo,
     Footer,
   },
-  watch: {
-    "$route.params.search": {
-      handler: function (search) {
-        this.language = this.$route.path.replace("/", "");
-      },
-      deep: true,
-      immediate: true,
-    },
-  },
+  methods: {
+    changeLanguage() {
+      this.language = localStorage.language
+    }
+  }
 }
 </script>
 

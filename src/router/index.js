@@ -9,19 +9,9 @@ const router = new VueRouter({
   base: import.meta.env.BASE_URL,
   routes: [
     {
-      path: '/pt',
-      name: 'homePT',
-      component: App
-    },
-    {
-      path: '/en',
-      name: 'homeEN',
-      component: App
-    },
-    {
       path: '/',
-      redirect: '/pt'
-    }
+      component: App
+    },
   ]
 })
 

@@ -50,13 +50,14 @@ export default {
     };
   },
   created() {
-    this.changeLanguage(this.$route.path.replace('/', ''))
+    this.changeLanguage(localStorage.language)
   },
   methods: {
     openSelect() {
       this.open = !this.open;
     },
     changeLanguage(language) {
+      localStorage.setItem('language', language != null ? language : 'pt')
       if (language == "pt") {
         this.languageSelected = {
           img: "https://recreio.uol.com.br/media/uploads/historia/brasil_e_portugal_capa.jpg",
@@ -71,7 +72,7 @@ export default {
         }
       }
       this.open = false
-      if (this.$route.path != `/${language}`) this.$router.push(`/${language}`)
+      this.$emit('languageChanged')
     },
   },
 };
