@@ -58,7 +58,7 @@ export default {
     },
     changeLanguage(language) {
       localStorage.setItem('language', language != null ? language : 'pt')
-      if (language == "pt") {
+      if (language == "pt" || !language) {
         this.languageSelected = {
           img: "https://recreio.uol.com.br/media/uploads/historia/brasil_e_portugal_capa.jpg",
           name: "Português",
