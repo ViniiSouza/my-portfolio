@@ -27,6 +27,35 @@ export default {
             introTitle: 'About me',
             introText: `My name is Vinícius, I'm 20 years old and I live in Blumenau/SC. I always liked computers and technology. I found an area where I can turn something I enjoy into work. I've been studying programming since the beginning of 2021. Since then, I've always tried to learn new technologies to be ready for the job market. I'm a little shy, but with 5 minutes of conversation I can already let go. I am currently studying Bachelor of Computer Science at FURB. I am always looking for evolution and new knowledge.`,
             introCollege: 'Course curriculum'
+        },
+        projects: {
+            title: 'My projects',
+            description: `Below are some of the projects I've done, by clicking on the card you can preview the project or access the website where it's hosted`,
+            chat: {
+                name: 'Insta chat',
+                description: `Instant messaging system, where it's possible to chat with other users with synchronous chat updated in real time. The demo is performed on only one device, but it's implemented for use among multiple devices and in different places. Project made with Vue 3, C Sharp and SignalR.`,
+                concepts: `Use of SignalR for real-time message updates, configured in .NET 6 environment. FrontEnd with VueJS 3, SignalR integration, Bootstrap for styles, and SweetAlert for stylized alerts.`
+            },
+            mercadoMania: {
+                name: 'MarketMania',
+                description: `Inventory control system for a market. It's possible to add products, categories, and update inventory. Products can be linked to categories. Project made with Angular and C Sharp (Entity Framework).`,
+                concepts: `Use of Entity Framework for database connections and part of the API with REST requests for frontend relationships. FrontEnd made with Angular and Bootstrap library.`
+            },
+            toDoList: {
+                name: 'To Do List',
+                description: `Project from DevInHouse course, To-do list. System to include and remove activities, mark them as completed, etc.`,
+                concepts: `Use of localStorage to store tasks even after closing/reloading the tab.`
+            },
+            credit: {
+                name: 'Credit to all',
+                description: `Profile analysis system for credit availability. Depending on the user's score, a loan approval rate is generated for the requested loan. The user has the option to provide a payment guarantee, increasing the chance of loan approval.`,
+                concepts: `Logic made with javascript and frontend made with HTML + Bootstrap.`
+            },
+            mmo: {
+                name: 'DEVINMMO',
+                description: `Project from DevInHouse course, game information and news website. Created using React and receiving information from an API with games and news. Word search and pagination system. Comment system stored in localStorage.`,
+                concepts: `Revised the use of REST requests, making requests from an external API for use in the project. Comment storage in localStorage. Creation of 3 different themes for the website.`
+            },
         }
     },
     pt: {
@@ -57,6 +86,35 @@ export default {
             introTitle: 'Sobre mim',
             introText: 'Meu nome é Vinícius, tenho 20 anos e moro em Blumenau/SC. Sempre gostei de computadores e tecnologia. Encontrei uma área em que posso transformar algo que gosto em trabalho. Estudo programação desde o início de 2021. Desde lá, procuro sempre aprender tecnologias novas para estar pronto para o mercado de trabalho. Sou um pouco tímido, mas com 5 minutos de conversa já consigo me soltar. Atualmente estou cursando Bacharelado em Ciências da Computação, na FURB. Estou sempre em busca de evolução e de novos conhecimentos.',
             introCollege: 'Grade curricular do curso'
+        },
+        projects: {
+            title: 'Meus Projetos',
+            description: 'Abaixo estão alguns dos projetos que fiz, ao clicar no card, você pode visualizar uma prévia do projeto ou acessar o site em que ele está hospedado',
+            chat: {
+                name: 'Chat instantâneo',
+                description: `Sistema de chat instantâneo, onde é possível conversar com outros usuários, com um bate-papo síncrono e atualizado em tempo real. A demonstração é feita em apenas um dispositivo, mas é implementado para o uso entre vários dispositivos e em diferentes lugares. Projeto feito com Vue 3, C Sharp e SignalR.`,
+                concepts: `Uso do SignalR para a atualização das mensagens em tempo real, configurado no ambiente .NET 6. FrontEnd com VueJS 3, integração do SignalR, bootstrap para estilos e sweetalert para alertas estilizados.`
+            },
+            mercadoMania: {
+                name: 'MercadoMania',
+                description: `Sistema de controle de estoque de um mercado. É possível adicionar produtos, categorias e alterar estoque. Os produtos podem ser vinculados às categorias. Projeto feito com Angular e C Sharp (Entity Framework).`,
+                concepts: `Uso do Entity Framework para conexões com o banco e parte de API com requisições REST para relacionamento com o frontend. FrontEnd feito com Angular e biblioteca Bootstrap.`
+            },
+            toDoList: {
+                name: 'To Do List',
+                description: `Projeto do curso DevInHouse, To-do list. Sistema para incluir e remover atividades, marcá-las como concluídas, etc.`,
+                concepts: `Uso do localStorage para armazenar tarefas mesmo após fechar/recarregar a guia.`
+            },
+            credit: {
+                name: 'Crédito para todxs',
+                description: `Sistema de análise de perfil para disponibilização de crédito. Conforme pontuação do usuário, é gerada uma taxa de aprovação do empréstimo solicitado. Usuário tem a opção de fornecer uma garantia de pagamento, aumentando a chance de aprovação do empréstimo.`,
+                concepts: `Lógica feita com javascript e frontend feito com HTML + Boostrap.`
+            },
+            mmo: {
+                name: 'DEVINMMO',
+                description: `Projeto do curso DevInHouse, site de informações de jogos e notícias sobre jogos. Criado utilizando React e recebendo informações de uma API com os jogos e notícias. Sistema de busca por palavras e paginação. Sistema de comentários armazenados em localStorage.`,
+                concepts: `Revisado o uso das requisições REST, fazendo requisições de uma API externa para uso no projeto. Armazenamento de comentários em localStorage. Criação de 3 temas diferentes para o site.`
+            },
         }
     }
 }

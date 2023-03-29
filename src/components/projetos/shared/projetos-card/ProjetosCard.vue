@@ -16,13 +16,13 @@
 
     <b-modal size="xl" :title="projectName" v-model="modalShow" ok-only>
       <p>{{ projectDescription }}</p>
-      <p v-if="usedConcepts != ''">Conceitos: {{ usedConcepts }}</p>
+      <p v-if="usedConcepts != ''">{{ language == 'pt' ? 'Conceitos:' : 'Concepts:' }} {{ usedConcepts }}</p>
       <div v-if="videoSrc != ''" class="iframe-container">
         <iframe :src="videoSrc" width="720" height="480"> </iframe>
       </div>
       <div v-else class="text-center">
         <p>
-          Site do projeto:<a
+          {{ language == 'pt' ? 'Site do projeto:' : 'Project website:' }} <a
             target="_blank"
             style="color: inherit"
             :href="projectSrc"
@@ -31,7 +31,7 @@
         </p>
       </div>
       <p class="text-center mt-5">
-        <a style="color: inherit" target="_blank" :href="gitSrc">Link do projeto</a>
+        <a style="color: inherit" target="_blank" :href="gitSrc"> {{ language == 'pt' ? 'Link do projeto' : 'Project link' }}</a>
       </p>
     </b-modal>
   </div>
@@ -39,6 +39,10 @@
 <script>
 export default {
   props: {
+    language: {
+      type: String,
+      default: 'pt'
+    },
     projectName: {
       default: "",
     },
