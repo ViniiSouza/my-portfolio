@@ -115,4 +115,23 @@ export default {
   display: inline;
   width: 50px;
 }
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .floating-button {
+    background-color: rgba(1,1,1,0);
+    top: 60px;
+    right: 15px;
+    width: 40px;
+  }
+  .option-language-text {
+    display: none;
+  }
+  .language-option {
+    column-gap: 0;
+    width: 44px;
+  }
+  .language-image {
+    width: 40px;
+  }
+}
 </style>
