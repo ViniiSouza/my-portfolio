@@ -11,6 +11,7 @@
       <a
         id="info-project-ref"
         href="https://github.com/ViniiSouza/my-portfolio"
+        target="_blank"
         >{{ texts[language].appInfo.projectLink }}</a
       >
     </div>
