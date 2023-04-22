@@ -34,25 +34,13 @@
       <Project-card
         techOne="JavaScript"
         imgSrc="https://i.imgur.com/FcB84MT.jpg"
-        videoSrc=""
+        videoSrc="https://www.youtube.com/embed/Y8idO7E2024"
         projectSrc="https://viniisouza.github.io/To-Do_List/"
         gitSrc="https://github.com/ViniiSouza/To-Do_List"
         :language="language"
         :projectName="texts[language].projects.toDoList.name"
         :projectDescription="texts[language].projects.toDoList.description"
         :usedConcepts="texts[language].projects.toDoList.concepts"
-      />
-      <Project-card
-        techOne="Javascript"
-        techTwo="Bootstrap"
-        videoSrc=""
-        projectSrc="https://viniisouza.github.io/analise_emprestimo/index.html"
-        imgSrc="https://i.imgur.com/pk8xkKH.png"
-        gitSrc="https://github.com/ViniiSouza/analise_emprestimo"
-        :language="language"
-        :projectName="texts[language].projects.credit.name"
-        :projectDescription="texts[language].projects.credit.description"
-        :usedConcepts="texts[language].projects.credit.concepts"
       />
       <Project-card
         techOne="React"

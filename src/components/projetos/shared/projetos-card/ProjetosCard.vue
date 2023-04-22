@@ -20,9 +20,9 @@
       <div v-if="videoSrc != ''" class="iframe-container">
         <iframe :src="videoSrc" width="720" height="480"> </iframe>
       </div>
-      <div v-else class="text-center">
+      <div v-if="projectSrc != ''" class="text-center">
         <p>
-          {{ language == 'pt' ? 'Site do projeto:' : 'Project website:' }} <a
+          {{ language == 'pt' ? 'Demo do projeto:' : 'Project demo:' }} <a
             target="_blank"
             style="color: inherit"
             :href="projectSrc"
@@ -65,10 +65,9 @@ export default {
       default: ""
     },
     projectDescription: {},
-    demoSrc: {},
-    videoSrc: {},
+    videoSrc: { default: ''},
     gitSrc: {},
-    projectSrc: {}
+    projectSrc: { default: ''},
   },
 };
 </script>
