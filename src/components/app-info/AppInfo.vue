@@ -7,7 +7,7 @@
     </div>
     <div id="info-content">
       <img id="info-image" src="https://i.imgur.com/VOQvATc.png" />
-      <p id="info-text">v.2</p>
+      <p id="info-text">v.2.7</p>
       <a
         id="info-project-ref"
         href="https://github.com/ViniiSouza/my-portfolio"
