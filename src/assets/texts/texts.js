@@ -7,58 +7,74 @@ export default {
         knowledge: {
             title: 'Knowledge',
             text: `I'm always looking for learning, improving myself in technologies I already know and learning new technologies necessary for my daily routines. My role today is with an emphasis on the backend, but I have already worked as a fullstack. Below are the technologies I use the most.`,
+            areas: [
+                { text: 'All', value: 'all' },
+                { text: 'Back-end', value: 'backend' },
+                { text: 'DevOps/Infrastructure', value: 'devops' },
+                { text: 'Front-end', value: 'frontend' }
+            ],
             techs: [
                 {
-                  title: "C Sharp",
-                  description: "Knowledge in classes, OOP (objects, encapsulation, inheritance, polymorphism, abstraction, etc.), partial classes, interfaces, exception handling. Use of Entity Framework working code first (or not), inherited classes, with creation and maintenance of CRUD's, tables, link between tables 1:1, N:1, N:N; Use of LINQ, with performative projections in databases and several other uses. SignalR for seamless connections and real-time updates. Use of external libraries in the projects worked on, etc. API projects, class libraries, console, windows forms, etc.",
-                  imgSrc: "https://i.imgur.com/FXkCnmH.png"
+                    title: "C Sharp",
+                    description: "Knowledge in classes, OOP (objects, encapsulation, inheritance, polymorphism, abstraction, etc.), partial classes, interfaces, exception handling. Use of Entity Framework working code first (or not), inherited classes, with creation and maintenance of CRUD's, tables, link between tables 1:1, N:1, N:N; Use of LINQ, with performative projections in databases and several other uses. SignalR for seamless connections and real-time updates. Use of external libraries in the projects worked on, etc. API projects, class libraries, console, windows forms, etc.",
+                    imgSrc: "https://i.imgur.com/FXkCnmH.png",
+                    area: "backend",
                 },
                 {
-                  title: "VueJS",
-                  description: "Component creation and maintenance, route management, HTTP requests, conditional rendering, dynamic components, component styling, properties, methods, directives, vuex, and other integrations with the backend; Daily use of CompositionAPI and OptionsAPI; Vue2 and knowledge in Vue3;",
-                  imgSrc: "https://i.imgur.com/VOQvATc.png"
+                    title: "VueJS",
+                    description: "Component creation and maintenance, route management, HTTP requests, conditional rendering, dynamic components, component styling, properties, methods, directives, vuex, and other integrations with the backend; Daily use of CompositionAPI and OptionsAPI; Vue2 and knowledge in Vue3;",
+                    imgSrc: "https://i.imgur.com/VOQvATc.png",
+                    area: "frontend"
                 },
                 {
-                  title: "JavaScript",
-                  description: "Functions, classes, loops, conditions, destructuring, DOM manipulations, axios and other general uses along with the frameworks I use.",
-                  imgSrc: "https://i.imgur.com/pSYaNdY.png"
+                    title: "JavaScript",
+                    description: "Functions, classes, loops, conditions, destructuring, DOM manipulations, axios and other general uses along with the frameworks I use.",
+                    imgSrc: "https://i.imgur.com/pSYaNdY.png",
+                    area: "frontend"
                 },
                 {
-                  title: "SQL",
-                  description: "Database manipulations, tables, columns and data. Filters in general, table relationships, primary and foreign keys, joins, etc.",
-                  imgSrc: "https://i.imgur.com/esMeynM.png"
+                    title: "SQL",
+                    description: "Database manipulations, tables, columns and data. Filters in general, table relationships, primary and foreign keys, joins, etc.",
+                    imgSrc: "https://i.imgur.com/esMeynM.png",
+                    area: "backend",
                 },
                 {
-                  title: "React",
-                  description: "Knowledge in components, props, conditional rendering, events, hooks, contextAPI, react-router-dom, forms with formik, yup, etc.",
-                  imgSrc: "https://i.imgur.com/iUV9fDa.png"
+                    title: "React",
+                    description: "Knowledge in components, props, conditional rendering, events, hooks, contextAPI, react-router-dom, forms with formik, yup, etc.",
+                    imgSrc: "https://i.imgur.com/iUV9fDa.png",
+                    area: "frontend"
                 },
                 {
-                  title: "Bootstrap",
-                  description: "Using bootstrap elements, styling single elements, using bootstrap classes for document styling, using joint libraries (vue-bootstrap, angular-bootstrap), etc.",
-                  imgSrc: "https://i.imgur.com/QcoruCz.png"
+                    title: "Bootstrap",
+                    description: "Using bootstrap elements, styling single elements, using bootstrap classes for document styling, using joint libraries (vue-bootstrap, angular-bootstrap), etc.",
+                    imgSrc: "https://i.imgur.com/QcoruCz.png",
+                    area: "frontend"
                 },
                 {
-                  title: "HTML",
-                  description: "Structures with semantic tags, form creations, accessibility, etc.",
-                  imgSrc: "https://i.imgur.com/UKCDmJf.png"
+                    title: "HTML",
+                    description: "Structures with semantic tags, form creations, accessibility, etc.",
+                    imgSrc: "https://i.imgur.com/UKCDmJf.png",
+                    area: "frontend"
                 },
                 {
-                  title: "CSS",
-                  description: "Element styling, animations, pseudo-elements, advanced selectors, media queries, etc.",
-                  imgSrc: "https://i.imgur.com/QyM1XAK.png"
+                    title: "CSS",
+                    description: "Element styling, animations, pseudo-elements, advanced selectors, media queries, etc.",
+                    imgSrc: "https://i.imgur.com/QyM1XAK.png",
+                    area: "frontend"
                 },
                 {
-                  title: "TypeScript",
-                  description: "Uses with Angular with component management, method creations, etc.",
-                  imgSrc: "https://i.imgur.com/t4grEz4.png"
+                    title: "TypeScript",
+                    description: "Uses with Angular with component management, method creations, etc.",
+                    imgSrc: "https://i.imgur.com/t4grEz4.png",
+                    area: "frontend"
                 },
                 {
-                  title: "Angular",
-                  description: "Knowledge in component creation and maintenance, route management, SPA, HTTP requests, ngModel, etc.",
-                  imgSrc: "https://i.imgur.com/nxWWeEy.png"
+                    title: "Angular",
+                    description: "Knowledge in component creation and maintenance, route management, SPA, HTTP requests, ngModel, etc.",
+                    imgSrc: "https://i.imgur.com/nxWWeEy.png",
+                    area: "frontend"
                 }
-              ]
+            ]
         },
         home: {
             profession: 'Software Developer',
@@ -106,58 +122,74 @@ export default {
         knowledge: {
             title: 'Conhecimento',
             text: 'Estou sempre em busca de aprendizado, me aprimorando em tecnologias que já conheço e aprendendo novas tecnologias necessárias para o meu dia a dia. Minha atuação hoje é com ênfase em backend, mas já trabalhei como fullstack. Abaixo estão as tecnologias que mais utilizo.',
+            areas: [
+                { text: 'Todos', value: 'all' },
+                { text: 'Back-end', value: 'backend' },
+                { text: 'DevOps/Infraestrutura', value: 'devops' },
+                { text: 'Front-end', value: 'frontend' }
+            ],
             techs: [
                 {
-                  title: "C Sharp",
-                  description: "Conhecimento em classes, POO (objetos, encapsulamento, herança, polimorfismo, abstração, etc), partial classes, interfaces, tratamento de exceções. Uso do Entity Framework trabalhando code first(ou não), classes herdadas, com criação e manutenção de CRUD's, tabelas, vínculo entre tabelas 1:1, N:1, N:N; Uso do LINQ, com projeções performáticas em bancos de dados e diversos outros usos. SignalR para conexões contínuas e atualizações em tempo real. Uso de bibliotecas externas nos projetos trabalhados, etc. Projetos de API, bibliotecas de classes, console, windows forms, etc.",
-                  imgSrc: "https://i.imgur.com/FXkCnmH.png"
+                    title: "C Sharp",
+                    description: "Conhecimento em classes, POO (objetos, encapsulamento, herança, polimorfismo, abstração, etc), partial classes, interfaces, tratamento de exceções. Uso do Entity Framework trabalhando code first(ou não), classes herdadas, com criação e manutenção de CRUD's, tabelas, vínculo entre tabelas 1:1, N:1, N:N; Uso do LINQ, com projeções performáticas em bancos de dados e diversos outros usos. SignalR para conexões contínuas e atualizações em tempo real. Uso de bibliotecas externas nos projetos trabalhados, etc. Projetos de API, bibliotecas de classes, console, windows forms, etc.",
+                    imgSrc: "https://i.imgur.com/FXkCnmH.png",
+                    area: "backend",
                 },
                 {
-                  title: "VueJS",
-                  description: "Criação e manutenção de componentes, gerenciamento de rotas, requisições HTTP, renderizações condicionais, componentes dinâmicos, estilizações de componentes, propriedades, métodos, diretivas, vuex, e demais integrações com o backend; Uso diário de CompositionAPI e OptionsAPI; Vue2 e conhecimentos em Vue3;",
-                  imgSrc: "https://i.imgur.com/VOQvATc.png"
+                    title: "VueJS",
+                    description: "Criação e manutenção de componentes, gerenciamento de rotas, requisições HTTP, renderizações condicionais, componentes dinâmicos, estilizações de componentes, propriedades, métodos, diretivas, vuex, e demais integrações com o backend; Uso diário de CompositionAPI e OptionsAPI; Vue2 e conhecimentos em Vue3;",
+                    imgSrc: "https://i.imgur.com/VOQvATc.png",
+                    area: "frontend"
                 },
                 {
-                  title: "JavaScript",
-                  description: "Funções, classes, loops, condições, destructuring, manipulações de DOM, axios e outros usos gerais juntamente com os frameworks que utilizo.",
-                  imgSrc: "https://i.imgur.com/pSYaNdY.png"
+                    title: "JavaScript",
+                    description: "Funções, classes, loops, condições, destructuring, manipulações de DOM, axios e outros usos gerais juntamente com os frameworks que utilizo.",
+                    imgSrc: "https://i.imgur.com/pSYaNdY.png",
+                    area: "frontend"
                 },
                 {
-                  title: "SQL",
-                  description: "Manipulações de banco de dados, tabelas, colunas e dados. Filtros em geral, relacionamento de tabelas, chaves primárias e estrangeiras, joins, etc",
-                  imgSrc: "https://i.imgur.com/esMeynM.png"
+                    title: "SQL",
+                    description: "Manipulações de banco de dados, tabelas, colunas e dados. Filtros em geral, relacionamento de tabelas, chaves primárias e estrangeiras, joins, etc",
+                    imgSrc: "https://i.imgur.com/esMeynM.png",
+                    area: "backend",
                 },
                 {
-                  title: "React",
-                  description: "Conhecimento em componentes, props, renderização condicional, eventos, hooks, contextAPI, react-router-dom, formulários com formik, yup, etc.",
-                  imgSrc: "https://i.imgur.com/iUV9fDa.png"
+                    title: "React",
+                    description: "Conhecimento em componentes, props, renderização condicional, eventos, hooks, contextAPI, react-router-dom, formulários com formik, yup, etc.",
+                    imgSrc: "https://i.imgur.com/iUV9fDa.png",
+                    area: "frontend"
                 },
                 {
-                  title: "Bootstrap",
-                  description: "Utilização de elementos bootstrap, estilizações de elementos únicos, utilização de classes bootstrap para estilização do documento, utilização de bibliotecas conjuntas (vue-bootstrap, angular-bootstrap), etc.",
-                  imgSrc: "https://i.imgur.com/QcoruCz.png"
+                    title: "Bootstrap",
+                    description: "Utilização de elementos bootstrap, estilizações de elementos únicos, utilização de classes bootstrap para estilização do documento, utilização de bibliotecas conjuntas (vue-bootstrap, angular-bootstrap), etc.",
+                    imgSrc: "https://i.imgur.com/QcoruCz.png",
+                    area: "frontend"
                 },
                 {
-                  title: "HTML",
-                  description: "Estruturas com tags semânticas, criações de formulários, acessibilidade, etc.",
-                  imgSrc: "https://i.imgur.com/UKCDmJf.png"
+                    title: "HTML",
+                    description: "Estruturas com tags semânticas, criações de formulários, acessibilidade, etc.",
+                    imgSrc: "https://i.imgur.com/UKCDmJf.png",
+                    area: "frontend"
                 },
                 {
-                  title: "CSS",
-                  description: "Estilizações de elementos, animações, pseudo-elementos, seletores avançados, media queries, etc.",
-                  imgSrc: "https://i.imgur.com/QyM1XAK.png"
+                    title: "CSS",
+                    description: "Estilizações de elementos, animações, pseudo-elementos, seletores avançados, media queries, etc.",
+                    imgSrc: "https://i.imgur.com/QyM1XAK.png",
+                    area: "frontend"
                 },
                 {
-                  title: "TypeScript",
-                  description: "Usos junto ao Angular com gerenciamento de componentes, criações de métodos, etc.",
-                  imgSrc: "https://i.imgur.com/t4grEz4.png"
+                    title: "TypeScript",
+                    description: "Usos junto ao Angular com gerenciamento de componentes, criações de métodos, etc.",
+                    imgSrc: "https://i.imgur.com/t4grEz4.png",
+                    area: "frontend"
                 },
                 {
-                  title: "Angular",
-                  description: "Conhecimento em criação e manutenção de componentes, gerenciamento de rotas, SPA, requisições HTTP, ngModel, etc.",
-                  imgSrc: "https://i.imgur.com/nxWWeEy.png"
+                    title: "Angular",
+                    description: "Conhecimento em criação e manutenção de componentes, gerenciamento de rotas, SPA, requisições HTTP, ngModel, etc.",
+                    imgSrc: "https://i.imgur.com/nxWWeEy.png",
+                    area: "frontend"
                 }
-              ]
+            ]
         },
         home: {
             profession: 'Desenvolvedor de Software',

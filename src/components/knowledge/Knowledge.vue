@@ -6,8 +6,15 @@
         {{ texts[language].knowledge.text }}
       </p>
 
+      <b-radio-group
+        v-model="selectedArea"
+        :options="areas"
+        class="knowledge-area-radio-group text-center"
+      >
+      </b-radio-group>
+
       <Stack
-        v-for="item in texts[language].knowledge.techs"
+        v-for="item in filteredTechs"
         :key="item.title"
         :imgSrc="item.imgSrc"
         :stackTitle="item.title"
@@ -17,23 +24,46 @@
   </div>
 </template>
 <script>
-import Stack from "./shared/stack/Stack.vue";
-import texts from "../../assets/texts/texts";
+import Stack from "./shared/stack/Stack.vue"
+import texts from "../../assets/texts/texts"
 
 export default {
   data() {
     return {
       texts,
+      selectedArea: "all",
+      filteredTechs: texts[this.language].knowledge.techs
     }
   },
   props: {
     language: {
       type: String,
-      default: 'pt'
+      default: 'pt',
     },
   },
+  methods: {
+    updateTechs() {
+      if (this.selectedArea == 'all')
+        this.filteredTechs = texts[this.language].knowledge.techs
+      else
+        this.filteredTechs = texts[this.language].knowledge.techs.filter((item) => item.area == this.selectedArea)
+    }
+  },
+  computed: {
+    areas() {
+      return texts[this.language].knowledge.areas
+    },
+  },
+  watch: {
+    selectedArea() {
+      this.updateTechs()
+    },
+    language() {
+      this.updateTechs()
+    }
+  },
   components: { Stack },
-};
+}
 </script>
 <style>
 #knowledge-section {
@@ -62,6 +92,15 @@ export default {
   display: flex;
   flex-direction: row;
 }
+
+.knowledge-area-radio-group > div {
+  display: inline-block;
+  margin: 00 1rem 2rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+  accent-color: rgb(150, 67, 228);
+}
+
 @media screen and (max-width: 1500px) {
 }
 @media screen and (max-width: 1024px) {
