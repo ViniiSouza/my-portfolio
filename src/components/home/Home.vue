@@ -95,7 +95,7 @@ export default {
   font-family: "Montserrat", sans-serif;
   text-align: justify;
   margin: 0 8vw 0 8vw;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 @media screen and (max-width: 1500px) {
   #author-name {

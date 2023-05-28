@@ -143,7 +143,7 @@ export default {
     margin-bottom: -20px;
   }
   #card-technologies {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 1024px) {

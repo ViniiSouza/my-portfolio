@@ -75,10 +75,10 @@
     font-size: 2rem;
   }
   #info-text {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   #info-project-ref {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   #info-image {
     width: 15rem;
