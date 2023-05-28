@@ -2,18 +2,18 @@
   <div id="app">
     <Language @languageChanged="changeLanguage"/>
     <Home :language="language" />
-    <Conhecimentos :language="language" />
-    <Projetos :language="language" />
+    <Knowledge :language="language" />
+    <Projects :language="language" />
     <AppInfo :language="language" />
     <Footer :language="language" />
   </div>
 </template>
 
 <script>
-import Conhecimentos from './components/conhecimentos/Conhecimentos.vue';
+import Knowledge from './components/knowledge/Knowledge.vue';
 import Home from './components/home/Home.vue';
 import Language from './components/language/Language.vue';
-import Projetos from './components/projetos/Projetos.vue';
+import Projects from './components/projects/Projects.vue';
 import AppInfo from './components/app-info/AppInfo.vue';
 import Footer from './components/footer/Footer.vue';
 
@@ -27,8 +27,8 @@ export default {
   components: {
     Home,
     Language,
-    Conhecimentos,
-    Projetos,
+    Knowledge,
+    Projects,
     AppInfo,
     Footer,
   },

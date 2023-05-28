@@ -59,7 +59,7 @@
   </div>
 </template>
 <script>
-import ProjectCard from "./shared/projetos-card/ProjetosCard.vue";
+import ProjectCard from "./shared/project-card/ProjectCard.vue";
 import texts from "../../assets/texts/texts";
 
 export default {
