@@ -27,21 +27,33 @@ export default {
                     area: "frontend"
                 },
                 {
-                    title: "JavaScript",
-                    description: "Functions, classes, loops, conditions, destructuring, DOM manipulations, axios and other general uses along with the frameworks I use.",
-                    imgSrc: "https://i.imgur.com/pSYaNdY.png",
-                    area: "frontend"
-                },
-                {
                     title: "SQL",
                     description: "Database manipulations, tables, columns and data. Filters in general, table relationships, primary and foreign keys, joins, etc.",
                     imgSrc: "https://i.imgur.com/esMeynM.png",
                     area: "backend",
                 },
                 {
+                    title: "AWS Services",
+                    description: "Knowledge in RDS and EC2, managing user groups, roles, VPC's, subnets, security groups and more.",
+                    imgSrc: "https://i.imgur.com/rDpMJNg.png",
+                    area: "devops"
+                },
+                {
+                    title: "Docker",
+                    description: "Knowledge in creating Docker Compose, Dockerfile, shell scripts for container automation, etc.",
+                    imgSrc: "https://i.imgur.com/vK8OFn7.png",
+                    area: "devops"
+                },
+                {
                     title: "React",
                     description: "Knowledge in components, props, conditional rendering, events, hooks, contextAPI, react-router-dom, forms with formik, yup, etc.",
                     imgSrc: "https://i.imgur.com/iUV9fDa.png",
+                    area: "frontend"
+                },
+                {
+                    title: "JavaScript",
+                    description: "Functions, classes, loops, conditions, destructuring, DOM manipulations, axios and other general uses along with the frameworks I use.",
+                    imgSrc: "https://i.imgur.com/pSYaNdY.png",
                     area: "frontend"
                 },
                 {
@@ -123,7 +135,7 @@ export default {
             title: 'Conhecimento',
             text: 'Estou sempre em busca de aprendizado, me aprimorando em tecnologias que já conheço e aprendendo novas tecnologias necessárias para o meu dia a dia. Minha atuação hoje é com ênfase em backend, mas já trabalhei como fullstack. Abaixo estão as tecnologias que mais utilizo.',
             areas: [
-                { text: 'Todos', value: 'all' },
+                { text: 'Todas', value: 'all' },
                 { text: 'Back-end', value: 'backend' },
                 { text: 'DevOps/Infraestrutura', value: 'devops' },
                 { text: 'Front-end', value: 'frontend' }
@@ -142,21 +154,33 @@ export default {
                     area: "frontend"
                 },
                 {
-                    title: "JavaScript",
-                    description: "Funções, classes, loops, condições, destructuring, manipulações de DOM, axios e outros usos gerais juntamente com os frameworks que utilizo.",
-                    imgSrc: "https://i.imgur.com/pSYaNdY.png",
-                    area: "frontend"
-                },
-                {
                     title: "SQL",
                     description: "Manipulações de banco de dados, tabelas, colunas e dados. Filtros em geral, relacionamento de tabelas, chaves primárias e estrangeiras, joins, etc",
                     imgSrc: "https://i.imgur.com/esMeynM.png",
                     area: "backend",
                 },
                 {
+                    title: "AWS Services",
+                    description: "Conhecimentos em RDS e EC2, gerenciando grupos de usuários, roles, VPC's, subnets, grupos de segurança e mais.",
+                    imgSrc: "https://i.imgur.com/rDpMJNg.png",
+                    area: "devops"
+                },
+                {
+                    title: "Docker",
+                    description: "Conhecimentos em criações de Docker Compose, Dockerfile, scripts shell para automação de containers, etc.",
+                    imgSrc: "https://i.imgur.com/vK8OFn7.png",
+                    area: "devops"
+                },
+                {
                     title: "React",
                     description: "Conhecimento em componentes, props, renderização condicional, eventos, hooks, contextAPI, react-router-dom, formulários com formik, yup, etc.",
                     imgSrc: "https://i.imgur.com/iUV9fDa.png",
+                    area: "frontend"
+                },
+                {
+                    title: "JavaScript",
+                    description: "Funções, classes, loops, condições, destructuring, manipulações de DOM, axios e outros usos gerais juntamente com os frameworks que utilizo.",
+                    imgSrc: "https://i.imgur.com/pSYaNdY.png",
                     area: "frontend"
                 },
                 {
