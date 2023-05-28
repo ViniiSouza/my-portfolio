@@ -17,7 +17,7 @@
         >
           <img
             class="language-image"
-            src="https://recreio.uol.com.br/media/uploads/historia/brasil_e_portugal_capa.jpg"
+            src="https://i.imgur.com/NkFj6Ni.jpg"
           />
           <p class="option-language-text">Português</p>
         </div>
@@ -28,7 +28,7 @@
         >
           <img
             class="language-image"
-            src="https://cdn.w600.comps.canstockphoto.com.br/bandeira-l%C3%ADngua-ingl%C3%AAs-banco-de-ilustra%C3%A7%C3%A3o_csp8895196.jpg"
+            src="https://i.imgur.com/7Lrop29.png"
           />
           <p class="option-language-text">English</p>
         </div>
@@ -43,7 +43,7 @@ export default {
     return {
       open: false,
       languageSelected: {
-        img: "https://recreio.uol.com.br/media/uploads/historia/brasil_e_portugal_capa.jpg",
+        img: "https://i.imgur.com/NkFj6Ni.jpg",
         name: "Português",
         value: "pt",
       },
