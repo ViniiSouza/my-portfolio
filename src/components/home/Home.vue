@@ -1,9 +1,6 @@
 <template>
   <div id="home-content">
-    <div id="author-section">
-      <p id="author-name">Vinícius G. de Souza</p>
-      <p id="author-subtitle">{{ texts[language].home.profession }}</p>
-    </div>
+    <Presentation />
     <div id="header-section">
       <h1 id="header-title">{{ texts[language].home.sectionTitle }}</h1>
       <h3 id="header-subtitle">{{ texts[language].home.sectionSubtitle }}</h3>
@@ -21,6 +18,9 @@
 import texts from "../../assets/texts/texts";
 
 export default {
+  components: {
+    Presentation: () => import('./components/presentation/Presentation.vue')
+  },
   data() {
     return {
       texts
@@ -38,26 +38,17 @@ export default {
 #home-content {
   font-family: Calibri, sans-serif;
 }
-#author-section {
-  font-family: "Staatliches", sans-serif;
-  text-align: center;
-  transition: 1.5s;
-}
-#author-section:hover {
-  color: white;
-  background-color: #212529;
-  transition: color 2s;
-  transition: background-color 0.8s;
-}
+
 #author-name {
   font-size: 13em;
+  margin-bottom: 0;
+  line-height: 1;
 }
 
 #author-subtitle {
   font-family: "Raleway", sans-serif;
   font-style: italic;
   font-size: 3.5rem;
-  margin-top: -4vh;
 }
 #header-section {
   text-align: center;
@@ -79,12 +70,7 @@ export default {
 #intro-section {
   background-color: white;
   color: rebeccapurple;
-  transition: 1.5s;
   padding: 10vh 0 10vh 0;
-}
-#intro-section:hover {
-  background-color: #9f76c752;
-  transition: 1.5s;
 }
 #intro-title {
   font-family: "Staatliches", sans-serif;
@@ -153,6 +139,6 @@ export default {
   }
   #intro-text {
     font-size: 1em;
-  }
-}
+  }  
+}  
 </style>
