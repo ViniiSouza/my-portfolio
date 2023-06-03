@@ -1,20 +1,20 @@
 #introduction__section {
+    display: grid;
+    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
     font-family: "Staatliches", sans-serif;
     text-align: center;
     padding: 2.5rem 0;
-    display: grid;
-    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
 }
 
 .introduction__hello-text {
-    font-size: 2.5rem;
     font-family: "Raleway", sans-serif;
+    font-size: 2.5rem;
     text-align: left;
+    padding-left: 0.5rem;
     justify-content: start;
     grid-column-start: 3;
     grid-column-end: 7;
     max-height: fit-content;
-    padding-left: 0.5rem;
 }
 
 .introduction__name-container {
@@ -26,42 +26,42 @@
 .introduction__name-text {
     font-family: "Raleway", sans-serif;
     font-weight: bold;
-    background-color: rgb(206, 206, 206);
+    line-height: 1;
+    width: 0;
     max-width: fit-content;
+    background-color: rgb(206, 206, 206);
     padding: 0.2em 0 0.2em 0.2em;
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    line-height: 1;
     align-self: end;
     align-content: end;
     vertical-align: bottom;
-    width: 0;
     letter-spacing: .15em;
 }
 
 .introduction__profession-text {
+    font-family: "Staatliches", sans-serif;
     font-size: 15em;
+    text-align: left;
     line-height: 0.8;
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 3;
     grid-column-end: 7;
-    text-align: left;
-    font-family: "Staatliches", sans-serif;
 }
 
 .introduction__description-text {
-    color: rgb(100, 100, 100);
     font-family: "Montserrat", sans-serif;
     font-size: 1.5em;
+    text-align: left;
+    color: rgb(100, 100, 100);
     line-height: 1.2;
     grid-row-start: 4;
     grid-column-start: 5;
     grid-column-end: 8;
     line-break: auto;
     overflow-wrap: break-word;
-    text-align: left;
 }
 
 @media screen and (max-width: 1780px) {
@@ -234,67 +234,85 @@
 
 }
 
-/* name animations */
+/* Typewriter animation - start */
 
 /* Typewriter cursor effect */
 @keyframes typeWriter {
-    from, to { border-color: transparent }
-    50% { border-color: rebeccapurple; }
-  }
+    from, to {
+        border-color: transparent
+    }
 
+    50% {
+        border-color: rebeccapurple;
+    }
+}
 @keyframes writeFullName {
-    from {width: 0;}
-    to { width: 100%;}
-}
+    from {
+        width: 0;
+    }
 
+    to {
+        width: 100%;
+    }
+}
 @keyframes eraseSurname {
-    from {width: 100%;}
-    to { width: 20%;}
-}
+    from {
+        width: 100%;
+    }
 
+    to {
+        width: 20%;
+    }
+}
 @keyframes eraseNickname {
-    from {width: 20%;}
-    to { width: 10%;}
-}
+    from {
+        width: 20%;
+    }
 
+    to {
+        width: 10%;
+    }
+}
 @keyframes fixNickname {
-    from, to {width: 10%;}
-    50% {width: 8.5%;}
-}
+    from, to {
+        width: 10%;
+    }
 
+    50% {
+        width: 8.5%;
+    }
+}
 @keyframes eraseAll {
-    from {width: 10%;}
-    to {width: 0%;}
-}
+    from {
+        width: 10%;
+    }
 
+    to {
+        width: 0%;
+    }
+}
 .first-animation {
     animation: writeFullName 4s steps(35, end)
 }
-
 .second-animation {
     animation: eraseSurname 3s steps(25, end)
 }
-
 .third-animation {
     animation: eraseNickname 1s steps(5, end)
 }
-
 .fourth-animation {
     animation: fixNickname 1s steps(1, end)
 }
-
 .fifth-animation {
     animation: eraseAll 1s steps(5, end)
 }
-
 .full-name {
     width: 100%;
 }
-
 .first-name {
     width: 20%;
 }
-
 .nick-name {
     width: 10%;
 }
+/* Typewriter animation - end */
