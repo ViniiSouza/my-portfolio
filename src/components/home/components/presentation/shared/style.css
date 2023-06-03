@@ -1,0 +1,300 @@
+#introduction__section {
+    font-family: "Staatliches", sans-serif;
+    text-align: center;
+    padding: 2.5rem 0;
+    display: grid;
+    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+}
+
+.introduction__hello-text {
+    font-size: 2.5rem;
+    font-family: "Raleway", sans-serif;
+    text-align: left;
+    justify-content: start;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    max-height: fit-content;
+    padding-left: 0.5rem;
+}
+
+.introduction__name-container {
+    display: inline;
+    border-right: .15em solid rebeccapurple;
+    animation: typeWriter 0.75s step-end infinite;
+}
+
+.introduction__name-text {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    background-color: rgb(206, 206, 206);
+    max-width: fit-content;
+    padding: 0.2em 0 0.2em 0.2em;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    line-height: 1;
+    align-self: end;
+    align-content: end;
+    vertical-align: bottom;
+    width: 0;
+    letter-spacing: .15em;
+}
+
+.introduction__profession-text {
+    font-size: 15em;
+    line-height: 0.8;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    text-align: left;
+    font-family: "Staatliches", sans-serif;
+}
+
+.introduction__description-text {
+    color: rgb(100, 100, 100);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+    line-height: 1.2;
+    grid-row-start: 4;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    line-break: auto;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+
+@media screen and (max-width: 1780px) {
+    .introduction__hello-text {
+        font-size: 1.8rem;
+    }
+
+    .introduction__profession-text {
+        font-size: 14em;
+    }
+
+    .introduction__description-text {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .introduction__hello-text {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    .introduction__profession-text {
+        font-size: 12.5em;
+    }
+
+    .introduction__description-text {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .introduction__hello-text {
+        font-size: 1.75rem;
+        font-weight: bold;
+    }
+
+    .introduction__profession-text {
+        font-size: 11em;
+    }
+
+    .introduction__description-text {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .introduction__hello-text {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .introduction__profession-text {
+        font-size: 9em;
+    }
+
+    .introduction__description-text {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .introduction__hello-text {
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    .introduction__profession-text {
+        font-size: 8em;
+    }
+
+    .introduction__description-text {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .introduction__hello-text {
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding-left: 0.4rem;
+    }
+
+    .introduction__profession-text {
+        font-size: 7em;
+    }
+
+    .introduction__description-text {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .introduction__hello-text {
+        font-size: 1rem;
+        font-weight: bold;
+        padding-left: 0.3rem;
+    }
+
+    .introduction__profession-text {
+        font-size: 6em;
+    }
+
+    .introduction__description-text {
+        font-size: 0.8em;
+        grid-column-start: 4;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .introduction__hello-text {
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    .introduction__profession-text {
+        font-size: 5em;
+    }
+
+    .introduction__description-text {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .introduction__hello-text {
+        font-size: 0.6rem;
+        font-weight: bold;
+        padding-left: 0.2rem;
+    }
+
+    .introduction__profession-text {
+        font-size: 4.5em;
+    }
+
+    .introduction__description-text {
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .introduction__hello-text {
+        font-size: 0.5rem;
+        font-weight: bold;
+        padding-left: 0.1rem;
+    }
+
+    .introduction__profession-text {
+        font-size: 3.2em;
+    }
+
+    .introduction__description-text {
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .introduction__hello-text {
+        font-size: 0.4rem;
+        font-weight: bold;
+    }
+
+    .introduction__profession-text {
+        font-size: 3em;
+    }
+
+    .introduction__description-text {
+        font-size: 0.4em;
+    }
+
+}
+
+/* name animations */
+
+/* Typewriter cursor effect */
+@keyframes typeWriter {
+    from, to { border-color: transparent }
+    50% { border-color: rebeccapurple; }
+  }
+
+@keyframes writeFullName {
+    from {width: 0;}
+    to { width: 100%;}
+}
+
+@keyframes eraseSurname {
+    from {width: 100%;}
+    to { width: 20%;}
+}
+
+@keyframes eraseNickname {
+    from {width: 20%;}
+    to { width: 10%;}
+}
+
+@keyframes fixNickname {
+    from, to {width: 10%;}
+    50% {width: 8.5%;}
+}
+
+@keyframes eraseAll {
+    from {width: 10%;}
+    to {width: 0%;}
+}
+
+.first-animation {
+    animation: writeFullName 4s steps(35, end)
+}
+
+.second-animation {
+    animation: eraseSurname 3s steps(25, end)
+}
+
+.third-animation {
+    animation: eraseNickname 1s steps(5, end)
+}
+
+.fourth-animation {
+    animation: fixNickname 1s steps(1, end)
+}
+
+.fifth-animation {
+    animation: eraseAll 1s steps(5, end)
+}
+
+.full-name {
+    width: 100%;
+}
+
+.first-name {
+    width: 20%;
+}
+
+.nick-name {
+    width: 10%;
+}
