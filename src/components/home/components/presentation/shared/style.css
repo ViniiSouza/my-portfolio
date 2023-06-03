@@ -246,6 +246,7 @@
         border-color: rebeccapurple;
     }
 }
+
 @keyframes writeFullName {
     from {
         width: 0;
@@ -255,6 +256,7 @@
         width: 100%;
     }
 }
+
 @keyframes eraseSurname {
     from {
         width: 100%;
@@ -264,6 +266,7 @@
         width: 20%;
     }
 }
+
 @keyframes eraseNickname {
     from {
         width: 20%;
@@ -273,6 +276,7 @@
         width: 10%;
     }
 }
+
 @keyframes fixNickname {
     from, to {
         width: 10%;
@@ -282,6 +286,7 @@
         width: 8.5%;
     }
 }
+
 @keyframes eraseAll {
     from {
         width: 10%;
@@ -291,28 +296,37 @@
         width: 0%;
     }
 }
+
 .first-animation {
     animation: writeFullName 4s steps(35, end)
 }
+
 .second-animation {
     animation: eraseSurname 3s steps(25, end)
 }
+
 .third-animation {
     animation: eraseNickname 1s steps(5, end)
 }
+
 .fourth-animation {
     animation: fixNickname 1s steps(1, end)
 }
+
 .fifth-animation {
     animation: eraseAll 1s steps(5, end)
 }
+
 .full-name {
     width: 100%;
 }
+
 .first-name {
     width: 20%;
 }
+
 .nick-name {
     width: 10%;
 }
+
 /* Typewriter animation - end */
