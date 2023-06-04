@@ -1,0 +1,33 @@
+.stack-container {
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    display: inline-block;
+    text-align: center;
+    width: 9rem;
+    height: 9rem;
+    vertical-align: middle;
+    margin: 5px 5px;
+    overflow: hidden;
+}
+
+.stack__image {
+    width: 5rem;
+    transition: transform 0.5s ease;
+    transform: translateY(2rem);
+}
+
+.stack__name {
+    opacity: 0;
+    transition: 1s;
+    transition: opacity 0.1s linear;
+    font-family: "Raleway";
+}
+
+.stack-container:hover .stack__image {
+    transform: translateY(0rem);
+}
+
+.stack-container:hover .stack__name {
+    opacity: 1;
+    transition: opacity 0.3s linear;
+}

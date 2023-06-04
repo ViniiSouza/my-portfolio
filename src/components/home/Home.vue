@@ -1,6 +1,8 @@
 <template>
   <div id="home-content">
     <Presentation />
+    <Knowledge :language="language" />
+    <hr />
     <div id="header-section">
       <h1 id="header-title">{{ texts[language].home.sectionTitle }}</h1>
       <h3 id="header-subtitle">{{ texts[language].home.sectionSubtitle }}</h3>
@@ -19,7 +21,8 @@ import texts from "../../assets/texts/texts";
 
 export default {
   components: {
-    Presentation: () => import('./components/presentation/Presentation.vue')
+    Presentation: () => import('./components/presentation/Presentation.vue'),
+    Knowledge: () => import('../knowledge/NewKnowledge.vue')
   },
   data() {
     return {

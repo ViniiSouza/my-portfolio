@@ -31,7 +31,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
   .full-container {
     transition: 0.5s;
 
