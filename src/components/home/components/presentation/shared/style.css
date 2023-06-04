@@ -1,7 +1,7 @@
 #introduction__section {
     display: grid;
     grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
-    font-family: "Staatliches", sans-serif;
+    font-family: var(--title-font);
     text-align: center;
     padding: 2.5rem 0;
 }
@@ -41,7 +41,7 @@
 }
 
 .introduction__profession-text {
-    font-family: "Staatliches", sans-serif;
+    font-family: var(--title-font);
     font-size: 15em;
     text-align: left;
     line-height: 0.8;
@@ -243,7 +243,7 @@
     }
 
     50% {
-        border-color: rebeccapurple;
+        border-color: var(--primary);
     }
 }
 

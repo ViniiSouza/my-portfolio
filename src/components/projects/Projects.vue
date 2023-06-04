@@ -84,7 +84,7 @@ export default {
 
 #projects-title {
   text-align: center;
-  font-family: "Staatliches";
+  font-family: var(--title-font);
   font-size: 3rem;
 }
 

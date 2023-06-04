@@ -56,7 +56,7 @@ export default {
 #header-section {
   text-align: center;
   color: white;
-  background-color: rebeccapurple;
+  background-color: var(--primary);
   padding: 20vh 0 20vh 0;
 }
 #header-title {
@@ -72,11 +72,11 @@ export default {
 
 #intro-section {
   background-color: white;
-  color: rebeccapurple;
+  color: var(--primary);
   padding: 10vh 0 10vh 0;
 }
 #intro-title {
-  font-family: "Staatliches", sans-serif;
+  font-family: var(--title-font);
   font-size: 4em;
   text-align: center;
 }

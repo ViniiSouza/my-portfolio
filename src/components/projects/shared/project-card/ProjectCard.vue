@@ -87,7 +87,7 @@ export default {
 }
 
 #card-image-section {
-  background-color: rebeccapurple;
+  background-color: var(--primary);
   border-bottom: 2px solid black;
   min-height: 170px;
   max-height: 170px;
@@ -107,7 +107,7 @@ export default {
 }
 
 #card-title {
-  font-family: "Staatliches", sans-serif;
+  font-family: var(--title-font);
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: -10px;

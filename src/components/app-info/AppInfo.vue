@@ -19,7 +19,7 @@
 </template>
 <style>
 #info-section {
-  background-color: rebeccapurple;
+  background-color: var(--primary);
   color: white;
   padding: 5rem 0 5rem 0;
 }
@@ -29,7 +29,7 @@
 
 #info-title {
   text-align: center;
-  font-family: "Staatliches";
+  font-family: var(--title-font);
   font-size: 3rem;
 }
 
