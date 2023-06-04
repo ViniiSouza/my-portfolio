@@ -1,5 +1,14 @@
 <template>
-  <div class="stack__container" data-tilt data-tilt-max="15" data-tilt-reverse="true" data-tilt-max-glare="0.25" data-tilt-glare="true" data-tilt-scale="1.05">
+  <div
+    class="stack__container"
+    data-tilt
+    data-tilt-max="15"
+    data-tilt-reverse="true"
+    data-tilt-max-glare="0.25"
+    data-tilt-glare="true"
+    data-tilt-scale="1.05"
+    @click="$emit('selectStack')"
+  >
     <img class="stack__image" :src="imgSrc" />
     <div class="stack__name">{{ stackTitle }}</div>
   </div>
