@@ -67,6 +67,9 @@ export default {
     setDelay(ms) {
       return new Promise((resolve) => setTimeout(resolve, ms))
     },
+    getNameReference() {
+      return this.$refs.name
+    }
   },
 }
 </script>
