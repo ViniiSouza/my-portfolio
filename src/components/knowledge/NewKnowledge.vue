@@ -3,15 +3,32 @@
     <div id="knowledge__section">
       <h3 id="knowledge__title">{{ texts[language].knowledge.title }}</h3>
       <div id="knowledge__stack-container">
-        <div id="knowledge__stack-grid" :class="showStackInfo ? 'test' : ''">
-          <NewStack
-            v-for="item in filteredTechs"
-            :key="item.title"
-            :imgSrc="item.imgSrc"
-            :stackTitle="item.title"
-            :stackDescription="item.description"
-            @selectStack="setStack(item)"
-          />
+        <div id="knowledge__stack-container-grid">
+          <div id="knowledge__stack-filter-grid">
+            <button
+              v-for="area in areas"
+              :key="area.value"
+              class="knowledge__stack-area-button"
+              :class="
+                selectedArea == area.value
+                  ? 'knowledge__stack-area-button--active'
+                  : ''
+              "
+              @click="filter(area.value)"
+            >
+              {{ area.text }}
+            </button>
+          </div>
+          <div id="knowledge__stack-grid">
+            <NewStack
+              v-for="item in filteredTechs"
+              :key="item.title"
+              :imgSrc="item.imgSrc"
+              :stackTitle="item.title"
+              :stackDescription="item.description"
+              @selectStack="setStack(item)"
+            />
+          </div>
         </div>
         <div v-if="showStackInfo" class="knowledge__stack-info-card">
           <div class="knowledge__stack-info-title">
@@ -50,16 +67,18 @@ export default {
     }
   },
   mounted() {
-    const plugin = document.createElement('script')
-    plugin.setAttribute('src', './src/assets/webkits/vanilla-tilt.js')
-    plugin.async = true
-    document.head.appendChild(plugin)
+    this.startTiltEffect()
     this.updateTechs()
   },
   props: {
     language: {
       type: String,
       default: 'pt',
+    },
+  },
+  computed: {
+    areas() {
+      return texts[this.language].knowledge.areas
     },
   },
   methods: {
@@ -70,6 +89,11 @@ export default {
         this.filteredTechs = texts[this.language].knowledge.techs.filter(
           (item) => item.area == this.selectedArea
         )
+      this.startTiltEffect()
+      this.stopTiltEffect()
+    },
+    filter(area) {
+      this.selectedArea = area
     },
     setStack(stack) {
       this.showStackInfo = true
@@ -81,6 +105,18 @@ export default {
     },
     closeStackInfo() {
       this.showStackInfo = false
+    },
+    startTiltEffect() {
+      const plugin = document.createElement('script')
+      plugin.setAttribute('src', './src/assets/webkits/vanilla-tilt.js')
+      plugin.async = true
+      document.head.appendChild(plugin)
+    },
+    stopTiltEffect() {
+      const scriptElement = document.querySelector(
+        'script[src="./src/assets/webkits/vanilla-tilt.js"]'
+      )
+      document.head.removeChild(scriptElement)
     },
   },
   computed: {

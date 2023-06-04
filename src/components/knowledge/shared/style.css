@@ -16,15 +16,40 @@
   align-items: center;
 }
 
+#knowledge__stack-container-grid {
+  background-color: rgb(64, 30, 99);
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+#knowledge__stack-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 0 0.4rem;
+  place-items: center;
+  gap: 10px;
+}
+
+.knowledge__stack-area-button {
+  font-family: 'Montserrat';
+  font-size: 1.1rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.knowledge__stack-area-button--active {
+  background-color: orange;
+  font-weight: bold;
+}
+
 #knowledge__stack-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   max-width: fit-content;
   place-items: center;
-  background-color: rgb(64, 30, 99);
-  padding: 1rem;
-  border-radius: 20px;
 }
 
 .knowledge__stack-info-card {
