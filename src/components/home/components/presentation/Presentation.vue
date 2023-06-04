@@ -57,7 +57,7 @@ export default {
       await this.setDelay(4000)
       this.getNameReference().classList.replace(
         "introduction__name-animation--fourth",
-        "fifthintroduction__name-animation--"
+        "introduction__name-animation--fifth"
       )
       this.getNameReference().classList.remove("introduction__name-text--nick-name")
       await this.setDelay(2000)
