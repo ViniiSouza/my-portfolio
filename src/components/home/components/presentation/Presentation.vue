@@ -33,35 +33,35 @@ export default {
   },
   methods: {
     async writeName() {
-      this.getNameReference().classList.add("first-animation")
-      this.getNameReference().classList.add("full-name")
+      this.getNameReference().classList.add("introduction__name-animation--first")
+      this.getNameReference().classList.add("introduction__name-text--full-name")
       await this.setDelay(4000)
       this.getNameReference().classList.replace(
-        "first-animation",
-        "second-animation"
+        "introduction__name-animation--first",
+        "introduction__name-animation--second"
       )
-      this.getNameReference().classList.replace("full-name", "first-name")
+      this.getNameReference().classList.replace("introduction__name-text--full-name", "introduction__name-text--first-name")
       await this.setDelay(5000)
       this.getNameReference().classList.replace(
-        "second-animation",
-        "third-animation"
+        "introduction__name-animation--second",
+        "introduction__name-animation--third"
       )
-      this.getNameReference().classList.replace("first-name", "nick-name")
+      this.getNameReference().classList.replace("introduction__name-text--first-name", "introduction__name-text--nick-name")
       await this.setDelay(1100)
       this.getNameReference().classList.replace(
-        "third-animation",
-        "fourth-animation"
+        "introduction__name-animation--third",
+        "introduction__name-animation--fourth"
       )
       await this.setDelay(1000)
       this.getNameReference().textContent = "Vini"
       await this.setDelay(4000)
       this.getNameReference().classList.replace(
-        "fourth-animation",
-        "fifth-animation"
+        "introduction__name-animation--fourth",
+        "fifthintroduction__name-animation--"
       )
-      this.getNameReference().classList.remove("nick-name")
+      this.getNameReference().classList.remove("introduction__name-text--nick-name")
       await this.setDelay(2000)
-      this.getNameReference().classList.remove("fifth-animation")
+      this.getNameReference().classList.remove("introduction__name-animation--fifth")
       this.getNameReference().textContent = "Vinícius Gabriel de Souza"
     },
     setDelay(ms) {

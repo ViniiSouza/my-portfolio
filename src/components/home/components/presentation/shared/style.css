@@ -297,35 +297,35 @@
     }
 }
 
-.first-animation {
+.introduction__name-animation--first {
     animation: writeFullName 4s steps(35, end)
 }
 
-.second-animation {
+.introduction__name-animation--second {
     animation: eraseSurname 3s steps(25, end)
 }
 
-.third-animation {
+.introduction__name-animation--third {
     animation: eraseNickname 1s steps(5, end)
 }
 
-.fourth-animation {
+.introduction__name-animation--fourth {
     animation: fixNickname 1s steps(1, end)
 }
 
-.fifth-animation {
+.introduction__name-animation--fifth {
     animation: eraseAll 1s steps(5, end)
 }
 
-.full-name {
+.introduction__name-text--full-name {
     width: 100%;
 }
 
-.first-name {
+.introduction__name-text--first-name {
     width: 20%;
 }
 
-.nick-name {
+.introduction__name-text--nick-name {
     width: 10%;
 }
 
