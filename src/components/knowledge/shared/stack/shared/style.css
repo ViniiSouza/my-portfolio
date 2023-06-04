@@ -1,4 +1,4 @@
-.stack-container {
+.stack__container {
     border: 2px solid white;
     border-radius: 0.5rem;
     display: inline-block;
@@ -21,13 +21,14 @@
     transition: 1s;
     transition: opacity 0.1s linear;
     font-family: "Raleway";
+    font-weight: bold;
 }
 
-.stack-container:hover .stack__image {
+.stack__container:hover .stack__image {
     transform: translateY(0rem);
 }
 
-.stack-container:hover .stack__name {
+.stack__container:hover .stack__name {
     opacity: 1;
     transition: opacity 0.3s linear;
 }

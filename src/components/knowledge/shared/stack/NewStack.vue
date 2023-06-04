@@ -1,5 +1,5 @@
 <template>
-  <div class="stack-container">
+  <div class="stack__container">
     <img class="stack__image" :src="imgSrc" />
     <div class="stack__name">{{ stackTitle }}</div>
   </div>
