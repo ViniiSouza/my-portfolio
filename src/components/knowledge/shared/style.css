@@ -1,47 +1,47 @@
 #knowledge__section {
+  padding: 10rem 0;
   background-color: var(--primary);
   color: white;
-  padding: 10rem 0 10rem 0;
 }
 
 #knowledge__title {
-  font-family: var(--title-font);
   font-size: 3rem;
+  font-family: var(--title-font);
   text-align: center;
 }
 
 #knowledge__stack-container {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 #knowledge__stack-container-grid {
+  padding: 1rem;
   background-color: rgb(64, 30, 99);
   border-radius: 20px;
-  padding: 1rem;
 }
 
 #knowledge__stack-filter-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  padding: 0 0.4rem;
-  place-items: center;
   gap: 10px;
+  place-items: center;
+  padding: 0 0.4rem;
 }
 
 .knowledge__stack-area-button {
-  font-family: 'Montserrat';
-  font-size: 1.1rem;
   width: 100%;
+  font-size: 1.1rem;
+  font-family: 'Montserrat';
   border: none;
   border-radius: 0.3rem;
 }
 
 .knowledge__stack-area-button--active {
-  background-color: orange;
   font-weight: bold;
+  background-color: orange;
 }
 
 #knowledge__stack-grid {
@@ -53,16 +53,16 @@
 }
 
 .knowledge__stack-info-card {
-  position: relative;
-  height: 25rem;
   width: 35rem;
-  background-color: rgb(64, 30, 99);
-  border-radius: 5px 50px 5px 50px / 5px 25px 5px 25px;
-  border: 2px solid white;
-  margin-left: 0.5rem;
-  align-self: flex-start;
+  height: 25rem;
   padding: 1rem;
+  margin-left: 0.5rem;
+  background-color: rgb(64, 30, 99);
+  border: 2px solid white;
+  border-radius: 5px 50px 5px 50px / 5px 25px 5px 25px;
   overflow: hidden;
+  position: relative;
+  align-self: flex-start;
   animation: scale 0.5s ease;
 }
 
@@ -73,17 +73,17 @@
 
 .knowledge__stack-info-title {
   display: inline-block;
+  font-size: 2rem;
   font-family: 'Montserrat';
   font-weight: bold;
-  font-size: 2rem;
   line-height: normal;
   margin-left: 0.5rem;
 }
 
 .knowledge__stack-close-button {
   position: absolute;
-  right: 2rem;
   top: 0.3rem;
+  right: 2rem;
   font-size: 2.5rem;
   transition: 0.3s;
   cursor: pointer;
@@ -94,9 +94,9 @@
 }
 
 .knowledge__stack-info-description {
-  display:block;
-  font-family: 'Montserrat';
+  display: block;
   font-size: 1.2rem;
+  font-family: 'Montserrat';
   height: 18rem;
   overflow-y: scroll;
 }
@@ -104,10 +104,10 @@
 /* animations */
 
 @keyframes scale {
-	0% {
-		transform: scale(0);
-	}
-	100% {
-		transform: scale(1);
-	}
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
