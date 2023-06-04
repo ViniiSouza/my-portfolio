@@ -20,7 +20,7 @@
             </button>
           </div>
           <div id="knowledge__stack-grid">
-            <NewStack
+            <Stack
               v-for="item in filteredTechs"
               :key="item.title"
               :imgSrc="item.imgSrc"
@@ -49,7 +49,7 @@
 <script>
 // component style
 import './shared/style.css'
-import NewStack from './shared/stack/NewStack.vue'
+import Stack from './shared/stack/Stack.vue'
 import texts from '../../assets/texts/texts'
 
 export default {
@@ -132,6 +132,6 @@ export default {
       this.updateTechs()
     },
   },
-  components: { NewStack },
+  components: { Stack },
 }
 </script>

@@ -22,7 +22,7 @@ import texts from "../../assets/texts/texts";
 export default {
   components: {
     Presentation: () => import('./components/presentation/Presentation.vue'),
-    Knowledge: () => import('../knowledge/NewKnowledge.vue')
+    Knowledge: () => import('../knowledge/Knowledge.vue')
   },
   data() {
     return {
