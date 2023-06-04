@@ -17,73 +17,73 @@ export default {
                 {
                     title: "C Sharp",
                     description: "Knowledge in classes, OOP (objects, encapsulation, inheritance, polymorphism, abstraction, etc.), partial classes, interfaces, exception handling. Use of Entity Framework working code first (or not), inherited classes, with creation and maintenance of CRUD's, tables, link between tables 1:1, N:1, N:N; Use of LINQ, with performative projections in databases and several other uses. SignalR for seamless connections and real-time updates. Use of external libraries in the projects worked on, etc. API projects, class libraries, console, windows forms, etc.",
-                    imgSrc: "https://i.imgur.com/FXkCnmH.png",
+                    imgSrc: "https://i.imgur.com/S8I0J4D.png",
                     area: "backend",
                 },
                 {
                     title: "VueJS",
                     description: "Component creation and maintenance, route management, HTTP requests, conditional rendering, dynamic components, component styling, properties, methods, directives, vuex, and other integrations with the backend; Daily use of CompositionAPI and OptionsAPI; Vue2 and knowledge in Vue3;",
-                    imgSrc: "https://i.imgur.com/VOQvATc.png",
+                    imgSrc: "https://i.imgur.com/hkyOatn.png",
                     area: "frontend"
                 },
                 {
                     title: "SQL",
                     description: "Database manipulations, tables, columns and data. Filters in general, table relationships, primary and foreign keys, joins, etc.",
-                    imgSrc: "https://i.imgur.com/esMeynM.png",
+                    imgSrc: "https://i.imgur.com/49NGDKg.png",
                     area: "backend",
                 },
                 {
                     title: "AWS Services",
                     description: "Knowledge in RDS and EC2, managing user groups, roles, VPC's, subnets, security groups and more.",
-                    imgSrc: "https://i.imgur.com/rDpMJNg.png",
+                    imgSrc: "https://i.imgur.com/w1sr2tW.png",
                     area: "devops"
                 },
                 {
                     title: "Docker",
                     description: "Knowledge in creating Docker Compose, Dockerfile, shell scripts for container automation, etc.",
-                    imgSrc: "https://i.imgur.com/vK8OFn7.png",
+                    imgSrc: "https://i.imgur.com/zHfIPsI.png",
                     area: "devops"
                 },
                 {
                     title: "React",
                     description: "Knowledge in components, props, conditional rendering, events, hooks, contextAPI, react-router-dom, forms with formik, yup, etc.",
-                    imgSrc: "https://i.imgur.com/iUV9fDa.png",
+                    imgSrc: "https://i.imgur.com/UiiNh2d.png",
                     area: "frontend"
                 },
                 {
                     title: "JavaScript",
                     description: "Functions, classes, loops, conditions, destructuring, DOM manipulations, axios and other general uses along with the frameworks I use.",
-                    imgSrc: "https://i.imgur.com/pSYaNdY.png",
+                    imgSrc: "https://i.imgur.com/N5M2V1h.png",
                     area: "frontend"
                 },
                 {
                     title: "Bootstrap",
                     description: "Using bootstrap elements, styling single elements, using bootstrap classes for document styling, using joint libraries (vue-bootstrap, angular-bootstrap), etc.",
-                    imgSrc: "https://i.imgur.com/QcoruCz.png",
+                    imgSrc: "https://i.imgur.com/yX555KZ.png",
                     area: "frontend"
                 },
                 {
                     title: "HTML",
                     description: "Structures with semantic tags, form creations, accessibility, etc.",
-                    imgSrc: "https://i.imgur.com/UKCDmJf.png",
+                    imgSrc: "https://i.imgur.com/un10rGr.png",
                     area: "frontend"
                 },
                 {
                     title: "CSS",
                     description: "Element styling, animations, pseudo-elements, advanced selectors, media queries, etc.",
-                    imgSrc: "https://i.imgur.com/QyM1XAK.png",
+                    imgSrc: "https://i.imgur.com/TBdHWr3.png",
                     area: "frontend"
                 },
                 {
                     title: "TypeScript",
                     description: "Uses with Angular with component management, method creations, etc.",
-                    imgSrc: "https://i.imgur.com/t4grEz4.png",
+                    imgSrc: "https://i.imgur.com/2AYM02p.png",
                     area: "frontend"
                 },
                 {
                     title: "Angular",
                     description: "Knowledge in component creation and maintenance, route management, SPA, HTTP requests, ngModel, etc.",
-                    imgSrc: "https://i.imgur.com/nxWWeEy.png",
+                    imgSrc: "https://i.imgur.com/si2CcC2.png",
                     area: "frontend"
                 }
             ]
@@ -144,73 +144,73 @@ export default {
                 {
                     title: "C Sharp",
                     description: "Conhecimento em classes, POO (objetos, encapsulamento, herança, polimorfismo, abstração, etc), partial classes, interfaces, tratamento de exceções. Uso do Entity Framework trabalhando code first(ou não), classes herdadas, com criação e manutenção de CRUD's, tabelas, vínculo entre tabelas 1:1, N:1, N:N; Uso do LINQ, com projeções performáticas em bancos de dados e diversos outros usos. SignalR para conexões contínuas e atualizações em tempo real. Uso de bibliotecas externas nos projetos trabalhados, etc. Projetos de API, bibliotecas de classes, console, windows forms, etc.",
-                    imgSrc: "https://i.imgur.com/FXkCnmH.png",
+                    imgSrc: "https://i.imgur.com/S8I0J4D.png",
                     area: "backend",
                 },
                 {
                     title: "VueJS",
                     description: "Criação e manutenção de componentes, gerenciamento de rotas, requisições HTTP, renderizações condicionais, componentes dinâmicos, estilizações de componentes, propriedades, métodos, diretivas, vuex, e demais integrações com o backend; Uso diário de CompositionAPI e OptionsAPI; Vue2 e conhecimentos em Vue3;",
-                    imgSrc: "https://i.imgur.com/VOQvATc.png",
+                    imgSrc: "https://i.imgur.com/hkyOatn.png",
                     area: "frontend"
                 },
                 {
                     title: "SQL",
                     description: "Manipulações de banco de dados, tabelas, colunas e dados. Filtros em geral, relacionamento de tabelas, chaves primárias e estrangeiras, joins, etc",
-                    imgSrc: "https://i.imgur.com/esMeynM.png",
+                    imgSrc: "https://i.imgur.com/49NGDKg.png",
                     area: "backend",
                 },
                 {
                     title: "AWS Services",
                     description: "Conhecimentos em RDS e EC2, gerenciando grupos de usuários, roles, VPC's, subnets, grupos de segurança e mais.",
-                    imgSrc: "https://i.imgur.com/rDpMJNg.png",
+                    imgSrc: "https://i.imgur.com/w1sr2tW.png",
                     area: "devops"
                 },
                 {
                     title: "Docker",
                     description: "Conhecimentos em criações de Docker Compose, Dockerfile, scripts shell para automação de containers, etc.",
-                    imgSrc: "https://i.imgur.com/vK8OFn7.png",
+                    imgSrc: "https://i.imgur.com/zHfIPsI.png",
                     area: "devops"
                 },
                 {
                     title: "React",
                     description: "Conhecimento em componentes, props, renderização condicional, eventos, hooks, contextAPI, react-router-dom, formulários com formik, yup, etc.",
-                    imgSrc: "https://i.imgur.com/iUV9fDa.png",
+                    imgSrc: "https://i.imgur.com/UiiNh2d.png",
                     area: "frontend"
                 },
                 {
                     title: "JavaScript",
                     description: "Funções, classes, loops, condições, destructuring, manipulações de DOM, axios e outros usos gerais juntamente com os frameworks que utilizo.",
-                    imgSrc: "https://i.imgur.com/pSYaNdY.png",
+                    imgSrc: "https://i.imgur.com/N5M2V1h.png",
                     area: "frontend"
                 },
                 {
                     title: "Bootstrap",
                     description: "Utilização de elementos bootstrap, estilizações de elementos únicos, utilização de classes bootstrap para estilização do documento, utilização de bibliotecas conjuntas (vue-bootstrap, angular-bootstrap), etc.",
-                    imgSrc: "https://i.imgur.com/QcoruCz.png",
+                    imgSrc: "https://i.imgur.com/yX555KZ.png",
                     area: "frontend"
                 },
                 {
                     title: "HTML",
                     description: "Estruturas com tags semânticas, criações de formulários, acessibilidade, etc.",
-                    imgSrc: "https://i.imgur.com/UKCDmJf.png",
+                    imgSrc: "https://i.imgur.com/un10rGr.png",
                     area: "frontend"
                 },
                 {
                     title: "CSS",
                     description: "Estilizações de elementos, animações, pseudo-elementos, seletores avançados, media queries, etc.",
-                    imgSrc: "https://i.imgur.com/QyM1XAK.png",
+                    imgSrc: "https://i.imgur.com/TBdHWr3.png",
                     area: "frontend"
                 },
                 {
                     title: "TypeScript",
                     description: "Usos junto ao Angular com gerenciamento de componentes, criações de métodos, etc.",
-                    imgSrc: "https://i.imgur.com/t4grEz4.png",
+                    imgSrc: "https://i.imgur.com/2AYM02p.png",
                     area: "frontend"
                 },
                 {
                     title: "Angular",
                     description: "Conhecimento em criação e manutenção de componentes, gerenciamento de rotas, SPA, requisições HTTP, ngModel, etc.",
-                    imgSrc: "https://i.imgur.com/nxWWeEy.png",
+                    imgSrc: "https://i.imgur.com/si2CcC2.png",
                     area: "frontend"
                 }
             ]
