@@ -51,6 +51,8 @@
   grid-template-rows: repeat(3, 1fr);
   max-width: fit-content;
   place-items: center;
+  max-height: calc(3 * (9rem) + 30px);
+  overflow-y: auto;
 }
 
 .knowledge__stack-info-card {
