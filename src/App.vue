@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <Language @languageChanged="changeLanguage"/>
-    <Home :language="language" />
+    <Presentation :language="language" />
     <Knowledge :language="language" />
+    <About :language="language" />
     <Projects :language="language" />
     <AppInfo :language="language" />
     <Footer :language="language" />
@@ -10,8 +11,9 @@
 </template>
 
 <script>
+import Presentation from './components/presentation/Presentation.vue';
 import Knowledge from './components/knowledge/Knowledge.vue';
-import Home from './components/home/Home.vue';
+import About from './components/about/About.vue'
 import Language from './components/language/Language.vue';
 import Projects from './components/projects/Projects.vue';
 import AppInfo from './components/app-info/AppInfo.vue';
@@ -25,9 +27,10 @@ export default {
     }
   },
   components: {
-    Home,
-    Language,
+    Presentation,
     Knowledge,
+    About,
+    Language,
     Projects,
     AppInfo,
     Footer,

@@ -4,6 +4,7 @@
     font-family: var(--title-font);
     text-align: center;
     padding: 2.5rem 0;
+    user-select: none;
 }
 
 .introduction__hello-text {
