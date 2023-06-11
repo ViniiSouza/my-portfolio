@@ -3,19 +3,12 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* code section */
+
 #skills__code-section {
   background-color: #313131;
-  padding-left: 1rem;
   max-width: 2fr;
   overflow: auto;
-}
-
-.skills__code-line-numbers > li {
-  padding-left: 2rem;
-}
-
-#skills__result-container {
-  background-color: var(--white);
 }
 
 #skills__code-container {
@@ -23,7 +16,12 @@
   display: inline;
 }
 
-#skills__code-container > * {
+#skills__code-container li {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+#skills__code-container pre {
   text-shadow: 0 0 0.05em currentColor;
   font-size: 1.2rem;
   font-weight: bold;
@@ -31,28 +29,41 @@
   margin-bottom: 0;
 }
 
-pre.skills__code--property {
+.skills__code-header {
+  display: block;
+  padding-left: 1.5rem;
+  background-color: #494949;
+  color: rgb(200, 200, 200);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.skills__code-line-numbers {
+  margin-left: 1rem;
+}
+
+.skills__code-line-numbers > li {
+  padding-left: 2rem;
+}
+
+.skills__code--property {
   color: hsl(338, 70%, 55%);
 }
 
-pre.skills__code--property::after {
+.skills__code--property::after {
   content: ': [';
   color: white;
 }
 
-pre.skills__code--property::before {
+.skills__code--property::before {
   content: '    ';
 }
 
-pre.skills__code--punctuation {
+.skills__code--punctuation {
   color: hsl(334, 7%, 95%);
 }
 
-pre.skills__code--bracket {
-  color: hsl(334, 7%, 95%);
-}
-
-pre.skills__code--punctuation::before {
+.skills__code--punctuation::before {
   content: '    ';
 }
 
@@ -64,6 +75,12 @@ pre.skills__code--punctuation::before {
   content: '        ';
 }
 
-pre.language-javascript > * {
-  text-shadow: 0 0 0.05em currentColor;
+.skills__code--bracket {
+  color: hsl(334, 7%, 95%);
+}
+
+/* result section */
+
+#skills__result-container {
+  background-color: var(--white);
 }
