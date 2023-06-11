@@ -47,7 +47,7 @@ export default {
   data() {
     return {
       codeStructure: {
-        name: 'skills: {',
+        name: '{',
         content: [
           {
             name: 'mostConfidentWith',
@@ -87,7 +87,24 @@ export default {
   methods: {
     updateValue(event, index) {
       this.codeStructure.content[index].value = event.target.innerText
+      this.skills[index].value = this.updateResult(event.target.innerText)
     },
+    updateResult(text) {
+      text = text.trim()
+      text = text.replaceAll('"', '')
+      text = text.replaceAll(', ', ',')
+      text = text.replaceAll('  ', ' ')
+
+      var items = text.split(',')
+
+      if (items.length === 1) {
+        return items[0];
+      }
+      var lastItem = items.pop()
+      var formattedItems = items.join(', ')
+
+      return formattedItems + ' and ' + lastItem
+    }
   },
 }
 </script>
