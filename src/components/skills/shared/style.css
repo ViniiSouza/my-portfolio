@@ -82,4 +82,22 @@
 
 #skills__result-container {
   background-color: var(--white);
+  padding: 1rem;
+  font-family: "Montserrat"
+}
+
+.skills__result__title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.skills__result__item-title {
+  color: var(--primary);
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.skills__result__item-description {
+  font-size: 1.2rem;
 }

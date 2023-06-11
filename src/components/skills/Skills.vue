@@ -5,27 +5,38 @@
         <code class="skills__code-header">Portfolio > skills.json</code>
         <ol class="skills__code-line-numbers">
           <li>
-            <pre class="skills__code--bracket">{{ codeContent.name }}</pre>
+            <pre class="skills__code--bracket">{{ codeStructure.name }}</pre>
           </li>
-          <div v-for="(content, index) in codeContent.content" :key="content.name">
+          <div
+            v-for="(content, index) in codeStructure.content"
+            :key="content.name"
+          >
             <li>
-              <pre class="skills__code--property">{{
-                content.name
-              }}</pre>
+              <pre class="skills__code--property">{{ content.name }}</pre>
             </li>
             <li>
-              <pre contenteditable class="skills__code--string" @blur="updateValue($event, index)">{{
-                content.content
-              }}</pre>
+              <pre
+                contenteditable
+                class="skills__code--string"
+                @blur="updateValue($event, index)"
+                >{{ content.value }}</pre
+              >
             </li>
             <li>
               <pre class="skills__code--punctuation">{{ content.end }}</pre>
             </li>
           </div>
+          <li><pre class="skills__code--bracket">}</pre></li>
         </ol>
       </code>
     </div>
-    <div id="skills__result-container">COLUNA B</div>
+    <div id="skills__result-container">
+      <h4 class="skills__result__title">Skills</h4>
+      <div v-for="skill in skills" :key="skill.title" class="skills__result__item">
+        <h6 class="skills__result__item-title">{{skill.title}}</h6>
+        <p class="skills__result__item-description">{{skill.value}}</p>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -35,32 +46,47 @@ import './shared/style.css'
 export default {
   data() {
     return {
-      codeContent: {
+      codeStructure: {
         name: 'skills: {',
         content: [
           {
             name: 'mostConfidentWith',
-            content: '"C Sharp", "JavaScript", "VueJS", "React", "SQL", "Bootstrap"',
+            value:
+              '"C Sharp", "JavaScript", "VueJS", "React", "SQL", "Bootstrap"',
             end: '],',
           },
           {
             name: 'goodKnowledge',
-            content:
+            value:
               '"Angular", "State management libraries (Redux and Vuex)", "Docker"',
             end: '],',
           },
           {
             name: 'canManageWithHelp',
-            content: '"Java", "Python", "AWS", "TypeScript"',
+            value: '"Java", "Python", "AWS", "TypeScript"',
             end: ']',
           },
         ],
       },
+      skills: [
+          {
+            title: 'Most confident with',
+            value: 'C Sharp, JavaScript, VueJS, React, SQL and Bootstrap.',
+          },
+          {
+            title: 'I have good knowledge on',
+            value: 'Angular, State management libraries (redux and vuex) and docker.',
+          },
+          {
+            title: 'I can manage with some help',
+            value: 'Java, Python, AWS and TypeScript.',
+          },
+        ],
     }
   },
   methods: {
-    updateValue(event, index, name) {
-        this.codeContent.content[index].content = event.target.innerText
+    updateValue(event, index) {
+      this.codeStructure.content[index].value = event.target.innerText
     },
   },
 }
