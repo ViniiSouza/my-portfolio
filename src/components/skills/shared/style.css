@@ -1,0 +1,69 @@
+#skills__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#skills__code-section {
+  background-color: #313131;
+  padding-left: 1rem;
+  max-width: 2fr;
+  overflow: auto;
+}
+
+.skills__code-line-numbers > li {
+  padding-left: 2rem;
+}
+
+#skills__result-container {
+  background-color: var(--white);
+}
+
+#skills__code-container {
+  color: white;
+  display: inline;
+}
+
+#skills__code-container > * {
+  text-shadow: 0 0 0.05em currentColor;
+  font-size: 1.2rem;
+  font-weight: bold;
+  max-width: fit-content;
+  margin-bottom: 0;
+}
+
+pre.skills__code--property {
+  color: hsl(338, 70%, 55%);
+}
+
+pre.skills__code--property::after {
+  content: ': [';
+  color: white;
+}
+
+pre.skills__code--property::before {
+  content: '    ';
+}
+
+pre.skills__code--punctuation {
+  color: hsl(334, 7%, 95%);
+}
+
+pre.skills__code--bracket {
+  color: hsl(334, 7%, 95%);
+}
+
+pre.skills__code--punctuation::before {
+  content: '    ';
+}
+
+.skills__code--string {
+  color: hsl(183, 70%, 62%);
+}
+
+.skills__code--string::before {
+  content: '        ';
+}
+
+pre.language-javascript > * {
+  text-shadow: 0 0 0.05em currentColor;
+}

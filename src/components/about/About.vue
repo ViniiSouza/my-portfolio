@@ -1,6 +1,5 @@
 <template>
   <div id="home-content">
-    <hr />
     <div id="header-section">
       <h1 id="header-title">{{ texts[language].home.sectionTitle }}</h1>
       <h3 id="header-subtitle">{{ texts[language].home.sectionSubtitle }}</h3>

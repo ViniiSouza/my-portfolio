@@ -3,6 +3,7 @@
     <Language @languageChanged="changeLanguage"/>
     <Presentation :language="language" />
     <Knowledge :language="language" />
+    <Skills :language="language" />
     <About :language="language" />
     <Projects :language="language" />
     <AppInfo :language="language" />
@@ -13,6 +14,7 @@
 <script>
 import Presentation from './components/presentation/Presentation.vue';
 import Knowledge from './components/knowledge/Knowledge.vue';
+import Skills from './components/skills/Skills.vue'
 import About from './components/about/About.vue'
 import Language from './components/language/Language.vue';
 import Projects from './components/projects/Projects.vue';
@@ -29,6 +31,7 @@ export default {
   components: {
     Presentation,
     Knowledge,
+    Skills,
     About,
     Language,
     Projects,
