@@ -41,7 +41,7 @@
   margin-left: 1rem;
 }
 
-.skills__code-line-numbers > li {
+.skills__code-line-numbers>li {
   padding-left: 2rem;
 }
 
@@ -100,4 +100,136 @@
 
 .skills__result__item-description {
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .skills__result__title {
+    font-size: 1.8rem;
+  }
+
+  .skills__code-header {
+    font-size: 1.1rem;
+  }
+
+  #skills__code-container pre {
+    font-size: 1.1rem;
+  }
+
+  .skills__result__item-title {
+    font-size: 1.3rem;
+  }
+
+  .skills__result__item-description {
+    font-size: 1.1rem
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .skills__result__title {
+    font-size: 1.6rem;
+  }
+
+  .skills__code-header {
+    font-size: 1rem;
+  }
+
+  #skills__code-container pre {
+    font-size: 1rem;
+  }
+
+  .skills__result__item-title {
+    font-size: 1.2rem;
+  }
+
+  .skills__result__item-description {
+    font-size: 1rem
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .skills__result__title {
+    font-size: 1.4rem;
+  }
+
+  .skills__code-header {
+    font-size: 0.8rem;
+  }
+
+  #skills__code-container pre {
+    font-size: 0.8rem;
+  }
+
+  .skills__result__item-title {
+    font-size: 1rem;
+  }
+
+  .skills__result__item-description {
+    font-size: 0.8rem
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .skills__result__title {
+    font-size: 1.2rem;
+  }
+
+  .skills__code-header {
+    font-size: 0.6rem;
+  }
+
+  #skills__code-container pre {
+    font-size: 0.6rem;
+  }
+
+  .skills__result__item-title {
+    font-size: 0.8rem;
+  }
+
+  .skills__result__item-description {
+    font-size: 0.6rem
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #skills__container {
+    display: block;
+  }
+
+  #skills__code-section {
+    display: none;
+  }
+
+  .skills__result__title {
+    font-size: 1.2rem;
+  }
+
+  #skills__result-container {
+    text-align: center;
+  }
+
+  .skills__result__item-title {
+    font-size: 0.8rem;
+  }
+
+  .skills__result__item-description {
+    font-size: 0.6rem
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills__result__title {
+    font-size: 1rem;
+  }
+
+  #skills__result-container {
+    text-align: center;
+  }
+
+  .skills__result__item-title {
+    font-size: 0.8rem;
+  }
+
+  .skills__result__item-description {
+    font-size: 0.6rem
+  }
 }
