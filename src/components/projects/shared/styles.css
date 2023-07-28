@@ -1,0 +1,22 @@
+#projects__section {
+  margin: 7rem 0 7rem 0;
+}
+
+#projects-title {
+  text-align: center;
+  font-family: var(--title-font);
+  font-size: 3rem;
+}
+
+.projects-text {
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.projects__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}

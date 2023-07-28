@@ -1,0 +1,73 @@
+.project__card {
+  width: 35%;
+  height: 500px;
+}
+
+.project__card__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.project__card__laptop {
+  position: relative;
+  width: 500px;
+  height: 70%;
+  margin: auto;
+}
+
+.project__card__phone {
+  position: absolute;
+  left: 10px;
+  bottom: -110px;
+  width: 100px;
+  height: 100%;
+}
+
+.project__card__phone__wrapper {
+  position: relative;
+  width: 110px;
+  height: 50%;
+  margin: 10px;
+}
+
+.project__card__laptop--body, .project__card__laptop--img, .project__card__phone--body, .project__card__phone--img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.device-enter-active, .device-leave-active {
+  transition: opacity 0.5s;
+}
+
+.device-enter, .device-leave-to {
+  opacity: 0;
+}
+
+.project__card__techs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project__card__tech-item {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 5px;
+  margin: auto 5px;
+}
+
+.project__card__description {
+  font-weight: normal;
+  text-align: center;
+}
+
+.project__card__title {
+  text-align: center;
+}
