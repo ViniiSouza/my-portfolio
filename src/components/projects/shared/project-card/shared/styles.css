@@ -1,6 +1,7 @@
 .project__card {
   width: 35%;
   height: 500px;
+  margin: 0 2rem;
 }
 
 .project__card__wrapper {
@@ -71,3 +72,99 @@
 .project__card__title {
   text-align: center;
 }
+
+/* Laptop L */
+@media screen and (max-width: 1440px) {
+  .project__card {
+    width: 40%;
+  }
+
+  .project__card__laptop {
+    width: 400px;
+  }
+
+  .project__card__phone {
+    left: -25px;
+    bottom: -120px;
+  }
+
+  .project__card__phone__wrapper {
+    width: 80px;
+  }
+}
+
+/* Laptop */
+@media screen and (max-width: 1024px) {
+  .project__card {
+    width: 60%;
+  }
+
+  .project__card__laptop {
+    width: 380px;
+  }
+
+  .project__card__phone {
+    left: 0px;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .project__card__laptop {
+    width: 280px;
+  }
+
+  .project__card__phone {
+    left: -30px;
+    bottom: -100px;
+  }
+
+  .project__card__phone__wrapper {
+    width: 60px;
+  }
+}
+
+/* Mobile L */
+@media screen and (max-width: 425px) {
+  .project__card {
+    height: 400px;
+  }
+
+  .project__card__laptop {
+    width: 250px;
+    height: 55%;
+  }
+
+  .project__card__phone {
+    left: -25px;
+    bottom: -80px;
+  }
+
+  .project__card__phone__wrapper {
+    width: 50px;
+    height: 40%;
+  }
+}
+
+/* Mobile M */
+@media screen and (max-width: 375px) {
+  .project__card {
+    height: 400px;
+  }
+
+  .project__card__laptop {
+    width: 200px;
+  }
+
+  .project__card__phone {
+    left: -20px;
+    bottom: -60px;
+  }
+
+  .project__card__phone__wrapper {
+    width: 42px;
+  }
+}
+
+/* Mobile S */
+@media screen and (max-width: 320px) {}
