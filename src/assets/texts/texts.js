@@ -15,72 +15,84 @@ export default {
             ],
             techs: [
                 {
+                    id: 'csharp',
                     title: "C Sharp",
                     description: "Knowledge in classes, OOP (objects, encapsulation, inheritance, polymorphism, abstraction, etc.), partial classes, interfaces, exception handling. Use of Entity Framework working code first (or not), inherited classes, with creation and maintenance of CRUD's, tables, link between tables 1:1, N:1, N:N; Use of LINQ, with performative projections in databases and several other uses. SignalR for seamless connections and real-time updates. Use of external libraries in the projects worked on, etc. API projects, class libraries, console, windows forms, etc.",
                     imgSrc: "https://i.imgur.com/S8I0J4D.png",
                     area: "backend",
                 },
                 {
+                    id: 'vuejs',
                     title: "VueJS",
                     description: "Component creation and maintenance, route management, HTTP requests, conditional rendering, dynamic components, component styling, properties, methods, directives, vuex, and other integrations with the backend; Daily use of CompositionAPI and OptionsAPI; Vue2 and knowledge in Vue3;",
                     imgSrc: "https://i.imgur.com/hkyOatn.png",
                     area: "frontend"
                 },
                 {
+                    id: 'sql',
                     title: "SQL",
                     description: "Database manipulations, tables, columns and data. Filters in general, table relationships, primary and foreign keys, joins, etc.",
                     imgSrc: "https://i.imgur.com/49NGDKg.png",
                     area: "backend",
                 },
                 {
+                    id: 'awsservices',
                     title: "AWS Services",
                     description: "Knowledge in RDS and EC2, managing user groups, roles, VPC's, subnets, security groups and more.",
                     imgSrc: "https://i.imgur.com/w1sr2tW.png",
                     area: "devops"
                 },
                 {
+                    id: 'docker',
                     title: "Docker",
                     description: "Knowledge in creating Docker Compose, Dockerfile, shell scripts for container automation, etc.",
                     imgSrc: "https://i.imgur.com/zHfIPsI.png",
                     area: "devops"
                 },
                 {
+                    id: 'react',
                     title: "React",
                     description: "Knowledge in components, props, conditional rendering, events, hooks, contextAPI, react-router-dom, forms with formik, yup, etc.",
                     imgSrc: "https://i.imgur.com/UiiNh2d.png",
                     area: "frontend"
                 },
                 {
+                    id: 'javascript',
                     title: "JavaScript",
                     description: "Functions, classes, loops, conditions, destructuring, DOM manipulations, axios and other general uses along with the frameworks I use.",
                     imgSrc: "https://i.imgur.com/N5M2V1h.png",
                     area: "frontend"
                 },
                 {
+                    id: 'bootstrap',
                     title: "Bootstrap",
                     description: "Using bootstrap elements, styling single elements, using bootstrap classes for document styling, using joint libraries (vue-bootstrap, angular-bootstrap), etc.",
                     imgSrc: "https://i.imgur.com/yX555KZ.png",
                     area: "frontend"
                 },
                 {
+                    id: 'html',
                     title: "HTML",
                     description: "Structures with semantic tags, form creations, accessibility, etc.",
                     imgSrc: "https://i.imgur.com/un10rGr.png",
                     area: "frontend"
                 },
                 {
+                    id: 'css',
                     title: "CSS",
                     description: "Element styling, animations, pseudo-elements, advanced selectors, media queries, etc.",
                     imgSrc: "https://i.imgur.com/TBdHWr3.png",
                     area: "frontend"
                 },
                 {
+                    id: 'typescript',
                     title: "TypeScript",
                     description: "Uses with Angular with component management, method creations, etc.",
                     imgSrc: "https://i.imgur.com/2AYM02p.png",
                     area: "frontend"
                 },
                 {
+                    id: 'angular',
                     title: "Angular",
                     description: "Knowledge in component creation and maintenance, route management, SPA, HTTP requests, ngModel, etc.",
                     imgSrc: "https://i.imgur.com/si2CcC2.png",
@@ -93,12 +105,18 @@ export default {
             sectionTitle: 'Hello!',
             sectionSubtitle: 'Welcome to my portfolio!',
             introTitle: 'About me',
-            introText: `My name is Vinícius, I'm 20 years old and I live in Blumenau/SC. I always liked computers and technology. I found an area where I can turn something I enjoy into work. I've been studying programming since the beginning of 2021. Since then, I've always tried to learn new technologies to be ready for the job market. I'm a little shy, but with 5 minutes of conversation I can already let go. I am currently studying Bachelor of Computer Science at FURB. I am always looking for evolution and new knowledge.`,
+            introText: `My name is Vinícius, I'm 20 years old and I live in Blumenau, Santa Catarina, Brazil. As a software developer, I have experience in both backend and frontend, covering different technologies and frameworks. I have solid knowledge in React, Angular and Vue.js, applied in the development of attractive, responsive and well-structured interfaces. In the backend, I highlight my experience in C#, implementing services from the API to the database connection efficiently, with Entity Framework and Dapper, using the available resources in the best way, with high scalability. I am driven by the constant search for improvement and I see each new challenge as an opportunity for learning and professional growth. I am currently doing a bachelors degree in computer Science at FURB.`,
             introCollege: 'Course curriculum'
+        },
+        presentation: {
+          introduction: 'Hi, I am',
+          title: 'Fullstack Developer',
+          description1: 'Software Developer with more',
+          description2: 'than 2 years of solid experience.'
         },
         projects: {
             title: 'My projects',
-            description: `Below are some of the projects I've done, by clicking on the card you can preview the project or access the website where it's hosted`,
+            description: `Some of my most notable projects`,
             chat: {
                 name: 'Insta chat',
                 description: `Instant messaging system, where it's possible to chat with other users with synchronous chat updated in real time. The demo is performed on only one device, but it's implemented for use among multiple devices and in different places. Project made with Vue 3, C Sharp and SignalR.`,
@@ -142,72 +160,84 @@ export default {
             ],
             techs: [
                 {
+                    id: 'csharp',
                     title: "C Sharp",
                     description: "Conhecimento em classes, POO (objetos, encapsulamento, herança, polimorfismo, abstração, etc), partial classes, interfaces, tratamento de exceções. Uso do Entity Framework trabalhando code first(ou não), classes herdadas, com criação e manutenção de CRUD's, tabelas, vínculo entre tabelas 1:1, N:1, N:N; Uso do LINQ, com projeções performáticas em bancos de dados e diversos outros usos. SignalR para conexões contínuas e atualizações em tempo real. Uso de bibliotecas externas nos projetos trabalhados, etc. Projetos de API, bibliotecas de classes, console, windows forms, etc.",
                     imgSrc: "https://i.imgur.com/S8I0J4D.png",
                     area: "backend",
                 },
                 {
+                    id: 'vuejs',
                     title: "VueJS",
                     description: "Criação e manutenção de componentes, gerenciamento de rotas, requisições HTTP, renderizações condicionais, componentes dinâmicos, estilizações de componentes, propriedades, métodos, diretivas, vuex, e demais integrações com o backend; Uso diário de CompositionAPI e OptionsAPI; Vue2 e conhecimentos em Vue3;",
                     imgSrc: "https://i.imgur.com/hkyOatn.png",
                     area: "frontend"
                 },
                 {
+                    id: 'sql',
                     title: "SQL",
                     description: "Manipulações de banco de dados, tabelas, colunas e dados. Filtros em geral, relacionamento de tabelas, chaves primárias e estrangeiras, joins, etc",
                     imgSrc: "https://i.imgur.com/49NGDKg.png",
                     area: "backend",
                 },
                 {
+                    id: 'awsservices',
                     title: "AWS Services",
                     description: "Conhecimentos em RDS e EC2, gerenciando grupos de usuários, roles, VPC's, subnets, grupos de segurança e mais.",
                     imgSrc: "https://i.imgur.com/w1sr2tW.png",
                     area: "devops"
                 },
                 {
+                    id: 'docker',
                     title: "Docker",
                     description: "Conhecimentos em criações de Docker Compose, Dockerfile, scripts shell para automação de containers, etc.",
                     imgSrc: "https://i.imgur.com/zHfIPsI.png",
                     area: "devops"
                 },
                 {
+                    id: 'react',
                     title: "React",
                     description: "Conhecimento em componentes, props, renderização condicional, eventos, hooks, contextAPI, react-router-dom, formulários com formik, yup, etc.",
                     imgSrc: "https://i.imgur.com/UiiNh2d.png",
                     area: "frontend"
                 },
                 {
+                    id: 'javascript',
                     title: "JavaScript",
                     description: "Funções, classes, loops, condições, destructuring, manipulações de DOM, axios e outros usos gerais juntamente com os frameworks que utilizo.",
                     imgSrc: "https://i.imgur.com/N5M2V1h.png",
                     area: "frontend"
                 },
                 {
+                    id: 'bootstrap',
                     title: "Bootstrap",
                     description: "Utilização de elementos bootstrap, estilizações de elementos únicos, utilização de classes bootstrap para estilização do documento, utilização de bibliotecas conjuntas (vue-bootstrap, angular-bootstrap), etc.",
                     imgSrc: "https://i.imgur.com/yX555KZ.png",
                     area: "frontend"
                 },
                 {
+                    id: 'html',
                     title: "HTML",
                     description: "Estruturas com tags semânticas, criações de formulários, acessibilidade, etc.",
                     imgSrc: "https://i.imgur.com/un10rGr.png",
                     area: "frontend"
                 },
                 {
+                    id: 'css',
                     title: "CSS",
                     description: "Estilizações de elementos, animações, pseudo-elementos, seletores avançados, media queries, etc.",
                     imgSrc: "https://i.imgur.com/TBdHWr3.png",
                     area: "frontend"
                 },
                 {
+                    id: 'typescript',
                     title: "TypeScript",
                     description: "Usos junto ao Angular com gerenciamento de componentes, criações de métodos, etc.",
                     imgSrc: "https://i.imgur.com/2AYM02p.png",
                     area: "frontend"
                 },
                 {
+                    id: 'angular',
                     title: "Angular",
                     description: "Conhecimento em criação e manutenção de componentes, gerenciamento de rotas, SPA, requisições HTTP, ngModel, etc.",
                     imgSrc: "https://i.imgur.com/si2CcC2.png",
@@ -220,12 +250,18 @@ export default {
             sectionTitle: 'Olá!',
             sectionSubtitle: 'Bem-vindo ao meu portfólio!',
             introTitle: 'Sobre mim',
-            introText: 'Meu nome é Vinícius, tenho 20 anos e moro em Blumenau/SC. Sempre gostei de computadores e tecnologia. Encontrei uma área em que posso transformar algo que gosto em trabalho. Estudo programação desde o início de 2021. Desde lá, procuro sempre aprender tecnologias novas para estar pronto para o mercado de trabalho. Sou um pouco tímido, mas com 5 minutos de conversa já consigo me soltar. Atualmente estou cursando Bacharelado em Ciências da Computação, na FURB. Estou sempre em busca de evolução e de novos conhecimentos.',
+            introText: 'Meu nome é Vinícius, tenho 20 anos e moro em Blumenau/SC. Como desenvolvedor de software, possuo experiência tanto no backend quanto no frontend, abrangendo diversas tecnologias e frameworks. Tenho conhecimentos sólidos em React, Angular e Vue.js, aplicados no desenvolvimento de interfaces atraentes, responsivas e bem estruturadas. No backend, destaco minha experiência em C#, implementando serviços desde a API até a conexão ao banco de dados de forma eficiente, com Entity Framework e Dapper, utilizando os recursos disponibilizados da melhor forma, com alta escalabilidade. Sou movido pela busca constante de aprimoramento e encaro cada novo desafio como uma oportunidade de aprendizado e crescimento profissional. Atualmente estou cursando bacharelado em Ciências da Computação na FURB.',
             introCollege: 'Grade curricular do curso'
+        },
+        presentation: {
+          introduction: 'Olá, eu sou o',
+          title: 'Fullstack Developer',
+          description1: 'Desenvolvedor de software com mais',
+          description2: 'de 2 anos de sólida experiência.'
         },
         projects: {
             title: 'Meus Projetos',
-            description: 'Abaixo estão alguns dos projetos que fiz, ao clicar no card, você pode visualizar uma prévia do projeto ou acessar o site em que ele está hospedado',
+            description: 'Alguns dos meus projetos mais notáveis',
             chat: {
                 name: 'Chat instantâneo',
                 description: `Sistema de chat instantâneo, onde é possível conversar com outros usuários, com um bate-papo síncrono e atualizado em tempo real. A demonstração é feita em apenas um dispositivo, mas é implementado para o uso entre vários dispositivos e em diferentes lugares. Projeto feito com Vue 3, C Sharp e SignalR.`,

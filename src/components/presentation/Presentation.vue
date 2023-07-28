@@ -1,27 +1,36 @@
 <template>
   <div id="introduction__section">
     <div class="introduction__hello-text">
-      Olá, eu sou o
+      {{ texts[language].presentation.introduction }}
       <div class="introduction__name-container">
         <span ref="name" class="introduction__name-text"
           >Vinícius Gabriel de Souza
         </span>
       </div>
     </div>
-    <div class="introduction__profession-text">FullStack Developer</div>
+    <div class="introduction__profession-text">{{ texts[language].presentation.title }}</div>
     <div class="introduction__description-text">
-      Desenvolvedor de software com mais <br />
-      de 2 anos de sólida experiência.
+      {{ texts[language].presentation.description1 }} <br />
+      {{ texts[language].presentation.description2 }}
     </div>
   </div>
 </template>
 <script>
 // component style
 import "./shared/style.css"
+import texts from '../../assets/texts/texts'
 
 export default {
   data() {
-    return {}
+    return {
+      texts,
+    }
+  },
+  props: {
+    language: {
+      type: String,
+      default: 'pt',
+    },
   },
   created() {
     setTimeout(() => {

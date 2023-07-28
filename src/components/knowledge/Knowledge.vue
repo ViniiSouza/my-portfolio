@@ -22,7 +22,7 @@
           <div id="knowledge__stack-grid">
             <Stack
               v-for="item in filteredTechs"
-              :key="item.title"
+              :key="item.id"
               :imgSrc="item.imgSrc"
               :stackTitle="item.title"
               :stackDescription="item.description"
@@ -89,6 +89,10 @@ export default {
         this.filteredTechs = texts[this.language].knowledge.techs.filter(
           (item) => item.area == this.selectedArea
         )
+      if (this.showStackInfo && this.stackInformation) {
+        let updatedStack = texts[this.language].knowledge.techs.find(find => find.id == this.stackInformation.id)
+        this.setStack(updatedStack)
+      }
       this.startTiltEffect()
       this.stopTiltEffect()
     },
@@ -98,6 +102,7 @@ export default {
     setStack(stack) {
       this.showStackInfo = true
       this.stackInformation = {
+        id: stack.id,
         imageSource: stack.imgSrc,
         title: stack.title,
         description: stack.description,

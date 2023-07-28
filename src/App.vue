@@ -2,10 +2,10 @@
   <div id="app">
     <Language @languageChanged="changeLanguage"/>
     <Presentation :language="language" />
-    <Knowledge :language="language" />
-    <Skills :language="language" />
     <About :language="language" />
     <Projects :language="language" />
+    <Knowledge :language="language" />
+    <Skills :language="language" />
     <AppInfo :language="language" />
     <Footer :language="language" />
   </div>
