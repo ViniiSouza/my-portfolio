@@ -1,8 +1,8 @@
 #introduction__section {
-    display: grid;
-    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+    display: flex;
+    flex-direction: column;
     font-family: var(--title-font);
-    text-align: center;
+    align-items: center;
     padding: 2.5rem 0;
     user-select: none;
 }
@@ -12,9 +12,6 @@
     font-size: 2.5rem;
     text-align: left;
     padding-left: 0.5rem;
-    justify-content: start;
-    grid-column-start: 3;
-    grid-column-end: 7;
     max-height: fit-content;
 }
 
@@ -25,6 +22,7 @@
 }
 
 .introduction__name-text {
+    align-self: flex-start;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
     line-height: 1;
@@ -35,8 +33,6 @@
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    align-self: end;
-    align-content: end;
     vertical-align: bottom;
     letter-spacing: .15em;
 }
@@ -46,70 +42,36 @@
     font-size: 15em;
     text-align: left;
     line-height: 0.8;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 7;
 }
 
 .introduction__description-text {
     font-family: "Montserrat", sans-serif;
     font-size: 1.5em;
-    text-align: left;
+    text-align: right;
+    width: 50%;
     color: rgb(100, 100, 100);
     line-height: 1.2;
-    grid-row-start: 4;
-    grid-column-start: 5;
-    grid-column-end: 8;
-    line-break: auto;
-    overflow-wrap: break-word;
 }
 
-@media screen and (max-width: 1780px) {
+
+/* Laptop L */
+@media screen and (max-width: 1440px) {
     .introduction__hello-text {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     .introduction__profession-text {
-        font-size: 14em;
+        font-size: 12em;
     }
 
     .introduction__description-text {
-        font-size: 1.4em;
+        font-size: 1.3em;
+        width: 70%;
     }
 }
 
-@media screen and (max-width: 1600px) {
-    .introduction__hello-text {
-        font-size: 1.6rem;
-        font-weight: bold;
-    }
-
-    .introduction__profession-text {
-        font-size: 12.5em;
-    }
-
-    .introduction__description-text {
-        font-size: 1.4em;
-    }
-}
-
-@media screen and (max-width: 1400px) {
-    .introduction__hello-text {
-        font-size: 1.75rem;
-        font-weight: bold;
-    }
-
-    .introduction__profession-text {
-        font-size: 11em;
-    }
-
-    .introduction__description-text {
-        font-size: 1.2em;
-    }
-}
-
-@media screen and (max-width: 1200px) {
+/* Laptop */
+@media screen and (max-width: 1024px) {
     .introduction__hello-text {
         font-size: 1.5rem;
         font-weight: bold;
@@ -124,42 +86,11 @@
     }
 }
 
-@media screen and (max-width: 1080px) {
+/* Tablet */
+@media screen and (max-width: 768px) {
     .introduction__hello-text {
-        font-size: 1.4rem;
+        font-size: 1.0rem;
         font-weight: bold;
-    }
-
-    .introduction__profession-text {
-        font-size: 8em;
-    }
-
-    .introduction__description-text {
-        font-size: 1.1em;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .introduction__hello-text {
-        font-size: 1.1rem;
-        font-weight: bold;
-        padding-left: 0.4rem;
-    }
-
-    .introduction__profession-text {
-        font-size: 7em;
-    }
-
-    .introduction__description-text {
-        font-size: 0.9em;
-    }
-}
-
-@media screen and (max-width: 720px) {
-    .introduction__hello-text {
-        font-size: 1rem;
-        font-weight: bold;
-        padding-left: 0.3rem;
     }
 
     .introduction__profession-text {
@@ -167,12 +98,29 @@
     }
 
     .introduction__description-text {
-        font-size: 0.8em;
-        grid-column-start: 4;
+        font-size: 0.9em;
     }
 }
 
-@media screen and (max-width: 640px) {
+/* Mobile L */
+@media screen and (max-width: 425px) {
+    .introduction__hello-text {
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .introduction__profession-text {
+        font-size: 5.5em;
+    }
+
+    .introduction__description-text {
+        font-size: 0.8em;
+        width: 85%;
+    }
+}
+
+/* Mobile M */
+@media screen and (max-width: 375px) {
     .introduction__hello-text {
         font-size: 0.8rem;
         font-weight: bold;
@@ -187,52 +135,20 @@
     }
 }
 
-@media screen and (max-width: 540px) {
+/* Mobile S */
+@media screen and (max-width: 320px) {
     .introduction__hello-text {
-        font-size: 0.6rem;
-        font-weight: bold;
-        padding-left: 0.2rem;
-    }
-
-    .introduction__profession-text {
-        font-size: 4.5em;
-    }
-
-    .introduction__description-text {
-        font-size: 0.5em;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .introduction__hello-text {
-        font-size: 0.5rem;
-        font-weight: bold;
-        padding-left: 0.1rem;
-    }
-
-    .introduction__profession-text {
-        font-size: 3.2em;
-    }
-
-    .introduction__description-text {
-        font-size: 0.5em;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .introduction__hello-text {
-        font-size: 0.4rem;
+        font-size: 0.65rem;
         font-weight: bold;
     }
 
     .introduction__profession-text {
-        font-size: 3em;
+        font-size: 4em;
     }
 
     .introduction__description-text {
-        font-size: 0.4em;
+        font-size: 0.55em;
     }
-
 }
 
 /* Typewriter animation - start */
