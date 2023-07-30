@@ -84,12 +84,20 @@
   }
 
   .project__card__phone {
-    left: -25px;
+    left: 30px;
     bottom: -120px;
   }
 
   .project__card__phone__wrapper {
     width: 80px;
+  }
+
+  .project__card__description {
+    font-size: 1.3rem;
+  }
+
+  .project__card__title {
+    font-size: 1.8rem;
   }
 }
 
@@ -104,23 +112,43 @@
   }
 
   .project__card__phone {
-    left: 0px;
+    left: 50px;
+  }
+
+  .project__card__description {
+    font-size: 1.2rem;
+  }
+
+  .project__card__title {
+    font-size: 2rem;
   }
 }
 
 /* Tablet */
 @media screen and (max-width: 768px) {
+  .project__card {
+    height: 450px;
+  }
+
   .project__card__laptop {
     width: 280px;
   }
 
   .project__card__phone {
-    left: -30px;
+    left: 40px;
     bottom: -100px;
   }
 
   .project__card__phone__wrapper {
     width: 60px;
+  }
+
+  .project__card__description {
+    font-size: 1rem;
+  }
+
+  .project__card__title {
+    font-size: 1.5rem;
   }
 }
 
@@ -149,20 +177,29 @@
 /* Mobile M */
 @media screen and (max-width: 375px) {
   .project__card {
-    height: 400px;
+    height: 300px;
   }
 
   .project__card__laptop {
     width: 200px;
+    height: 50%;
   }
 
   .project__card__phone {
     left: -20px;
-    bottom: -60px;
+    bottom: -50px;
   }
 
   .project__card__phone__wrapper {
     width: 42px;
+  }
+
+  .project__card__description {
+    font-size: 0.9rem;
+  }
+
+  .project__card__title {
+    font-size: 1.3rem;
   }
 }
 
