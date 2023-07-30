@@ -119,8 +119,10 @@ export default {
   /* For mobile phones: */
   .floating-button {
     background-color: rgba(1,1,1,0);
-    top: 60px;
-    right: 15px;
+    bottom: 40px;
+    left: 10px;
+    top: inherit;
+    right: inherit;
     width: 40px;
   }
   .option-language-text {
