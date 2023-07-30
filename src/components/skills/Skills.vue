@@ -2,7 +2,7 @@
   <div id="skills__container">
     <div id="skills__code-section">
       <code id="skills__code-container">
-        <code class="skills__code-header">Portfolio > skills.json</code>
+        <code class="skills__code-header">Portfolio > {{ language == 'en' ? 'skills' : 'habilidades' }}.json</code>
         <ol class="skills__code-line-numbers">
           <li>
             <pre class="skills__code--bracket">{{ codeStructure.name }}</pre>
@@ -31,7 +31,7 @@
       </code>
     </div>
     <div id="skills__result-container">
-      <h4 class="skills__result__title">Skills</h4>
+      <h4 class="skills__result__title">{{ texts[language].skills.name }}</h4>
       <div v-for="skill in skills" :key="skill.title" class="skills__result__item">
         <h6 class="skills__result__item-title">{{skill.title}}</h6>
         <p class="skills__result__item-description">{{skill.value}}</p>
@@ -40,49 +40,23 @@
   </div>
 </template>
 <script>
+import texts from '../../assets/texts/texts.js'
 // component style
 import './shared/style.css'
 
 export default {
   data() {
     return {
-      codeStructure: {
-        name: '{',
-        content: [
-          {
-            name: 'mostConfidentWith',
-            value:
-              '"C Sharp", "JavaScript", "VueJS", "React", "SQL", "Bootstrap"',
-            end: '],',
-          },
-          {
-            name: 'goodKnowledge',
-            value:
-              '"Angular", "State management libraries (Redux and Vuex)", "Docker"',
-            end: '],',
-          },
-          {
-            name: 'canManageWithHelp',
-            value: '"Java", "Python", "AWS", "TypeScript"',
-            end: ']',
-          },
-        ],
-      },
-      skills: [
-          {
-            title: 'Most confident with',
-            value: 'C Sharp, JavaScript, VueJS, React, SQL and Bootstrap.',
-          },
-          {
-            title: 'I have good knowledge on',
-            value: 'Angular, State management libraries (redux and vuex) and docker.',
-          },
-          {
-            title: 'I can manage with some help',
-            value: 'Java, Python, AWS and TypeScript.',
-          },
-        ],
+      texts,
+      codeStructure: texts[this.language].skills.codeStructure,
+      skills: texts[this.language].skills.skills,
     }
+  },
+  props: {
+    language: {
+      type: String,
+      default: 'pt',
+    },
   },
   methods: {
     updateValue(event, index) {
@@ -103,8 +77,14 @@ export default {
       var lastItem = items.pop()
       var formattedItems = items.join(', ')
 
-      return formattedItems + ' and ' + lastItem
+      return formattedItems + (this.language == 'en' ? ' and ' : ' e ' ) + lastItem
     }
   },
+  watch: {
+    language(value) {
+      this.codeStructure = texts[value].skills.codeStructure
+      this.skills = texts[value].skills.skills
+    }
+  }
 }
 </script>
