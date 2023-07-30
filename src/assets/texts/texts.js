@@ -110,7 +110,8 @@ export default {
         },
         presentation: {
           introduction: 'Hi, I am',
-          title: 'Fullstack Developer',
+          title1: 'Fullstack',
+          title2: 'Developer',
           description1: 'Software Developer with more',
           description2: 'than 2 years of solid experience.'
         },
@@ -255,7 +256,8 @@ export default {
         },
         presentation: {
           introduction: 'Olá, eu sou o',
-          title: 'Fullstack Developer',
+          title1: 'Fullstack',
+          title2: 'Developer',
           description1: 'Desenvolvedor de software com mais',
           description2: 'de 2 anos de sólida experiência.'
         },
