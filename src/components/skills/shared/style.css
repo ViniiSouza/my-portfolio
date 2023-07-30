@@ -104,7 +104,8 @@
   font-size: 1.2rem;
 }
 
-@media screen and (max-width: 1400px) {
+/* Laptop L */
+@media screen and (max-width: 1440px) {
   .skills__result__title {
     font-size: 1.8rem;
   }
@@ -118,15 +119,16 @@
   }
 
   .skills__result__item-title {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 
   .skills__result__item-description {
-    font-size: 1.1rem
+    font-size: 1.2rem
   }
 }
 
-@media screen and (max-width: 1080px) {
+/* Laptop */
+@media screen and (max-width: 1024px) {
   .skills__result__title {
     font-size: 1.6rem;
   }
@@ -148,17 +150,41 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+/* Tablet */
+@media screen and (max-width: 768px) {
+  #skills__container {
+    display: block;
+  }
+
+  #skills__code-section {
+    display: none;
+  }
+
   .skills__result__title {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 
-  .skills__code-header {
-    font-size: 0.8rem;
+  #skills__result-container {
+    text-align: center;
   }
 
-  #skills__code-container pre {
-    font-size: 0.8rem;
+  .skills__result__item-title {
+    font-size: 1.3rem;
+  }
+
+  .skills__result__item-description {
+    font-size: 0.9rem
+  }
+}
+
+/* Mobile L */
+@media screen and (max-width: 425px) {
+  .skills__result__title {
+    font-size: 2rem;
+  }
+
+  #skills__result-container {
+    text-align: center;
   }
 
   .skills__result__item-title {
@@ -170,39 +196,10 @@
   }
 }
 
-@media screen and (max-width: 720px) {
+/* Mobile M */
+@media screen and (max-width: 375px) {
   .skills__result__title {
-    font-size: 1.2rem;
-  }
-
-  .skills__code-header {
-    font-size: 0.6rem;
-  }
-
-  #skills__code-container pre {
-    font-size: 0.6rem;
-  }
-
-  .skills__result__item-title {
-    font-size: 0.8rem;
-  }
-
-  .skills__result__item-description {
-    font-size: 0.6rem
-  }
-}
-
-@media screen and (max-width: 540px) {
-  #skills__container {
-    display: block;
-  }
-
-  #skills__code-section {
-    display: none;
-  }
-
-  .skills__result__title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   #skills__result-container {
@@ -210,28 +207,13 @@
   }
 
   .skills__result__item-title {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .skills__result__item-description {
-    font-size: 0.6rem
+    font-size: 0.7rem
   }
 }
 
-@media screen and (max-width: 480px) {
-  .skills__result__title {
-    font-size: 1rem;
-  }
-
-  #skills__result-container {
-    text-align: center;
-  }
-
-  .skills__result__item-title {
-    font-size: 0.8rem;
-  }
-
-  .skills__result__item-description {
-    font-size: 0.6rem
-  }
-}
+/* Mobile S */
+@media screen and (max-width: 320px) {}
