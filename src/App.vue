@@ -6,7 +6,7 @@
     <Projects :language="language" />
     <Knowledge :language="language" />
     <Skills :language="language" />
-    <AppInfo :language="language" />
+    <Contact :language="language" />
     <Footer :language="language" />
   </div>
 </template>
@@ -18,7 +18,7 @@ import Skills from './components/skills/Skills.vue'
 import About from './components/about/About.vue'
 import Language from './components/language/Language.vue';
 import Projects from './components/projects/Projects.vue';
-import AppInfo from './components/app-info/AppInfo.vue';
+import Contact from './components/contact/Contact.vue';
 import Footer from './components/footer/Footer.vue';
 
 export default {
@@ -35,7 +35,7 @@ export default {
     About,
     Language,
     Projects,
-    AppInfo,
+    Contact,
     Footer,
   },
   methods: {

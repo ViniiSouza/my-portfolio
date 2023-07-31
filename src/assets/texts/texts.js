@@ -4,6 +4,21 @@ export default {
       description: 'This website was created with VueJS',
       projectLink: 'Project in GitHub',
     },
+    contact: {
+      title: 'Contact',
+      email: {
+        description: 'Send me a e-mail',
+        feedback: 'E-mail copied'
+      }
+    },
+    home: {
+      profession: 'Software Developer',
+      sectionTitle: 'Hello!',
+      sectionSubtitle: 'Welcome to my portfolio!',
+      introTitle: 'About me',
+      introText: `My name is Vinícius, I'm 20 years old and I live in Blumenau, Santa Catarina, Brazil. As a software developer, I have experience in both backend and frontend, covering different technologies and frameworks. I have solid knowledge in React, Angular and Vue.js, applied in the development of attractive, responsive and well-structured interfaces. In the backend, I highlight my experience in C#, implementing services from the API to the database connection efficiently, with Entity Framework and Dapper, using the available resources in the best way, with high scalability. I am driven by the constant search for improvement and I see each new challenge as an opportunity for learning and professional growth. I am currently doing a bachelors degree in computer Science at FURB.`,
+      introCollege: 'Course curriculum',
+    },
     knowledge: {
       title: 'Knowledge',
       text: `I'm always looking for learning, improving myself in technologies I already know and learning new technologies necessary for my daily routines. My role today is with an emphasis on the backend, but I have already worked as a fullstack. Below are the technologies I use the most.`,
@@ -112,14 +127,6 @@ export default {
         },
       ],
     },
-    home: {
-      profession: 'Software Developer',
-      sectionTitle: 'Hello!',
-      sectionSubtitle: 'Welcome to my portfolio!',
-      introTitle: 'About me',
-      introText: `My name is Vinícius, I'm 20 years old and I live in Blumenau, Santa Catarina, Brazil. As a software developer, I have experience in both backend and frontend, covering different technologies and frameworks. I have solid knowledge in React, Angular and Vue.js, applied in the development of attractive, responsive and well-structured interfaces. In the backend, I highlight my experience in C#, implementing services from the API to the database connection efficiently, with Entity Framework and Dapper, using the available resources in the best way, with high scalability. I am driven by the constant search for improvement and I see each new challenge as an opportunity for learning and professional growth. I am currently doing a bachelors degree in computer Science at FURB.`,
-      introCollege: 'Course curriculum',
-    },
     presentation: {
       introduction: 'Hi, I am',
       title1: 'Fullstack',
@@ -201,6 +208,22 @@ export default {
     appInfo: {
       description: 'Este site foi desenvolvido com VueJS',
       projectLink: 'Projeto no GitHub',
+    },
+    contact: {
+      title: 'Contato',
+      email: {
+        description: 'Me envie um e-mail',
+        feedback: 'E-mail copiado'
+      }
+    },
+    home: {
+      profession: 'Desenvolvedor de Software',
+      sectionTitle: 'Olá!',
+      sectionSubtitle: 'Bem-vindo ao meu portfólio!',
+      introTitle: 'Sobre mim',
+      introText:
+        'Meu nome é Vinícius, tenho 20 anos e moro em Blumenau/SC. Como desenvolvedor de software, possuo experiência tanto no backend quanto no frontend, abrangendo diversas tecnologias e frameworks. Tenho conhecimentos sólidos em React, Angular e Vue.js, aplicados no desenvolvimento de interfaces atraentes, responsivas e bem estruturadas. No backend, destaco minha experiência em C#, implementando serviços desde a API até a conexão ao banco de dados de forma eficiente, com Entity Framework e Dapper, utilizando os recursos disponibilizados da melhor forma, com alta escalabilidade. Sou movido pela busca constante de aprimoramento e encaro cada novo desafio como uma oportunidade de aprendizado e crescimento profissional. Atualmente estou cursando bacharelado em Ciências da Computação na FURB.',
+      introCollege: 'Grade curricular do curso',
     },
     knowledge: {
       title: 'Conhecimento',
@@ -309,15 +332,6 @@ export default {
           area: 'frontend',
         },
       ],
-    },
-    home: {
-      profession: 'Desenvolvedor de Software',
-      sectionTitle: 'Olá!',
-      sectionSubtitle: 'Bem-vindo ao meu portfólio!',
-      introTitle: 'Sobre mim',
-      introText:
-        'Meu nome é Vinícius, tenho 20 anos e moro em Blumenau/SC. Como desenvolvedor de software, possuo experiência tanto no backend quanto no frontend, abrangendo diversas tecnologias e frameworks. Tenho conhecimentos sólidos em React, Angular e Vue.js, aplicados no desenvolvimento de interfaces atraentes, responsivas e bem estruturadas. No backend, destaco minha experiência em C#, implementando serviços desde a API até a conexão ao banco de dados de forma eficiente, com Entity Framework e Dapper, utilizando os recursos disponibilizados da melhor forma, com alta escalabilidade. Sou movido pela busca constante de aprimoramento e encaro cada novo desafio como uma oportunidade de aprendizado e crescimento profissional. Atualmente estou cursando bacharelado em Ciências da Computação na FURB.',
-      introCollege: 'Grade curricular do curso',
     },
     presentation: {
       introduction: 'Olá, eu sou o',
