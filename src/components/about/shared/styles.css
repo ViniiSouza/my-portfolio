@@ -8,7 +8,7 @@
 }
 #intro-title {
   font-family: var(--title-font);
-  font-size: 4em;
+  font-size: 3rem;
   text-align: center;
 }
 #intro-text {

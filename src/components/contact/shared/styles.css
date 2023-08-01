@@ -1,13 +1,17 @@
-#contact__section{
+#contact__section {
   background-color: var(--primary);
   color: var(--white);
-  padding: 2rem 0;
+  padding: 6rem 0;
 }
 
 #contact__title {
   font-family: var(--title-font);
   text-align: center;
   font-size: 3rem;
+}
+
+.contact__item-title {
+  font-size: 1.6rem;
 }
 
 #contact__email {
@@ -64,5 +68,89 @@
   }
   50% {
       opacity: 1;
+  }
+}
+
+/* Laptop L */
+@media screen and (max-width: 1440px) {
+  #contact__title {
+    font-size: 2.5rem;
+  }
+  #contact__email__input span {
+    font-size: 1.3rem;
+  }
+  .contact__item-title {
+    font-size: 1.4rem;
+  }
+}
+
+/* Laptop */
+@media screen and (max-width: 1024px) {
+  #contact__email__input span, .contact__item-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  #contact__section {
+    padding: 6vh 0;
+  }
+  #contact__title {
+    font-size: 2rem;
+  }
+  #contact__email__input span {
+    font-size: 0.9rem;
+  }
+  .contact__item-title {
+    font-size: 1.3rem;
+  }
+  #contact__email-icon {
+    font-size: 3rem;
+  }
+}
+
+/* Mobile L */
+@media screen and (max-width: 425px) {
+  #contact__section {
+    padding: 5vh 0;
+  }
+  #contact__title {
+    font-size: 2rem;
+  }
+  #contact__email__input span {
+    font-size: 0.8rem;
+  }
+  .contact__item-title {
+    font-size: 1rem;
+  }
+  #contact__email-icon {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile M */
+@media screen and (max-width: 375px) {
+  #contact__section {
+    padding: 4vh 0;
+  }
+  #contact__title {
+    font-size: 1.5rem;
+  }
+  #contact__email__input span {
+    font-size: 0.7rem;
+  }
+  .contact__item-title {
+    font-size: 0.9rem;
+  }
+  #contact__email-icon {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile S */
+@media screen and (max-width: 320px) {
+  #intro-text {
+    font-size: 0.55rem;
   }
 }
