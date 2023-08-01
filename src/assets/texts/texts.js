@@ -7,7 +7,7 @@ export default {
     contact: {
       title: 'Contact',
       email: {
-        description: 'Send me a e-mail',
+        description: 'Send me an e-mail',
         feedback: 'E-mail copied'
       }
     },
