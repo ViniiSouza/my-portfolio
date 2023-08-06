@@ -10,6 +10,9 @@ export default {
         description: 'Send me an e-mail',
         feedback: 'E-mail copied',
       },
+      whatsapp: {
+        description: 'Send me a message',
+      },
     },
     home: {
       profession: 'Software Developer',
@@ -210,6 +213,9 @@ export default {
       email: {
         description: 'Me envie um e-mail',
         feedback: 'E-mail copiado',
+      },
+      whatsapp: {
+        description: 'Me envie uma mensagem',
       },
     },
     home: {

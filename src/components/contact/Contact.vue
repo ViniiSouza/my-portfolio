@@ -23,7 +23,7 @@
     <div class="contact__item">
       <p class="contact__item-icon"><i class="bi bi-whatsapp"></i></p>
       <h4 class="contact__item-title">
-        {{ texts[language].contact.email.description }}
+        {{ texts[language].contact.whatsapp.description }}
       </h4>
       <div class="contact__item__input">
         <div class="contact__item__input__wrapper">
