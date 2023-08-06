@@ -1,10 +1,10 @@
 <template>
-  <div class="project__card" @click="changeImage">
+  <div class="project__card">
     <div class="project__card__wrapper">
       <div class="project__card__laptop">
         <img
           class="project__card__laptop--body"
-          src="https://i.imgur.com/fAydCyZ.png"
+          src="https://i.imgur.com/gx1bIyJ.png"
         />
         <Transition name="device" mode="out-in">
           <img
@@ -18,7 +18,7 @@
         <div class="project__card__phone__wrapper">
           <img
             class="project__card__phone--body"
-            src="https://i.imgur.com/WxqkUuA.png"
+            src="https://i.imgur.com/8Scip30.png"
           />
           <Transition name="device" mode="out-in">
             <img

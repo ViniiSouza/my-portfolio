@@ -8,19 +8,13 @@
     </div>
     <div class="projects__wrapper">
       <ProjectCard
-        :laptop-imgs="[
-          'https://i.imgur.com/i4wvS9j.png',
-          'https://i.imgur.com/rNjyK5H.png',
-          'https://i.imgur.com/2vUeWo6.png',
-        ]"
-        :phone-imgs="[
-          'https://i.imgur.com/BTJdDRL.png',
-          'https://i.imgur.com/kl3LeF7.png',
-          'https://i.imgur.com/tiJNTjI.png',
-        ]"
-        :techs="['C#', 'VueJS']"
-        short-desc="A real-time chat application"
-        title="ChitChat App"
+        v-for="project in texts[language].projects.items"
+        :key="project.title"
+        :laptop-imgs="project.imgs.laptop"
+        :phone-imgs="project.imgs.cellphone"
+        :techs="project.techs"
+        :short-desc="project.description"
+        :title="project.title"
       />
     </div>
   </div>

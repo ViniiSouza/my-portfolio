@@ -8,8 +8,8 @@ export default {
       title: 'Contact',
       email: {
         description: 'Send me an e-mail',
-        feedback: 'E-mail copied'
-      }
+        feedback: 'E-mail copied',
+      },
     },
     home: {
       profession: 'Software Developer',
@@ -137,31 +137,27 @@ export default {
     projects: {
       title: 'My projects',
       description: `Some of my most notable projects`,
-      chat: {
-        name: 'Insta chat',
-        description: `Instant messaging system, where it's possible to chat with other users with synchronous chat updated in real time. The demo is performed on only one device, but it's implemented for use among multiple devices and in different places. Project made with Vue 3, C Sharp and SignalR.`,
-        concepts: `Use of SignalR for real-time message updates, configured in .NET 6 environment. FrontEnd with VueJS 3, SignalR integration, Bootstrap for styles, and SweetAlert for stylized alerts.`,
-      },
-      mercadoMania: {
-        name: 'MarketMania',
-        description: `Inventory control system for a market. It's possible to add products, categories, and update inventory. Products can be linked to categories. Project made with Angular and C Sharp (Entity Framework).`,
-        concepts: `Use of Entity Framework for database connections and part of the API with REST requests for frontend relationships. FrontEnd made with Angular and Bootstrap library.`,
-      },
-      toDoList: {
-        name: 'To Do List',
-        description: `Project from DevInHouse course, To-do list. System to include and remove activities, mark them as completed, etc.`,
-        concepts: `Use of localStorage to store tasks even after closing/reloading the tab.`,
-      },
-      credit: {
-        name: 'Credit to all',
-        description: `Profile analysis system for credit availability. Depending on the user's score, a loan approval rate is generated for the requested loan. The user has the option to provide a payment guarantee, increasing the chance of loan approval.`,
-        concepts: `Logic made with javascript and frontend made with HTML + Bootstrap.`,
-      },
-      mmo: {
-        name: 'DEVINMMO',
-        description: `Project from DevInHouse course, game information and news website. Created using React and receiving information from an API with games and news. Word search and pagination system. Comment system stored in localStorage.`,
-        concepts: `Revised the use of REST requests, making requests from an external API for use in the project. Comment storage in localStorage. Creation of 3 different themes for the website.`,
-      },
+      items: [
+        {
+          title: 'ChitChat App',
+          description: 'A real-time chat application',
+          techs: ['C#', 'VueJS', 'SignalR'],
+          imgs: {
+            laptop: [
+              'https://i.imgur.com/IDYHP8o.png',
+              'https://i.imgur.com/Rp7RZBY.png',
+              'https://i.imgur.com/J6jPQOn.png',
+              'https://i.imgur.com/1B4pwv2.png',
+            ],
+            cellphone: [
+              'https://i.imgur.com/ecMno6U.png',
+              'https://i.imgur.com/ky32aXB.png',
+              'https://i.imgur.com/8HLo6vz.png',
+              'https://i.imgur.com/wrYCvw9.png',
+            ],
+          },
+        },
+      ],
     },
     skills: {
       codeStructure: {
@@ -213,8 +209,8 @@ export default {
       title: 'Contato',
       email: {
         description: 'Me envie um e-mail',
-        feedback: 'E-mail copiado'
-      }
+        feedback: 'E-mail copiado',
+      },
     },
     home: {
       profession: 'Desenvolvedor de Software',
@@ -343,31 +339,27 @@ export default {
     projects: {
       title: 'Meus Projetos',
       description: 'Alguns dos meus projetos mais notáveis',
-      chat: {
-        name: 'Chat instantâneo',
-        description: `Sistema de chat instantâneo, onde é possível conversar com outros usuários, com um bate-papo síncrono e atualizado em tempo real. A demonstração é feita em apenas um dispositivo, mas é implementado para o uso entre vários dispositivos e em diferentes lugares. Projeto feito com Vue 3, C Sharp e SignalR.`,
-        concepts: `Uso do SignalR para a atualização das mensagens em tempo real, configurado no ambiente .NET 6. FrontEnd com VueJS 3, integração do SignalR, bootstrap para estilos e sweetalert para alertas estilizados.`,
-      },
-      mercadoMania: {
-        name: 'MercadoMania',
-        description: `Sistema de controle de estoque de um mercado. É possível adicionar produtos, categorias e alterar estoque. Os produtos podem ser vinculados às categorias. Projeto feito com Angular e C Sharp (Entity Framework).`,
-        concepts: `Uso do Entity Framework para conexões com o banco e parte de API com requisições REST para relacionamento com o frontend. FrontEnd feito com Angular e biblioteca Bootstrap.`,
-      },
-      toDoList: {
-        name: 'To Do List',
-        description: `Projeto do curso DevInHouse, To-do list. Sistema para incluir e remover atividades, marcá-las como concluídas, etc.`,
-        concepts: `Uso do localStorage para armazenar tarefas mesmo após fechar/recarregar a guia.`,
-      },
-      credit: {
-        name: 'Crédito para todxs',
-        description: `Sistema de análise de perfil para disponibilização de crédito. Conforme pontuação do usuário, é gerada uma taxa de aprovação do empréstimo solicitado. Usuário tem a opção de fornecer uma garantia de pagamento, aumentando a chance de aprovação do empréstimo.`,
-        concepts: `Lógica feita com javascript e frontend feito com HTML + Boostrap.`,
-      },
-      mmo: {
-        name: 'DEVINMMO',
-        description: `Projeto do curso DevInHouse, site de informações de jogos e notícias sobre jogos. Criado utilizando React e recebendo informações de uma API com os jogos e notícias. Sistema de busca por palavras e paginação. Sistema de comentários armazenados em localStorage.`,
-        concepts: `Revisado o uso das requisições REST, fazendo requisições de uma API externa para uso no projeto. Armazenamento de comentários em localStorage. Criação de 3 temas diferentes para o site.`,
-      },
+      items: [
+        {
+          title: 'ChitChat App',
+          description: 'Um aplicativo de bate-papo em tempo real',
+          techs: ['C#', 'VueJS', 'SignalR'],
+          imgs: {
+            laptop: [
+              'https://i.imgur.com/IDYHP8o.png',
+              'https://i.imgur.com/Rp7RZBY.png',
+              'https://i.imgur.com/J6jPQOn.png',
+              'https://i.imgur.com/1B4pwv2.png',
+            ],
+            cellphone: [
+              'https://i.imgur.com/ecMno6U.png',
+              'https://i.imgur.com/ky32aXB.png',
+              'https://i.imgur.com/8HLo6vz.png',
+              'https://i.imgur.com/wrYCvw9.png',
+            ],
+          },
+        },
+      ],
     },
     skills: {
       codeStructure: {
@@ -386,7 +378,7 @@ export default {
             end: '],',
           },
           {
-            name: 'possoTrabalharComAjuda',
+            name: 'tenhoConhecimento',
             value: '"Java", "Python", "AWS", "TypeScript"',
             end: ']',
           },
@@ -400,10 +392,10 @@ export default {
         },
         {
           title: 'Tenho bons conhecimentos em',
-          value: 'Angular, State management libraries (redux e vuex) e docker.',
+          value: 'Angular, Bibliotecas de gerenciamento de estado (redux e vuex) e docker.',
         },
         {
-          title: 'Posso trabalhar com alguma ajuda',
+          title: 'Tenho algum conhecimento em',
           value: 'Java, Python, AWS e TypeScript.',
         },
       ],

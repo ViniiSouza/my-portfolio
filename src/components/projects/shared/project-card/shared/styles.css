@@ -201,6 +201,10 @@
   .project__card__title {
     font-size: 1.3rem;
   }
+
+  .project__card__techs {
+    margin-top: 1rem;
+  }
 }
 
 /* Mobile S */
