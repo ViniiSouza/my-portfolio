@@ -42,7 +42,7 @@
 <script>
 import texts from '../../assets/texts/texts.json'
 // component style
-import './shared/style.css'
+import './shared/styles.css'
 
 export default {
   data() {

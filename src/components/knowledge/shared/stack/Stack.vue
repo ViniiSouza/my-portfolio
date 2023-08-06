@@ -15,7 +15,7 @@
 </template>
 <script>
 // component style
-import './shared/style.css'
+import './shared/styles.css'
 
 export default {
   data() {

@@ -48,7 +48,7 @@
 </template>
 <script>
 // component style
-import './shared/style.css'
+import './shared/styles.css'
 import Stack from './shared/stack/Stack.vue'
 import texts from '../../assets/texts/texts.json'
 
