@@ -1,24 +1,38 @@
 <template>
   <div id="contact__section">
     <h3 id="contact__title">{{ texts[language].contact.title }}</h3>
-    <div id="contact__email">
-      <p id="contact__email-icon"><i class="bi bi-envelope-paper"></i></p>
+    <div class="contact__item">
+      <p class="contact__item-icon"><i class="bi bi-envelope-paper"></i></p>
       <h4 class="contact__item-title">
         {{ texts[language].contact.email.description }}
       </h4>
-      <div id="contact__email__input">
-        <div id="contact__email__input__wrapper">
+      <div class="contact__item__input">
+        <div class="contact__item__input__wrapper">
           <span>{{ email }}</span>
-          <button @click="copyEmail">
+          <button class="contact__item__action" @click="copyEmail">
             <i :class="copying ? 'bi bi-check' : 'bi bi-clipboard'"></i>
           </button>
         </div>
       </div>
       <span
-        id="contact__email-feedback"
+        class="contact__item-feedback"
         :class="copying ? 'feedback-animation' : ''"
         >{{ texts[language].contact.email.feedback }}</span
       >
+    </div>
+    <div class="contact__item">
+      <p class="contact__item-icon"><i class="bi bi-whatsapp"></i></p>
+      <h4 class="contact__item-title">
+        {{ texts[language].contact.email.description }}
+      </h4>
+      <div class="contact__item__input">
+        <div class="contact__item__input__wrapper">
+          <span>{{ number }}</span>
+          <a class="contact__item__action" target="_blank" href="https://wa.me/5547996458019">
+            <i class="bi bi-send"></i>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -32,6 +46,7 @@ export default {
       texts,
       email: 'vinigsouza.bnu@gmail.com',
       emailIcon: 'bi bi-clipboard',
+      number: '+55 47 99645-8019',
       copying: false,
     }
   },

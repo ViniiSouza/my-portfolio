@@ -14,28 +14,28 @@
   font-size: 1.6rem;
 }
 
-#contact__email {
+.contact__item {
   text-align: center;
 }
 
-#contact__email-icon {
+.contact__item-icon {
   font-size: 4rem;
   text-align: center;
   margin: 0 auto;
 }
 
-#contact__email__input {
+.contact__item__input {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#contact__email__input__wrapper {
+.contact__item__input__wrapper {
   border: 1px solid var(--white);
   border-radius: 5px;
 }
 
-#contact__email__input span {
+.contact__item__input span {
   font-size: 1.3rem;
   border-radius: 5px 0 0 5px;
   border-right: none;
@@ -43,7 +43,7 @@
   height: 100%;
 }
 
-#contact__email__input button {
+.contact__item__action {
   background-color: rgba(0,0,0,0);
   border: none;
   border-left: 1px solid white;
@@ -53,7 +53,7 @@
   height: 100%;
 }
 
-#contact__email-feedback {
+.contact__item-feedback {
   user-select: none;
   opacity: 0;
 }
@@ -76,7 +76,7 @@
   #contact__title {
     font-size: 2.5rem;
   }
-  #contact__email__input span {
+  .contact__item__input span {
     font-size: 1.3rem;
   }
   .contact__item-title {
@@ -86,7 +86,7 @@
 
 /* Laptop */
 @media screen and (max-width: 1024px) {
-  #contact__email__input span, .contact__item-title {
+  .contact__item__input span, .contact__item-title {
     font-size: 1.2rem;
   }
 }
@@ -99,13 +99,13 @@
   #contact__title {
     font-size: 2rem;
   }
-  #contact__email__input span {
+  .contact__item__input span {
     font-size: 0.9rem;
   }
   .contact__item-title {
     font-size: 1.3rem;
   }
-  #contact__email-icon {
+  .contact__item-icon {
     font-size: 3rem;
   }
 }
@@ -118,13 +118,13 @@
   #contact__title {
     font-size: 2rem;
   }
-  #contact__email__input span {
+  .contact__item__input span {
     font-size: 0.8rem;
   }
   .contact__item-title {
     font-size: 1rem;
   }
-  #contact__email-icon {
+  .contact__item-icon {
     font-size: 2.5rem;
   }
 }
@@ -137,13 +137,13 @@
   #contact__title {
     font-size: 1.5rem;
   }
-  #contact__email__input span {
+  .contact__item__input span {
     font-size: 0.7rem;
   }
   .contact__item-title {
     font-size: 0.9rem;
   }
-  #contact__email-icon {
+  .contact__item-icon {
     font-size: 2rem;
   }
 }
