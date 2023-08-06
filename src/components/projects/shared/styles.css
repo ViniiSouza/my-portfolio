@@ -1,16 +1,16 @@
 #projects__section {
-  padding: 10vh 0;
+  padding: var(--section-padding);
 }
 
 #projects-title {
   text-align: center;
   font-family: var(--title-font);
-  font-size: 3rem;
+  font-size: var(--title-size);
 }
 
 .projects-text {
-  font-family: 'Montserrat';
-  font-size: 1.2rem;
+  font-family: var(--text-font);
+  font-size: var(--text-size);
   text-align: center;
 }
 
@@ -22,67 +22,19 @@
 }
 
 /* Laptop L */
-@media screen and (max-width: 1440px) {
-  #projects__section {
-    padding: 7vh 0;
-  }
-  #projects-title {
-    font-size: 2.5rem;
-  }
-  .projects-text {
-    font-size: 1.3rem;
-  }
-}
+@media screen and (max-width: 1440px) {}
 
 /* Laptop */
-@media screen and (max-width: 1024px) {
-  .projects-text {
-    font-size: 1.2rem;
-  }
-}
+@media screen and (max-width: 1024px) {}
 
 /* Tablet */
-@media screen and (max-width: 768px) {
-  #projects__section {
-    padding: 6vh 0;
-  }
-  #projects-title {
-    font-size: 2rem;
-  }
-  .projects-text {
-    font-size: 1rem;
-  }
-}
+@media screen and (max-width: 768px) {}
 
 /* Mobile L */
-@media screen and (max-width: 425px) {
-  #projects__section {
-    padding: 5vh 0;
-  }
-  #projects-title {
-    font-size: 2rem;
-  }
-  .projects-text {
-    font-size: 0.8rem;
-  }
-}
+@media screen and (max-width: 425px) {}
 
 /* Mobile M */
-@media screen and (max-width: 375px) {
-  #projects__section {
-    padding: 4vh 0;
-  }
-  #projects-title {
-    font-size: 1.5rem;
-  }
-  .projects-text {
-    font-size: 0.7rem;
-  }
-}
+@media screen and (max-width: 375px) {}
 
 /* Mobile S */
-@media screen and (max-width: 320px) {
-  .projects-text {
-    font-size: 0.55rem;
-  }
-}
+@media screen and (max-width: 320px) {}

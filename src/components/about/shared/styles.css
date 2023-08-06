@@ -1,85 +1,36 @@
-#home-content {
-  font-family: Calibri, sans-serif;
-}
-#intro-section {
+#about__section {
   background-color: var(--primary);
   color: var(--white);
-  padding: 10vh 0 10vh 0;
+  padding: var(--section-padding);
 }
-#intro-title {
+
+#about__title {
   font-family: var(--title-font);
-  font-size: 3rem;
+  font-size: var(--title-size);
   text-align: center;
 }
-#intro-text {
-  font-family: 'Montserrat', sans-serif;
+
+#about__text {
+  font-family: var(--text-font);
   text-align: justify;
   margin: 0 8vw 0 8vw;
-  font-size: 1.2rem;
+  font-size: var(--text-size);
 }
 
 /* Laptop L */
-@media screen and (max-width: 1440px) {
-  #intro-section {
-    padding: 7vh 0;
-  }
-  #intro-title {
-    font-size: 2.5rem;
-  }
-  #intro-text {
-    font-size: 1.3rem;
-  }
-}
+@media screen and (max-width: 1440px) {}
 
 /* Laptop */
-@media screen and (max-width: 1024px) {
-  #intro-text {
-    font-size: 1.2rem;
-  }
-}
+@media screen and (max-width: 1024px) {}
 
 /* Tablet */
-@media screen and (max-width: 768px) {
-  #intro-section {
-    padding: 6vh 0;
-  }
-  #intro-title {
-    font-size: 2rem;
-  }
-  #intro-text {
-    font-size: 0.9rem;
-  }
-}
+@media screen and (max-width: 768px) {}
 
 /* Mobile L */
-@media screen and (max-width: 425px) {
-  #intro-section {
-    padding: 5vh 0;
-  }
-  #intro-title {
-    font-size: 2rem;
-  }
-  #intro-text {
-    font-size: 0.8rem;
-  }
-}
+@media screen and (max-width: 425px) {}
 
 /* Mobile M */
-@media screen and (max-width: 375px) {
-  #intro-section {
-    padding: 4vh 0;
-  }
-  #intro-title {
-    font-size: 1.5rem;
-  }
-  #intro-text {
-    font-size: 0.7rem;
-  }
-}
+@media screen and (max-width: 375px) {}
 
 /* Mobile S */
-@media screen and (max-width: 320px) {
-  #intro-text {
-    font-size: 0.55rem;
-  }
-}
+@media screen and (max-width: 320px) {}

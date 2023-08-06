@@ -1,13 +1,13 @@
 #contact__section {
   background-color: var(--primary);
   color: var(--white);
-  padding: 6rem 0;
+  padding: var(--section-padding);
 }
 
 #contact__title {
   font-family: var(--title-font);
   text-align: center;
-  font-size: 3rem;
+  font-size: var(--title-size);
 }
 
 .contact__item-title {
@@ -36,7 +36,7 @@
 }
 
 .contact__item__input span {
-  font-size: 1.3rem;
+  font-size: var(--text-size);
   border-radius: 5px 0 0 5px;
   border-right: none;
   padding: 0.2rem 1rem;
@@ -44,7 +44,7 @@
 }
 
 .contact__item__action {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   border: none;
   border-left: 1px solid white;
   color: var(--white);
@@ -64,21 +64,16 @@
 
 @keyframes fade-in-out {
   0%, 100% {
-      opacity: 0;
+    opacity: 0;
   }
+
   50% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
 /* Laptop L */
 @media screen and (max-width: 1440px) {
-  #contact__title {
-    font-size: 2.5rem;
-  }
-  .contact__item__input span {
-    font-size: 1.3rem;
-  }
   .contact__item-title {
     font-size: 1.4rem;
   }
@@ -86,25 +81,17 @@
 
 /* Laptop */
 @media screen and (max-width: 1024px) {
-  .contact__item__input span, .contact__item-title {
+  .contact__item-title {
     font-size: 1.2rem;
   }
 }
 
 /* Tablet */
 @media screen and (max-width: 768px) {
-  #contact__section {
-    padding: 6vh 0;
-  }
-  #contact__title {
-    font-size: 2rem;
-  }
-  .contact__item__input span {
-    font-size: 0.9rem;
-  }
   .contact__item-title {
     font-size: 1.3rem;
   }
+
   .contact__item-icon {
     font-size: 3rem;
   }
@@ -112,18 +99,10 @@
 
 /* Mobile L */
 @media screen and (max-width: 425px) {
-  #contact__section {
-    padding: 5vh 0;
-  }
-  #contact__title {
-    font-size: 2rem;
-  }
-  .contact__item__input span {
-    font-size: 0.8rem;
-  }
   .contact__item-title {
     font-size: 1rem;
   }
+
   .contact__item-icon {
     font-size: 2.5rem;
   }
@@ -131,26 +110,14 @@
 
 /* Mobile M */
 @media screen and (max-width: 375px) {
-  #contact__section {
-    padding: 4vh 0;
-  }
-  #contact__title {
-    font-size: 1.5rem;
-  }
-  .contact__item__input span {
-    font-size: 0.7rem;
-  }
   .contact__item-title {
     font-size: 0.9rem;
   }
+
   .contact__item-icon {
     font-size: 2rem;
   }
 }
 
 /* Mobile S */
-@media screen and (max-width: 320px) {
-  #intro-text {
-    font-size: 0.55rem;
-  }
-}
+@media screen and (max-width: 320px) {}

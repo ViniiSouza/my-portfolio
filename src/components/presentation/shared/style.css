@@ -45,7 +45,7 @@
 }
 
 .introduction__description-text {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--text-font);
     font-size: 1.5em;
     text-align: right;
     width: 50%;

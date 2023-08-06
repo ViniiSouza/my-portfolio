@@ -83,14 +83,14 @@
 #skills__result-container {
   background-color: var(--white);
   padding: 1rem;
-  font-family: "Montserrat"
+  font-family: var(--text-font)
 }
 
 .skills__result__title {
   font-family: var(--title-font);
   color: var(--primary);
   text-align: center;
-  font-size: 2rem;
+  font-size: var(--title-size);
   font-weight: bold;
 }
 
@@ -101,15 +101,11 @@
 }
 
 .skills__result__item-description {
-  font-size: 1.2rem;
+  font-size: var(--text-size);
 }
 
 /* Laptop L */
 @media screen and (max-width: 1440px) {
-  .skills__result__title {
-    font-size: 1.8rem;
-  }
-
   .skills__code-header {
     font-size: 1.1rem;
   }
@@ -121,18 +117,10 @@
   .skills__result__item-title {
     font-size: 1.4rem;
   }
-
-  .skills__result__item-description {
-    font-size: 1.2rem
-  }
 }
 
 /* Laptop */
 @media screen and (max-width: 1024px) {
-  .skills__result__title {
-    font-size: 1.6rem;
-  }
-
   .skills__code-header {
     font-size: 1rem;
   }
@@ -143,10 +131,6 @@
 
   .skills__result__item-title {
     font-size: 1.2rem;
-  }
-
-  .skills__result__item-description {
-    font-size: 1rem
   }
 }
 
@@ -160,10 +144,6 @@
     display: none;
   }
 
-  .skills__result__title {
-    font-size: 2rem;
-  }
-
   #skills__result-container {
     text-align: center;
   }
@@ -171,18 +151,10 @@
   .skills__result__item-title {
     font-size: 1.3rem;
   }
-
-  .skills__result__item-description {
-    font-size: 0.9rem
-  }
 }
 
 /* Mobile L */
 @media screen and (max-width: 425px) {
-  .skills__result__title {
-    font-size: 2rem;
-  }
-
   #skills__result-container {
     text-align: center;
   }
@@ -190,28 +162,16 @@
   .skills__result__item-title {
     font-size: 1rem;
   }
-
-  .skills__result__item-description {
-    font-size: 0.8rem
-  }
 }
 
 /* Mobile M */
 @media screen and (max-width: 375px) {
-  .skills__result__title {
-    font-size: 1.5rem;
-  }
-
   #skills__result-container {
     text-align: center;
   }
 
   .skills__result__item-title {
     font-size: 0.9rem;
-  }
-
-  .skills__result__item-description {
-    font-size: 0.7rem
   }
 }
 

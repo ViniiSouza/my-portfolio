@@ -1,11 +1,11 @@
 #knowledge__section {
-  padding: 10rem 0;
+  padding: var(--section-padding);
   background-color: var(--primary);
   color: white;
 }
 
 #knowledge__title {
-  font-size: 3rem;
+  font-size: var(--title-size);
   font-family: var(--title-font);
   text-align: center;
 }
@@ -35,7 +35,7 @@
 .knowledge__stack-area-button {
   width: 100%;
   font-size: 1.1rem;
-  font-family: 'Montserrat';
+  font-family: var(--text-font);
   border: none;
   border-radius: 0.3rem;
 }
@@ -73,7 +73,7 @@
 .knowledge__stack-info-title {
   display: inline-block;
   font-size: 2rem;
-  font-family: 'Montserrat';
+  font-family: var(--text-font);
   font-weight: bold;
   line-height: normal;
   margin-left: 0.5rem;
@@ -94,8 +94,8 @@
 
 .knowledge__stack-info-description {
   display: block;
-  font-size: 1.2rem;
-  font-family: 'Montserrat';
+  font-size: var(--text-size);
+  font-family: var(--text-font);
   height: 18rem;
   overflow-y: scroll;
 }
@@ -104,33 +104,35 @@
   #knowledge__stack-grid {
     height: calc(3 * (9rem));
   }
+
   .knowledge__stack-info-card {
     margin-top: 0.5rem;
     height: 20rem;
   }
+
   .knowledge__stack-info-description {
     height: 13rem;
   }
 }
 
 @media screen and (max-width: 1080px) {
-  #knowledge__title {
-    font-size: 2.5rem;
-  }
   #knowledge__stack-grid {
     height: calc(3 * (8rem));
   }
+
   .knowledge__stack-info-card {
     width: 30rem;
     height: 15rem;
   }
+
   .knowledge__stack-info-title {
     font-size: 1.5rem;
   }
+
   .knowledge__stack-info-description {
-    font-size: 1.1rem;
     height: 8rem;
   }
+
   .knowledge__stack-area-button {
     font-size: 1rem;
   }
@@ -143,48 +145,42 @@
 }
 
 @media screen and (max-width: 720px) {
-  #knowledge__section {
-    padding: 6rem 0;
-  }
   #knowledge__stack-grid {
     height: calc(3 * (7rem));
   }
+
   .knowledge__stack-info-card {
     width: 25rem;
     height: 15rem;
   }
+
   .knowledge__stack-info-title {
     font-size: 1.3rem;
   }
-  .knowledge__stack-info-description {
-    font-size: 1rem;
-  }
+
   .knowledge__stack-area-button {
     font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 540px) {
-  #knowledge__section {
-    padding: 5rem 0;
-  }
-  #knowledge__title {
-    font-size: 2rem;
-  }
   #knowledge__stack-grid {
     height: calc(3 * (6rem));
   }
+
   .knowledge__stack-info-card {
     width: 20rem;
     height: 11rem;
   }
+
   .knowledge__stack-info-title {
     font-size: 1.1rem;
   }
+
   .knowledge__stack-info-description {
-    font-size: 0.8rem;
     height: 5rem
   }
+
   .knowledge__stack-area-button {
     font-size: 0.6rem;
   }
@@ -197,26 +193,23 @@
 }
 
 @media screen and (max-width: 360px) {
-  #knowledge__section {
-    padding: 3rem 0;
-  }
-  #knowledge__title {
-    font-size: 2rem;
-  }
   #knowledge__stack-grid {
     height: calc(3 * (5rem));
   }
+
   .knowledge__stack-info-card {
     width: 20rem;
     height: 11rem;
   }
+
   .knowledge__stack-info-title {
     font-size: 1rem;
   }
+
   .knowledge__stack-info-description {
-    font-size: 0.7rem;
     height: 5rem
   }
+
   .knowledge__stack-area-button {
     font-size: 0.6rem;
   }
@@ -228,6 +221,7 @@
   0% {
     transform: scale(0);
   }
+
   100% {
     transform: scale(1);
   }
