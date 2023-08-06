@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Language @languageChanged="changeLanguage"/>
+    <Language @languageChanged="changeLanguage" />
     <Presentation :language="language" />
     <About :language="language" />
     <Projects :language="language" />
@@ -12,20 +12,20 @@
 </template>
 
 <script>
-import Presentation from './components/presentation/Presentation.vue';
-import Knowledge from './components/knowledge/Knowledge.vue';
-import Skills from './components/skills/Skills.vue'
 import About from './components/about/About.vue'
-import Language from './components/language/Language.vue';
-import Projects from './components/projects/Projects.vue';
-import Contact from './components/contact/Contact.vue';
-import Footer from './components/footer/Footer.vue';
+import Contact from './components/contact/Contact.vue'
+import Footer from './components/footer/Footer.vue'
+import Knowledge from './components/knowledge/Knowledge.vue'
+import Language from './components/language/Language.vue'
+import Presentation from './components/presentation/Presentation.vue'
+import Projects from './components/projects/Projects.vue'
+import Skills from './components/skills/Skills.vue'
 
 export default {
   name: 'App',
   data() {
     return {
-      language: localStorage.language
+      language: localStorage.language,
     }
   },
   components: {
@@ -41,8 +41,8 @@ export default {
   methods: {
     changeLanguage() {
       this.language = localStorage.language
-    }
-  }
+    },
+  },
 }
 </script>
 

@@ -40,7 +40,7 @@
   </div>
 </template>
 <script>
-import texts from '../../assets/texts/texts.js'
+import texts from '../../assets/texts/texts.json'
 // component style
 import './shared/style.css'
 

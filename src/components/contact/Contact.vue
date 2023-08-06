@@ -38,7 +38,7 @@
 </template>
 <script>
 import './shared/styles.css'
-import texts from '../../assets/texts/texts'
+import texts from '../../assets/texts/texts.json'
 
 export default {
   data() {

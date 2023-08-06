@@ -23,7 +23,7 @@
 import './shared/styles.css'
 
 import ProjectCard from './shared/project-card/ProjectCard.vue'
-import texts from '../../assets/texts/texts'
+import texts from '../../assets/texts/texts.json'
 
 export default {
   data() {

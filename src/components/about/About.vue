@@ -1,13 +1,13 @@
 <template>
     <div id="intro-section">
-      <h3 id="intro-title">{{ texts[language].home.introTitle }}</h3>
+      <h3 id="intro-title">{{ texts[language].about.introTitle }}</h3>
       <p id="intro-text">
-        {{ texts[language].home.introText }}
+        {{ texts[language].about.introText }}
         <a
           style="color: inherit"
           href="https://www.furb.br/pt/graduacao/ciencia-da-computacao"
           target="_blank"
-          >{{ texts[language].home.introCollege }}</a
+          >{{ texts[language].about.introCollege }}</a
         >.
       </p>
     </div>
@@ -15,7 +15,7 @@
 
 <script>
 import './shared/styles.css'
-import texts from '../../assets/texts/texts'
+import texts from '../../assets/texts/texts.json'
 
 export default {
   data() {

@@ -50,7 +50,7 @@
 // component style
 import './shared/style.css'
 import Stack from './shared/stack/Stack.vue'
-import texts from '../../assets/texts/texts'
+import texts from '../../assets/texts/texts.json'
 
 export default {
   data() {
