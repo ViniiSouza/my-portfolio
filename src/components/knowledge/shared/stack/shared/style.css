@@ -1,0 +1,118 @@
+.stack__container {
+    display: inline-block;
+    width: 9rem;
+    height: 9rem;
+    margin: 5px 5px;
+    overflow: hidden;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.stack__image {
+    width: 5rem;
+    transform: translateY(2rem);
+    transition: transform 0.5s ease;
+}
+
+.stack__name {
+    opacity: 0;
+    font-family: "Raleway";
+    font-weight: bold;
+    transition: opacity 0.1s linear;
+}
+
+.stack__container:hover .stack__image {
+    transform: translateY(0rem);
+}
+
+.stack__container:hover .stack__name {
+    opacity: 1;
+    transition: opacity 0.3s linear;
+}
+
+@media screen and (max-width: 1400px) {
+    .stack__container {
+        width: 8rem;
+        height: 8rem;
+    }
+    .stack__image {
+        width: 4rem;
+    }
+  }
+  
+  @media screen and (max-width: 1080px) {
+    .stack__container {
+        width: 7rem;
+        height: 7rem;
+    }
+    .stack__image {
+        width: 3.5rem;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .stack__container {
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+    .stack__image {
+        width: 3rem;
+        transform: translateY(1rem);
+    }
+    .stack__name {
+        opacity: 1;
+        transform: translateY(1rem);
+        font-size: 0.8rem;
+    }
+  }
+  
+  @media screen and (max-width: 720px) {
+    .stack__container {
+        width: 6rem;
+        height: 6rem;
+    }
+    .stack__image {
+        width: 3rem;
+    }
+  }
+  
+  @media screen and (max-width: 540px) {
+    .stack__container {
+        width: 5rem;
+        height: 5rem;
+    }
+    .stack__image {
+        width: 2rem;
+    }
+    .stack__name {
+        font-size: 0.7rem;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .stack__container {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    .stack__image {
+        width: 1.8rem;
+    }
+    .stack__name {
+        font-size: 0.6rem;
+    }
+  }
+  
+  @media screen and (max-width: 360px) {
+    .stack__container {
+        width: 4rem;
+        height: 4rem;
+    }
+    .stack__image {
+        width: 1.6rem;
+    }
+    .stack__name {
+        font-size: 0.5rem;
+    }
+  }

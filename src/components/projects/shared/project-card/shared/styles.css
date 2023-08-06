@@ -1,0 +1,211 @@
+.project__card {
+  width: 35%;
+  height: 500px;
+  margin: 0 2rem;
+}
+
+.project__card__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.project__card__laptop {
+  position: relative;
+  width: 500px;
+  height: 70%;
+  margin: auto;
+}
+
+.project__card__phone {
+  position: absolute;
+  left: 10px;
+  bottom: -110px;
+  width: 100px;
+  height: 100%;
+}
+
+.project__card__phone__wrapper {
+  position: relative;
+  width: 110px;
+  height: 50%;
+  margin: 10px;
+}
+
+.project__card__laptop--body, .project__card__laptop--img, .project__card__phone--body, .project__card__phone--img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.device-enter-active, .device-leave-active {
+  transition: opacity 0.5s;
+}
+
+.device-enter, .device-leave-to {
+  opacity: 0;
+}
+
+.project__card__techs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project__card__tech-item {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 5px;
+  margin: auto 5px;
+}
+
+.project__card__description {
+  font-weight: normal;
+  text-align: center;
+}
+
+.project__card__title {
+  text-align: center;
+}
+
+/* Laptop L */
+@media screen and (max-width: 1440px) {
+  .project__card {
+    width: 40%;
+  }
+
+  .project__card__laptop {
+    width: 400px;
+  }
+
+  .project__card__phone {
+    left: 30px;
+    bottom: -120px;
+  }
+
+  .project__card__phone__wrapper {
+    width: 80px;
+  }
+
+  .project__card__description {
+    font-size: 1.3rem;
+  }
+
+  .project__card__title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Laptop */
+@media screen and (max-width: 1024px) {
+  .project__card {
+    width: 60%;
+  }
+
+  .project__card__laptop {
+    width: 380px;
+  }
+
+  .project__card__phone {
+    left: 50px;
+  }
+
+  .project__card__description {
+    font-size: 1.2rem;
+  }
+
+  .project__card__title {
+    font-size: 2rem;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .project__card {
+    height: 450px;
+  }
+
+  .project__card__laptop {
+    width: 280px;
+  }
+
+  .project__card__phone {
+    left: 40px;
+    bottom: -100px;
+  }
+
+  .project__card__phone__wrapper {
+    width: 60px;
+  }
+
+  .project__card__description {
+    font-size: 1rem;
+  }
+
+  .project__card__title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile L */
+@media screen and (max-width: 425px) {
+  .project__card {
+    height: 400px;
+  }
+
+  .project__card__laptop {
+    width: 250px;
+    height: 55%;
+  }
+
+  .project__card__phone {
+    left: -25px;
+    bottom: -80px;
+  }
+
+  .project__card__phone__wrapper {
+    width: 50px;
+    height: 40%;
+  }
+}
+
+/* Mobile M */
+@media screen and (max-width: 375px) {
+  .project__card {
+    height: 300px;
+  }
+
+  .project__card__laptop {
+    width: 200px;
+    height: 50%;
+  }
+
+  .project__card__phone {
+    left: -20px;
+    bottom: -50px;
+  }
+
+  .project__card__phone__wrapper {
+    width: 42px;
+  }
+
+  .project__card__description {
+    font-size: 0.9rem;
+  }
+
+  .project__card__title {
+    font-size: 1.3rem;
+  }
+
+  .project__card__techs {
+    margin-top: 1rem;
+  }
+}
+
+/* Mobile S */
+@media screen and (max-width: 320px) {}

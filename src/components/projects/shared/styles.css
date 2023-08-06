@@ -1,0 +1,40 @@
+#projects__section {
+  padding: var(--section-padding);
+}
+
+#projects-title {
+  text-align: center;
+  font-family: var(--title-font);
+  font-size: var(--title-size);
+}
+
+.projects-text {
+  font-family: var(--text-font);
+  font-size: var(--text-size);
+  text-align: center;
+}
+
+.projects__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Laptop L */
+@media screen and (max-width: 1440px) {}
+
+/* Laptop */
+@media screen and (max-width: 1024px) {}
+
+/* Tablet */
+@media screen and (max-width: 768px) {}
+
+/* Mobile L */
+@media screen and (max-width: 425px) {}
+
+/* Mobile M */
+@media screen and (max-width: 375px) {}
+
+/* Mobile S */
+@media screen and (max-width: 320px) {}

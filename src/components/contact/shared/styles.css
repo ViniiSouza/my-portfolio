@@ -1,0 +1,123 @@
+#contact__section {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: var(--section-padding);
+}
+
+#contact__title {
+  font-family: var(--title-font);
+  text-align: center;
+  font-size: var(--title-size);
+}
+
+.contact__item-title {
+  font-size: 1.6rem;
+}
+
+.contact__item {
+  text-align: center;
+}
+
+.contact__item-icon {
+  font-size: 4rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact__item__input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__item__input__wrapper {
+  border: 1px solid var(--white);
+  border-radius: 5px;
+}
+
+.contact__item__input span {
+  font-size: var(--text-size);
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+  padding: 0.2rem 1rem;
+  height: 100%;
+}
+
+.contact__item__action {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-left: 1px solid white;
+  color: var(--white);
+  padding: 0.2rem 1rem;
+  font-size: 1.1rem;
+  height: 100%;
+}
+
+.contact__item-feedback {
+  user-select: none;
+  opacity: 0;
+}
+
+.feedback-animation {
+  animation: fade-in-out 2s;
+}
+
+@keyframes fade-in-out {
+  0%, 100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Laptop L */
+@media screen and (max-width: 1440px) {
+  .contact__item-title {
+    font-size: 1.4rem;
+  }
+}
+
+/* Laptop */
+@media screen and (max-width: 1024px) {
+  .contact__item-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .contact__item-title {
+    font-size: 1.3rem;
+  }
+
+  .contact__item-icon {
+    font-size: 3rem;
+  }
+}
+
+/* Mobile L */
+@media screen and (max-width: 425px) {
+  .contact__item-title {
+    font-size: 1rem;
+  }
+
+  .contact__item-icon {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile M */
+@media screen and (max-width: 375px) {
+  .contact__item-title {
+    font-size: 0.9rem;
+  }
+
+  .contact__item-icon {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile S */
+@media screen and (max-width: 320px) {}

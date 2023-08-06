@@ -1,0 +1,76 @@
+:root {
+  /* colors */
+  --primary: rebeccapurple;
+  --white: #fff;
+  --black: #000;
+
+  /* fonts */
+  --title-font: "Staatliches", sans-serif;
+  --text-font: "Montserrat", sans-serif;
+
+  /* elements size */
+  --title-size: 3rem;
+  --section-padding: 10vh 0;
+  --text-size: 1.2rem;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Laptop L */
+@media screen and (max-width: 1440px) {
+  :root {
+    --title-size: 2.5rem;
+    --section-padding: 7vh 0;
+  }
+}
+
+/* Laptop */
+@media screen and (max-width: 1024px) {}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  :root {
+    --title-size: 2rem;
+    --section-padding: 6vh 0;
+    --text-size: 0.9rem;
+  }
+}
+
+/* Mobile L */
+@media screen and (max-width: 425px) {
+  :root {
+    --section-padding: 5vh 0;
+    --text-size: 0.8rem;
+  }
+}
+
+/* Mobile M */
+@media screen and (max-width: 375px) {
+  :root {
+    --title-size: 1.5rem;
+    --section-padding: 4vh 0;
+    --text-size: 0.7rem;
+  }
+}
+
+/* Mobile S */
+@media screen and (max-width: 320px) {
+  :root {
+    --text-size: 0.55rem;
+  }
+}

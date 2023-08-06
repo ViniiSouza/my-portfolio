@@ -1,39 +1,74 @@
 <template>
   <div>
-    <div id="knowledge-section">
-      <h3 id="knowledge-title">{{ texts[language].knowledge.title }}</h3>
-      <p id="knowledge-text">
-        {{ texts[language].knowledge.text }}
-      </p>
-
-      <b-radio-group
-        v-model="selectedArea"
-        :options="areas"
-        class="knowledge-area-radio-group text-center"
-      >
-      </b-radio-group>
-
-      <Stack
-        v-for="item in filteredTechs"
-        :key="item.title"
-        :imgSrc="item.imgSrc"
-        :stackTitle="item.title"
-        :stackDescription="item.description"
-      />
+    <div id="knowledge__section">
+      <h3 id="knowledge__title">{{ texts[language].knowledge.title }}</h3>
+      <div id="knowledge__stack-container">
+        <div id="knowledge__stack-container-grid">
+          <div id="knowledge__stack-filter-grid">
+            <button
+              v-for="area in areas"
+              :key="area.value"
+              class="knowledge__stack-area-button"
+              :class="
+                selectedArea == area.value
+                  ? 'knowledge__stack-area-button--active'
+                  : ''
+              "
+              @click="filter(area.value)"
+            >
+              {{ area.text }}
+            </button>
+          </div>
+          <div id="knowledge__stack-grid">
+            <Stack
+              v-for="item in filteredTechs"
+              :key="item.id"
+              :imgSrc="item.imgSrc"
+              :stackTitle="item.title"
+              :stackDescription="item.description"
+              @selectStack="setStack(item)"
+            />
+          </div>
+        </div>
+        <div v-if="showStackInfo" class="knowledge__stack-info-card">
+          <div class="knowledge__stack-info-title">
+            {{ stackInformation.title }}
+          </div>
+          <div class="knowledge__stack-close-button" @click="closeStackInfo">
+            &times;
+          </div>
+          <hr class="mb-3 mx-50" />
+          <div class="knowledge__stack-info-description">
+            {{ stackInformation.description }}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 <script>
-import Stack from "./shared/stack/Stack.vue"
-import texts from "../../assets/texts/texts"
+// component style
+import './shared/style.css'
+import Stack from './shared/stack/Stack.vue'
+import texts from '../../assets/texts/texts.json'
 
 export default {
   data() {
     return {
       texts,
-      selectedArea: "all",
-      filteredTechs: texts[this.language].knowledge.techs
+      selectedArea: 'all',
+      filteredTechs: texts[this.language].knowledge.techs,
+      showStackInfo: false,
+      stackInformation: {
+        imageSource: '',
+        title: '',
+        description: '',
+      },
     }
+  },
+  mounted() {
+    this.startTiltEffect()
+    this.updateTechs()
   },
   props: {
     language: {
@@ -41,13 +76,53 @@ export default {
       default: 'pt',
     },
   },
+  computed: {
+    areas() {
+      return texts[this.language].knowledge.areas
+    },
+  },
   methods: {
     updateTechs() {
       if (this.selectedArea == 'all')
         this.filteredTechs = texts[this.language].knowledge.techs
       else
-        this.filteredTechs = texts[this.language].knowledge.techs.filter((item) => item.area == this.selectedArea)
-    }
+        this.filteredTechs = texts[this.language].knowledge.techs.filter(
+          (item) => item.area == this.selectedArea
+        )
+      if (this.showStackInfo && this.stackInformation) {
+        let updatedStack = texts[this.language].knowledge.techs.find(find => find.id == this.stackInformation.id)
+        this.setStack(updatedStack)
+      }
+      this.startTiltEffect()
+      this.stopTiltEffect()
+    },
+    filter(area) {
+      this.selectedArea = area
+    },
+    setStack(stack) {
+      this.showStackInfo = true
+      this.stackInformation = {
+        id: stack.id,
+        imageSource: stack.imgSrc,
+        title: stack.title,
+        description: stack.description,
+      }
+    },
+    closeStackInfo() {
+      this.showStackInfo = false
+    },
+    startTiltEffect() {
+      const plugin = document.createElement('script')
+      plugin.setAttribute('src', './src/assets/webkits/vanilla-tilt.js')
+      plugin.async = true
+      document.head.appendChild(plugin)
+    },
+    stopTiltEffect() {
+      const scriptElement = document.querySelector(
+        'script[src="./src/assets/webkits/vanilla-tilt.js"]'
+      )
+      document.head.removeChild(scriptElement)
+    },
   },
   computed: {
     areas() {
@@ -60,71 +135,8 @@ export default {
     },
     language() {
       this.updateTechs()
-    }
+    },
   },
   components: { Stack },
 }
 </script>
-<style>
-#knowledge-section {
-  background-color: rebeccapurple;
-  color: white;
-  padding: 10rem 0 10rem 0;
-}
-#knowledge-title {
-  font-family: "Staatliches", sans-serif;
-  font-size: 3rem;
-  text-align: center;
-}
-#knowledge-text {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
-  text-align: center;
-  margin: 1rem 8rem 2rem 8rem;
-}
-
-.knowledge-container {
-  font-family: "Raleway";
-  font-size: 2.5rem;
-  vertical-align: middle;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  display: flex;
-  flex-direction: row;
-}
-
-.knowledge-area-radio-group > div {
-  display: inline-block;
-  margin: 00 1rem 2rem 1rem;
-  font-size: 1.5rem;
-  font-weight: 100;
-  accent-color: rgb(150, 67, 228);
-}
-
-@media screen and (max-width: 1500px) {
-}
-@media screen and (max-width: 1024px) {
-  #knowledge-section {
-    padding: 5rem 0 5rem 0;
-  }
-  #knowledge-title {
-    font-size: 2.2rem;
-  }
-  #knowledge-text {
-    font-size: 1.2rem;
-    margin: 1rem 2.5rem 2rem 2.5rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  #knowledge-section {
-    padding: 3rem 0 3rem 0;
-  }
-  #knowledge-title {
-    font-size: 2.2rem;
-  }
-  #knowledge-text {
-    font-size: 1rem;
-    margin: 1rem 1.1rem 2rem 1.1rem;
-  }
-}
-</style>

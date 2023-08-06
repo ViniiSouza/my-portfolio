@@ -1,0 +1,249 @@
+#introduction__section {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--title-font);
+    align-items: center;
+    padding: 2.5rem 0;
+    user-select: none;
+}
+
+.introduction__hello-text {
+    font-family: "Raleway", sans-serif;
+    font-size: 2.5rem;
+    text-align: left;
+    padding-left: 0.5rem;
+    max-height: fit-content;
+}
+
+.introduction__name-container {
+    display: inline;
+    border-right: .15em solid rebeccapurple;
+    animation: typeWriter 0.75s step-end infinite;
+}
+
+.introduction__name-text {
+    align-self: flex-start;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    width: 0;
+    max-width: fit-content;
+    background-color: rgb(206, 206, 206);
+    padding: 0.2em 0 0.2em 0.2em;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    letter-spacing: .15em;
+}
+
+.introduction__profession-text {
+    font-family: var(--title-font);
+    font-size: 15em;
+    text-align: left;
+    line-height: 0.8;
+}
+
+.introduction__description-text {
+    font-family: var(--text-font);
+    font-size: 1.5em;
+    text-align: right;
+    width: 50%;
+    color: rgb(100, 100, 100);
+    line-height: 1.2;
+}
+
+
+/* Laptop L */
+@media screen and (max-width: 1440px) {
+    .introduction__hello-text {
+        font-size: 2rem;
+    }
+
+    .introduction__profession-text {
+        font-size: 12em;
+    }
+
+    .introduction__description-text {
+        font-size: 1.3em;
+        width: 70%;
+    }
+}
+
+/* Laptop */
+@media screen and (max-width: 1024px) {
+    .introduction__hello-text {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .introduction__profession-text {
+        font-size: 9em;
+    }
+
+    .introduction__description-text {
+        font-size: 1.2em;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    .introduction__hello-text {
+        font-size: 1.0rem;
+        font-weight: bold;
+    }
+
+    .introduction__profession-text {
+        font-size: 6em;
+    }
+
+    .introduction__description-text {
+        font-size: 0.9em;
+    }
+}
+
+/* Mobile L */
+@media screen and (max-width: 425px) {
+    .introduction__hello-text {
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .introduction__profession-text {
+        font-size: 5.5em;
+    }
+
+    .introduction__description-text {
+        font-size: 0.8em;
+        width: 85%;
+    }
+}
+
+/* Mobile M */
+@media screen and (max-width: 375px) {
+    .introduction__hello-text {
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    .introduction__profession-text {
+        font-size: 5em;
+    }
+
+    .introduction__description-text {
+        font-size: 0.7em;
+    }
+}
+
+/* Mobile S */
+@media screen and (max-width: 320px) {
+    .introduction__hello-text {
+        font-size: 0.65rem;
+        font-weight: bold;
+    }
+
+    .introduction__profession-text {
+        font-size: 4em;
+    }
+
+    .introduction__description-text {
+        font-size: 0.55em;
+    }
+}
+
+/* Typewriter animation - start */
+
+/* Typewriter cursor effect */
+@keyframes typeWriter {
+    from, to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--primary);
+    }
+}
+
+@keyframes writeFullName {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes eraseSurname {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 20%;
+    }
+}
+
+@keyframes eraseNickname {
+    from {
+        width: 20%;
+    }
+
+    to {
+        width: 10%;
+    }
+}
+
+@keyframes fixNickname {
+    from, to {
+        width: 10%;
+    }
+
+    50% {
+        width: 8.5%;
+    }
+}
+
+@keyframes eraseAll {
+    from {
+        width: 10%;
+    }
+
+    to {
+        width: 0%;
+    }
+}
+
+.introduction__name-animation--first {
+    animation: writeFullName 4s steps(35, end)
+}
+
+.introduction__name-animation--second {
+    animation: eraseSurname 3s steps(25, end)
+}
+
+.introduction__name-animation--third {
+    animation: eraseNickname 1s steps(5, end)
+}
+
+.introduction__name-animation--fourth {
+    animation: fixNickname 1s steps(1, end)
+}
+
+.introduction__name-animation--fifth {
+    animation: eraseAll 1s steps(5, end)
+}
+
+.introduction__name-text--full-name {
+    width: 100%;
+}
+
+.introduction__name-text--first-name {
+    width: 20%;
+}
+
+.introduction__name-text--nick-name {
+    width: 10%;
+}
+
+/* Typewriter animation - end */

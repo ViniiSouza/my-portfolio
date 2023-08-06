@@ -1,42 +1,48 @@
 <template>
   <div id="app">
-    <Language @languageChanged="changeLanguage"/>
-    <Home :language="language" />
-    <Knowledge :language="language" />
+    <Language @languageChanged="changeLanguage" />
+    <Presentation :language="language" />
+    <About :language="language" />
     <Projects :language="language" />
-    <AppInfo :language="language" />
+    <Knowledge :language="language" />
+    <Skills :language="language" />
+    <Contact :language="language" />
     <Footer :language="language" />
   </div>
 </template>
 
 <script>
-import Knowledge from './components/knowledge/Knowledge.vue';
-import Home from './components/home/Home.vue';
-import Language from './components/language/Language.vue';
-import Projects from './components/projects/Projects.vue';
-import AppInfo from './components/app-info/AppInfo.vue';
-import Footer from './components/footer/Footer.vue';
+import About from './components/about/About.vue'
+import Contact from './components/contact/Contact.vue'
+import Footer from './components/footer/Footer.vue'
+import Knowledge from './components/knowledge/Knowledge.vue'
+import Language from './components/language/Language.vue'
+import Presentation from './components/presentation/Presentation.vue'
+import Projects from './components/projects/Projects.vue'
+import Skills from './components/skills/Skills.vue'
 
 export default {
   name: 'App',
   data() {
     return {
-      language: localStorage.language
+      language: localStorage.language,
     }
   },
   components: {
-    Home,
-    Language,
+    Presentation,
     Knowledge,
+    Skills,
+    About,
+    Language,
     Projects,
-    AppInfo,
+    Contact,
     Footer,
   },
   methods: {
     changeLanguage() {
       this.language = localStorage.language
-    }
-  }
+    },
+  },
 }
 </script>
 
