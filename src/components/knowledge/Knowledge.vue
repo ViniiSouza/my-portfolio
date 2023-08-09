@@ -113,13 +113,13 @@ export default {
     },
     startTiltEffect() {
       const plugin = document.createElement('script')
-      plugin.setAttribute('src', './src/assets/webkits/vanilla-tilt.js')
+      plugin.setAttribute('src', './assets/webkits/vanilla-tilt.js')
       plugin.async = true
       document.head.appendChild(plugin)
     },
     stopTiltEffect() {
       const scriptElement = document.querySelector(
-        'script[src="./src/assets/webkits/vanilla-tilt.js"]'
+        'script[src="./assets/webkits/vanilla-tilt.js"]'
       )
       document.head.removeChild(scriptElement)
     },
