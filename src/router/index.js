@@ -12,6 +12,12 @@ const router = new VueRouter({
       path: '/',
       component: App
     },
+    {
+      path: '*',
+      redirect: () => {
+        return { path: '/' }
+      }
+    }
   ]
 })
 
