@@ -1,6 +1,6 @@
 #knowledge__section {
   padding: var(--section-padding);
-  background-color: var(--primary);
+  background-image: var(--primary-gradient);
   color: white;
 }
 

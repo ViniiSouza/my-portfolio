@@ -1,5 +1,5 @@
 #contact__section {
-  background-color: var(--primary);
+  background-image: var(--primary-gradient);
   color: var(--white);
   padding: var(--section-padding);
 }

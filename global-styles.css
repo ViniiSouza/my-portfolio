@@ -3,6 +3,7 @@
   --primary: rebeccapurple;
   --white: #fff;
   --black: #000;
+  --primary-gradient: radial-gradient(circle at -20.71% 50%, #be50d0 0, #9243b7 25%, #663399 50%, #3c237a 75%, #12165e 100%);
 
   /* fonts */
   --title-font: "Staatliches", sans-serif;
