@@ -60,8 +60,20 @@ export default {
   },
   methods: {
     updateValue(event, index) {
+      event.target.innerText = this.formatCode(event.target.innerText)
       this.codeStructure.content[index].value = event.target.innerText
       this.skills[index].value = this.updateResult(event.target.innerText)
+    },
+    formatCode(text) {
+      text = text.replace(/\r?\n|\r/g, '')
+      let items = text.split(',')
+      items = items.map(item => item.trim()).filter(item => item.trim() !== '');
+      for (let i = 0; i < items.length; i++) {
+        items[i] = items[i].trim()
+        items[i] = items[i].replace(/\"/g, '')
+        items[i] = "\"" + items[i] + "\""
+      }
+      return items.join(', ')
     },
     updateResult(text) {
       text = text.trim()
