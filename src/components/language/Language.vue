@@ -50,7 +50,13 @@ export default {
     };
   },
   created() {
-    this.changeLanguage(localStorage.language)
+    if (this.$route.query.language && ['en', 'pt'].includes(this.$route.query.language.toLowerCase())) {
+      this.changeLanguage(this.$route.query.language)
+    }
+    else {
+      this.$router.replace({'query': null})
+      this.changeLanguage(localStorage.language)
+    }
   },
   methods: {
     openSelect() {
@@ -60,13 +66,13 @@ export default {
       localStorage.setItem('language', language != null ? language : 'pt')
       if (language == "pt" || !language) {
         this.languageSelected = {
-          img: "https://recreio.uol.com.br/media/uploads/historia/brasil_e_portugal_capa.jpg",
+          img: "https://i.imgur.com/NkFj6Ni.jpg",
           name: "Português",
           value: "pt",
         }
       } else {
         this.languageSelected = {
-          img: "https://cdn.w600.comps.canstockphoto.com.br/bandeira-l%C3%ADngua-ingl%C3%AAs-banco-de-ilustra%C3%A7%C3%A3o_csp8895196.jpg",
+          img: "https://i.imgur.com/7Lrop29.png",
           name: "English",
           value: "en",
         }
