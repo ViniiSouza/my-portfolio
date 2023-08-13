@@ -2,7 +2,7 @@
   "en": {
     "about": {
       "introTitle": "About me",
-      "introText": "My name is Vinícius, I'm 20 years old and I live in Blumenau, Santa Catarina, Brazil. As a software developer, I have experience in both backend and frontend, covering different technologies and frameworks. I have solid knowledge in React, Angular and Vue.js, applied in the development of attractive, responsive and well-structured interfaces. In the backend, I highlight my experience in C#, implementing services from the API to the database connection efficiently, with Entity Framework and Dapper, using the available resources in the best way, with high scalability. I am driven by the constant search for improvement and I see each new challenge as an opportunity for learning and professional growth. I am currently doing a bachelors degree in computer Science at FURB.",
+      "introText": "My name is Vinícius, I'm 20 years old and I live in Blumenau, Santa Catarina, Brazil. As a software developer, I have experience in both backend and frontend, covering different technologies and frameworks. I have deep knowledge in React, Angular and Vue.js, applied in the development of attractive, responsive and well-structured interfaces. In the backend, I highlight my experience in C#, implementing services from the API to the database connection efficiently, with Entity Framework and Dapper, using the available resources in the best way, with high scalability. I am driven by the constant search for improvement and I see each new challenge as an opportunity for learning and professional growth. I am currently doing a bachelors degree in Computer Science at FURB.",
       "introCollege": "Course curriculum"
     },
     "contact": {
@@ -128,7 +128,7 @@
       "title1": "Fullstack",
       "title2": "Developer",
       "description1": "Software Developer with more",
-      "description2": "than 2 years of solid experience."
+      "description2": "than 2 years of relevant experience."
     },
     "projects": {
       "title": "My projects",
