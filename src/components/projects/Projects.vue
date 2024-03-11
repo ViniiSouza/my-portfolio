@@ -1,5 +1,5 @@
 <template>
-  <div id="projects__section">
+  <section id="projects__section">
     <div id="projects-header">
       <h3 id="projects-title">{{ texts[language].projects.title }}</h3>
       <p class="projects-text">
@@ -17,7 +17,7 @@
         :title="project.title"
       />
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import './shared/styles.css'

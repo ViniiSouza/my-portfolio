@@ -9,7 +9,7 @@
     data-tilt-scale="1.05"
     @click="$emit('selectStack')"
   >
-    <img class="stack__image" :src="imgSrc" />
+    <img class="stack__image" :src="imgSrc" :alt="`${stackTitle} logo`"/>
     <div class="stack__name">{{ stackTitle }}</div>
   </div>
 </template>

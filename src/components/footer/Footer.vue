@@ -1,5 +1,5 @@
 <template>
-  <div id="footer__section">
+  <footer id="footer__section">
     <p id="footer__content">
       <b>Vinícius Gabriel de Souza</b
       ><a
@@ -25,7 +25,7 @@
         <i class="bi bi-file-earmark-fill"></i
       ></a>
     </p>
-  </div>
+  </footer>
 </template>
 <script>
 import './shared/styles.css'

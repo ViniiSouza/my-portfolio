@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <div id="knowledge__section">
+    <section id="knowledge__section">
       <h3 id="knowledge__title">{{ texts[language].knowledge.title }}</h3>
       <div id="knowledge__stack-container">
         <div id="knowledge__stack-container-grid">
@@ -43,8 +42,7 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
 </template>
 <script>
 // component style

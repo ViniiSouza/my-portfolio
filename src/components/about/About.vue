@@ -1,5 +1,5 @@
 <template>
-  <div id="about__section">
+  <section id="about__section">
     <h3 id="about__title">{{ texts[language].about.introTitle }}</h3>
     <p id="about__text">
       {{ texts[language].about.introText }}
@@ -10,7 +10,7 @@
         >{{ texts[language].about.introCollege }}</a
       >.
     </p>
-  </div>
+  </section>
 </template>
 
 <script>

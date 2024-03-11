@@ -1,5 +1,5 @@
 <template>
-  <div id="introduction__section">
+  <section id="introduction__section">
     <div class="introduction__wrapper">
       <div class="introduction__hello-text">
         {{ texts[language].presentation.introduction }}
@@ -19,7 +19,7 @@
       {{ texts[language].presentation.description1 }} <br />
       {{ texts[language].presentation.description2 }}
     </div>
-  </div>
+  </section>
 </template>
 <script>
 // component style

@@ -6,7 +6,7 @@
         class="language-option"
         @click="openSelect"
       >
-        <img class="language-image" :src="languageSelected.img" />
+        <img class="language-image" :src="languageSelected.img" :alt="`${languageSelected.name} flag`"/>
         <p class="option-language-text">{{ languageSelected.name }}</p>
       </div>
       <div v-if="open" class="language-options">
@@ -18,6 +18,7 @@
           <img
             class="language-image"
             src="https://i.imgur.com/NkFj6Ni.jpg"
+            alt="portuguese language flag"
           />
           <p class="option-language-text">Português</p>
         </div>
@@ -29,6 +30,7 @@
           <img
             class="language-image"
             src="https://i.imgur.com/7Lrop29.png"
+            alt="english language flag"
           />
           <p class="option-language-text">English</p>
         </div>

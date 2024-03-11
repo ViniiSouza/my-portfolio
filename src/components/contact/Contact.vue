@@ -1,5 +1,5 @@
 <template>
-  <div id="contact__section">
+  <section id="contact__section">
     <h3 id="contact__title">{{ texts[language].contact.title }}</h3>
     <div class="contact__item">
       <p class="contact__item-icon"><i class="bi bi-envelope-paper"></i></p>
@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import './shared/styles.css'

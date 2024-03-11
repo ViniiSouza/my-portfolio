@@ -1,5 +1,5 @@
 <template>
-  <div id="skills__container">
+  <section id="skills__container">
     <div id="skills__code-section">
       <code id="skills__code-container">
         <code class="skills__code-header">Portfolio > {{ language == 'en' ? 'skills' : 'habilidades' }}.json</code>
@@ -37,7 +37,7 @@
         <p class="skills__result__item-description">{{skill.value}}</p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import texts from '../../assets/texts/texts.json'
