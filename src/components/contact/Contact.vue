@@ -34,6 +34,20 @@
         </div>
       </div>
     </div>
+    <div class="contact__item">
+      <p class="contact__item-icon"><i class="bi bi-file-earmark-text"></i></p>
+      <h4 class="contact__item-title">
+        {{ texts[language].contact.cv.description }}
+      </h4>
+      <div class="contact__item__input">
+        <div class="contact__item__input__wrapper">
+          <span>Download:</span>
+          <a class="contact__item__action" target="_blank" href="https://wa.me/5547996458019">
+            <i class="bi bi-cloud-download"></i>
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 <script>
@@ -44,7 +58,7 @@ export default {
   data() {
     return {
       texts,
-      email: 'vinigsouza.bnu@gmail.com',
+      email: 'contact@souzavinicius.com',
       emailIcon: 'bi bi-clipboard',
       number: '+55 47 99645-8019',
       copying: false,

@@ -22,7 +22,7 @@
             : 'https://drive.google.com/file/d/1XOa4Or4heizqa4aWNHwvkqRCGL4BTOwj/view?usp=sharing'
         "
       >
-        <i class="bi bi-file-earmark-fill"></i
+        <i class="bi bi-file-earmark-text-fill"></i
       ></a>
     </p>
   </footer>

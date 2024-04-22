@@ -13,6 +13,9 @@
       },
       "whatsapp": {
         "description": "Send me a message"
+      },
+      "cv": {
+        "description": "Download my resume"
       }
     },
     "knowledge": {
@@ -207,6 +210,9 @@
       },
       "whatsapp": {
         "description": "Me envie uma mensagem"
+      },
+      "cv": {
+        "description": "Baixe meu currículo"
       }
     },
     "knowledge": {
