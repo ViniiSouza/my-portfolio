@@ -9,11 +9,11 @@
           </span>
         </div>
       </div>
-      <div class="introduction__profession-text">
+      <h1 class="introduction__profession-text">
         {{ texts[language].presentation.title1 }}
         <br />
         {{ texts[language].presentation.title2 }}
-      </div>
+      </h1>
     </div>
     <div class="introduction__description-text">
       {{ texts[language].presentation.description1 }} <br />

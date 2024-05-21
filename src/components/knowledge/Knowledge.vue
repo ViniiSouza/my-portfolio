@@ -1,6 +1,6 @@
 <template>
     <section id="knowledge__section">
-      <h3 id="knowledge__title">{{ texts[language].knowledge.title }}</h3>
+      <h2 id="knowledge__title">{{ texts[language].knowledge.title }}</h2>
       <div id="knowledge__stack-container">
         <div id="knowledge__stack-container-grid">
           <div id="knowledge__stack-filter-grid">

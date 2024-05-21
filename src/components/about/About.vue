@@ -1,6 +1,6 @@
 <template>
   <section id="about__section">
-    <h3 id="about__title">{{ texts[language].about.introTitle }}</h3>
+    <h2 id="about__title">{{ texts[language].about.introTitle }}</h2>
     <p id="about__text">
       {{ texts[language].about.introText }}
       <a

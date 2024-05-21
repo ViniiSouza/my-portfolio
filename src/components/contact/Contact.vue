@@ -1,6 +1,6 @@
 <template>
   <section id="contact__section">
-    <h3 id="contact__title">{{ texts[language].contact.title }}</h3>
+    <h2 id="contact__title">{{ texts[language].contact.title }}</h2>
     <div class="contact__item">
       <p class="contact__item-icon"><i class="bi bi-envelope-paper"></i></p>
       <h4 class="contact__item-title">

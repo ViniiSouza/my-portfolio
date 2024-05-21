@@ -38,7 +38,7 @@
         <h5 class="project__card__description">
           {{ shortDesc }}
         </h5>
-        <h3 class="project__card__title">{{ title }}</h3>
+        <h2 class="project__card__title">{{ title }}</h2>
       </div>
     </div>
   </div>

@@ -1,7 +1,7 @@
 <template>
   <section id="projects__section">
     <div id="projects-header">
-      <h3 id="projects-title">{{ texts[language].projects.title }}</h3>
+      <h2 id="projects-title">{{ texts[language].projects.title }}</h2>
       <p class="projects-text">
         {{ texts[language].projects.description }}
       </p>
