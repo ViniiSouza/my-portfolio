@@ -40,7 +40,7 @@
 .introduction__profession-text {
     font-family: var(--title-font);
     font-size: 15em;
-    text-align: left;
+    text-align: center;
     line-height: 0.8;
 }
 
