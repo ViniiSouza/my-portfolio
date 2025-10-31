@@ -56,8 +56,14 @@ export default {
       this.changeLanguage(this.$route.query.language)
     }
     else {
-      this.$router.replace({'query': null})
-      this.changeLanguage(localStorage.language)
+      if (Object.keys(this.$route.query).length > 0) {
+        this.$router.replace({ query: {} }).catch(err => {
+          if (err.name !== 'NavigationDuplicated') {
+            throw err
+          }
+        })
+      }
+      this.changeLanguage(localStorage.language || 'pt')
     }
   },
   methods: {

@@ -21,4 +21,22 @@ const router = new VueRouter({
   ]
 })
 
+const originalPush = router.push
+router.push = function push(location) {
+  return originalPush.call(this, location).catch(err => {
+    if (err.name !== 'NavigationDuplicated') {
+      return Promise.reject(err)
+    }
+  })
+}
+
+const originalReplace = router.replace
+router.replace = function replace(location) {
+  return originalReplace.call(this, location).catch(err => {
+    if (err.name !== 'NavigationDuplicated') {
+      return Promise.reject(err)
+    }
+  })
+}
+
 export default router
