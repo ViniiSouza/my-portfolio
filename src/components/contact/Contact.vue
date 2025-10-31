@@ -9,7 +9,11 @@
       <div class="contact__item__input">
         <div class="contact__item__input__wrapper">
           <span>{{ email }}</span>
-          <button class="contact__item__action" @click="copyEmail">
+          <button 
+            class="contact__item__action" 
+            :aria-label="copying ? texts[language].contact.email.ariaLabelCopied : texts[language].contact.email.ariaLabel"
+            @click="copyEmail"
+          >
             <i :class="copying ? 'bi bi-check' : 'bi bi-clipboard'"></i>
           </button>
         </div>
@@ -45,7 +49,7 @@
       </h4>
       <div class="contact__item__input">
         <div class="contact__item__input__wrapper">
-          <span>Download:</span>
+          <span>{{ texts[language].contact.cv.downloadLabel }}</span>
           <a
             class="contact__item__action"
             target="_blank"

@@ -13,6 +13,8 @@
                   ? 'knowledge__stack-area-button--active'
                   : ''
               "
+              :aria-label="`${texts[language].knowledge.ariaLabels.filterBy} ${area.text}`"
+              :aria-pressed="selectedArea === area.value"
               @click="filter(area.value)"
             >
               {{ area.text }}
@@ -33,9 +35,13 @@
           <div class="knowledge__stack-info-title">
             {{ stackInformation.title }}
           </div>
-          <div class="knowledge__stack-close-button" @click="closeStackInfo">
+          <button 
+            class="knowledge__stack-close-button" 
+            :aria-label="`${texts[language].knowledge.ariaLabels.closeInfo} ${stackInformation.title}`"
+            @click="closeStackInfo"
+          >
             &times;
-          </div>
+          </button>
           <hr class="mb-3 mx-50" />
           <div class="knowledge__stack-info-description">
             {{ stackInformation.description }}
@@ -120,11 +126,6 @@ export default {
         'script[src="./assets/webkits/vanilla-tilt.js"]'
       )
       document.head.removeChild(scriptElement)
-    },
-  },
-  computed: {
-    areas() {
-      return texts[this.language].knowledge.areas
     },
   },
   watch: {
