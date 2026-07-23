@@ -2,7 +2,7 @@
   "en": {
     "about": {
       "introTitle": "About me",
-      "introText": "My name is Vinícius, I'm 23 years old and I live in Blumenau, Santa Catarina, Brazil. As a software engineer, I have experience in both backend and frontend, covering different technologies and frameworks. I have deep knowledge in React, Angular and Vue.js, applied in the development of attractive, responsive and well-structured interfaces. In the backend, I highlight my experience in C#, implementing services from the API to the database connection efficiently, with Entity Framework and Dapper, using the available resources in the best way, with high scalability. I am currently improving my knowledge in the cloud, with platforms such as AWS and GCP. I am driven by the constant search for improvement and I see each new challenge as an opportunity for learning and professional growth. I am currently doing a bachelors degree in Computer Science at FURB.",
+      "introText": "My name is Vinícius and I'm a Backend Engineer based in Blumenau, Santa Catarina, Brazil. I specialize in C#/.NET, designing and implementing services from the API to the database with Entity Framework and Dapper, always trying to understand the problem and the business context before writing the first line of code. Over 4 years I've built and modernized business-critical systems: multi-tenant ERPs, biometric authentication with AWS Rekognition, real-time features with SignalR, and industrial platforms. I also have solid full-stack experience with React, TypeScript and Vue.js, which lets me work end to end when needed. I'm currently pursuing a bachelor's degree in Computer Science at FURB, and in 2026 I completed an academic exchange at Halmstad University, Sweden, studying Human-Centered AI, Big Data parallel programming and digital transformation.",
       "introCollege": "Course curriculum"
     },
     "contact": {
@@ -23,7 +23,7 @@
     },
     "knowledge": {
       "title": "Knowledge",
-      "text": "I'm always looking for learning, improving myself in technologies I already know and learning new technologies necessary for my daily routines. My role today is with an emphasis on the backend, but I have already worked as a fullstack. Below are the technologies I use the most.",
+      "text": "I'm always looking for learning, improving myself in technologies I already know and learning new technologies necessary for my daily routines. My work today is focused on the backend, with full-stack experience as a differential. Below are the technologies I use the most.",
       "ariaLabels": {
         "filterBy": "Filter technologies by",
         "closeInfo": "Close information about"
@@ -50,28 +50,21 @@
         {
           "id": "csharp",
           "title": "C Sharp",
-          "description": "Knowledge in classes, OOP (objects, encapsulation, inheritance, polymorphism, abstraction, etc.), partial classes, interfaces, exception handling. Use of Entity Framework working code first (or not), inherited classes, with creation and maintenance of CRUD's, tables, link between tables 1:1, N:1, N:N; Use of LINQ, with performative projections in databases and several other uses. SignalR for seamless connections and real-time updates. Use of external libraries in the projects worked on. API projects, class libraries, console, windows forms, etc.",
+          "description": "Knowledge in classes, OOP (objects, encapsulation, inheritance, polymorphism, abstraction, etc.), partial classes, interfaces, exception handling. Use of Entity Framework working code first (or not), inherited classes, with creation and maintenance of CRUD's, tables, link between tables 1:1, N:1, N:N; Use of LINQ, with performative projections in databases and several other uses. SignalR for seamless connections and real-time updates. Use of external libraries in the projects worked on. API projects, class libraries, console applications, etc.",
           "imgSrc": "https://i.imgur.com/S8I0J4D.png",
           "area": "backend"
         },
         {
-          "id": "vuejs",
-          "title": "VueJS",
-          "description": "Component creation and maintenance, route management, HTTP requests, conditional rendering, dynamic components, component styling, properties, methods, directives, vuex, and other integrations with the backend; Daily use of CompositionAPI and OptionsAPI; Vue2 and Vue3;",
-          "imgSrc": "https://i.imgur.com/hkyOatn.png",
-          "area": "frontend"
-        },
-        {
           "id": "sql",
           "title": "SQL",
-          "description": "Database manipulations, tables, columns and data. Filters in general, table relationships, primary and foreign keys, joins, etc.",
+          "description": "Daily work with PostgreSQL and SQL Server: modeling, complex queries, joins, indexing and query optimization. Experience adapting database-specific SQL during a SQL Server to PostgreSQL migration.",
           "imgSrc": "https://i.imgur.com/49NGDKg.png",
           "area": "backend"
         },
         {
           "id": "awsservices",
           "title": "AWS Services",
-          "description": "Knowledge in RDS and EC2, IAM, VPC's, subnets, security groups and more.",
+          "description": "Hands-on experience with S3 (document storage, multipart uploads), Rekognition/Face Liveness (biometric validation), EC2, IAM, VPC's, subnets, security groups and more.",
           "imgSrc": "https://i.imgur.com/w1sr2tW.png",
           "area": "devops"
         },
@@ -90,6 +83,13 @@
           "area": "frontend"
         },
         {
+          "id": "typescript",
+          "title": "TypeScript",
+          "description": "Daily use with React and Node.js for better control and management of data in applications.",
+          "imgSrc": "https://i.imgur.com/2AYM02p.png",
+          "area": "frontend"
+        },
+        {
           "id": "javascript",
           "title": "JavaScript",
           "description": "Functions, classes, loops, conditions, destructuring, DOM manipulations, ES6, axios requests and other general uses along with the frameworks I use.",
@@ -97,31 +97,17 @@
           "area": "frontend"
         },
         {
+          "id": "vuejs",
+          "title": "VueJS",
+          "description": "Component creation and maintenance, route management, HTTP requests, conditional rendering, dynamic components, component styling, properties, methods, directives, vuex, and other integrations with the backend; CompositionAPI and OptionsAPI; Vue2 and Vue3;",
+          "imgSrc": "https://i.imgur.com/hkyOatn.png",
+          "area": "frontend"
+        },
+        {
           "id": "bootstrap",
           "title": "Bootstrap",
           "description": "Using bootstrap elements, styling single elements, using bootstrap classes for document styling, using joint libraries (vue-bootstrap, angular-bootstrap), etc.",
           "imgSrc": "https://i.imgur.com/yX555KZ.png",
-          "area": "frontend"
-        },
-        {
-          "id": "html",
-          "title": "HTML",
-          "description": "Structures with semantic tags, form creations, accessibility, etc.",
-          "imgSrc": "https://i.imgur.com/un10rGr.png",
-          "area": "frontend"
-        },
-        {
-          "id": "css",
-          "title": "CSS",
-          "description": "Element styling, animations, pseudo-elements, advanced selectors, media queries, etc.",
-          "imgSrc": "https://i.imgur.com/TBdHWr3.png",
-          "area": "frontend"
-        },
-        {
-          "id": "typescript",
-          "title": "TypeScript",
-          "description": "Development with frameworks for better control and management of data in applications.",
-          "imgSrc": "https://i.imgur.com/2AYM02p.png",
           "area": "frontend"
         },
         {
@@ -135,10 +121,10 @@
     },
     "presentation": {
       "introduction": "Hi, I am",
-      "title1": "Fullstack",
+      "title1": "Backend",
       "title2": "Engineer",
-      "description1": "Software Engineer with more",
-      "description2": "than 4 years of relevant experience."
+      "description1": "Backend Engineer (.NET) with 4 years",
+      "description2": "of experience building business-critical systems."
     },
     "projects": {
       "title": "My projects",
@@ -146,8 +132,8 @@
       "items": [
         {
           "title": "ChitChat App",
-          "description": "A real-time chat application",
-          "techs": ["C#", "VueJS", "SignalR"],
+          "description": "A real-time chat application built with .NET and SignalR: private conversations, presence tracking, message requests and JWT authentication",
+          "techs": ["C#", ".NET 8", "SignalR", "VueJS"],
           "imgs": {
             "laptop": [
               "https://i.imgur.com/IDYHP8o.png",
@@ -171,17 +157,17 @@
         "content": [
           {
             "name": "mostConfidentWith",
-            "value": "\"C Sharp\", \"JavaScript\", \"VueJS\", \"React\", \"SQL\", \"Bootstrap\"",
+            "value": "\"C Sharp\", \".NET\", \"Entity Framework\", \"SQL\", \"React\", \"TypeScript\"",
             "end": "],"
           },
           {
             "name": "goodKnowledge",
-            "value": "\"Angular\", \"State management libraries (Redux and Vuex)\", \"Docker\"",
+            "value": "\"Node.js\", \"VueJS\", \"Redis\", \"Docker\", \"AWS\", \"SignalR\"",
             "end": "],"
           },
           {
             "name": "canManageWithHelp",
-            "value": "\"Java\", \"Python\", \"AWS\", \"TypeScript\"",
+            "value": "\"Kubernetes\", \"Terraform\", \"Go\", \"Python\"",
             "end": "]"
           }
         ]
@@ -190,15 +176,15 @@
       "skills": [
         {
           "title": "Most confident with",
-          "value": "C Sharp, JavaScript, VueJS, React, SQL and Bootstrap."
+          "value": "C Sharp, .NET, Entity Framework, SQL, React and TypeScript."
         },
         {
           "title": "I have good knowledge on",
-          "value": "Angular, State management libraries (redux and vuex) and docker."
+          "value": "Node.js, VueJS, Redis, Docker, AWS and SignalR."
         },
         {
           "title": "I can manage with some help",
-          "value": "Java, Python, AWS and TypeScript."
+          "value": "Kubernetes, Terraform, Go and Python."
         }
       ]
     }
@@ -206,7 +192,7 @@
   "pt": {
     "about": {
       "introTitle": "Sobre mim",
-      "introText": "Meu nome é Vinícius, tenho 23 anos e moro em Blumenau, Santa Catarina. Como engenheiro de software, possuo experiência tanto no backend quanto no frontend, abrangendo diversas tecnologias e frameworks. Tenho conhecimentos sólidos em React, Angular e Vue.js, aplicados no desenvolvimento de interfaces atraentes, responsivas e bem estruturadas. No backend, destaco minha experiência em C#, implementando serviços desde a API até a conexão ao banco de dados de forma eficiente, com Entity Framework e Dapper, utilizando os recursos disponibilizados da melhor forma, com alta escalabilidade. Atualmente estou aperfeiçoando meus conhecimentos em cloud, com plataformas como AWS e GCP. Sou movido pela busca constante de aprimoramento e encaro cada novo desafio como uma oportunidade de aprendizado e crescimento profissional. Atualmente estou cursando bacharelado em Ciências da Computação na FURB.",
+      "introText": "Meu nome é Vinícius e sou Backend Engineer em Blumenau, Santa Catarina. Sou especializado em C#/.NET, projetando e implementando serviços da API ao banco de dados com Entity Framework e Dapper, sempre buscando entender o problema e o contexto de negócio antes de escrever a primeira linha de código. Em 4 anos, construí e modernizei sistemas críticos de negócio: ERPs multi-tenant, autenticação biométrica com AWS Rekognition, recursos em tempo real com SignalR e plataformas industriais. Também tenho experiência full-stack sólida com React, TypeScript e Vue.js, o que me permite atuar de ponta a ponta quando necessário. Atualmente curso bacharelado em Ciência da Computação na FURB e, em 2026, realizei um intercâmbio acadêmico na Halmstad University, na Suécia, estudando IA centrada no humano, programação paralela para Big Data e transformação digital.",
       "introCollege": "Grade curricular do curso"
     },
     "contact": {
@@ -227,7 +213,7 @@
     },
     "knowledge": {
       "title": "Conhecimento",
-      "text": "Estou sempre em busca de aprendizado, me aprimorando em tecnologias que já conheço e aprendendo novas tecnologias necessárias para o meu dia a dia. Minha atuação hoje é com ênfase em backend, mas já trabalhei como fullstack. Abaixo estão as tecnologias que mais utilizo.",
+      "text": "Estou sempre em busca de aprendizado, me aprimorando em tecnologias que já conheço e aprendendo novas tecnologias necessárias para o meu dia a dia. Minha atuação hoje é focada em backend, com a experiência full-stack como diferencial. Abaixo estão as tecnologias que mais utilizo.",
       "ariaLabels": {
         "filterBy": "Filtrar tecnologias por",
         "closeInfo": "Fechar informações sobre"
@@ -254,28 +240,21 @@
         {
           "id": "csharp",
           "title": "C Sharp",
-          "description": "Conhecimento em classes, POO (objetos, encapsulamento, herança, polimorfismo, abstração, etc), partial classes, interfaces, tratamento de exceções. Uso do Entity Framework trabalhando code first(ou não), classes herdadas, com criação e manutenção de CRUD's, tabelas, vínculo entre tabelas 1:1, N:1, N:N; Uso do LINQ, com projeções performáticas em bancos de dados e diversos outros usos. SignalR para conexões contínuas e atualizações em tempo real. Uso de bibliotecas externas nos projetos trabalhados. Projetos de API, bibliotecas de classes, console, windows forms, etc.",
+          "description": "Conhecimento em classes, POO (objetos, encapsulamento, herança, polimorfismo, abstração, etc), partial classes, interfaces, tratamento de exceções. Uso do Entity Framework trabalhando code first(ou não), classes herdadas, com criação e manutenção de CRUD's, tabelas, vínculo entre tabelas 1:1, N:1, N:N; Uso do LINQ, com projeções performáticas em bancos de dados e diversos outros usos. SignalR para conexões contínuas e atualizações em tempo real. Uso de bibliotecas externas nos projetos trabalhados. Projetos de API, bibliotecas de classes, console, etc.",
           "imgSrc": "https://i.imgur.com/S8I0J4D.png",
           "area": "backend"
         },
         {
-          "id": "vuejs",
-          "title": "VueJS",
-          "description": "Criação e manutenção de componentes, gerenciamento de rotas, requisições HTTP, renderizações condicionais, componentes dinâmicos, estilizações de componentes, propriedades, métodos, diretivas, vuex, e demais integrações com o backend; Uso diário de CompositionAPI e OptionsAPI; Vue2 e Vue3;",
-          "imgSrc": "https://i.imgur.com/hkyOatn.png",
-          "area": "frontend"
-        },
-        {
           "id": "sql",
           "title": "SQL",
-          "description": "Manipulações de banco de dados, tabelas, colunas e dados. Filtros em geral, relacionamento de tabelas, chaves primárias e estrangeiras, joins, etc.",
+          "description": "Trabalho diário com PostgreSQL e SQL Server: modelagem, consultas complexas, joins, índices e otimização de consultas. Experiência adaptando SQL específico durante uma migração de SQL Server para PostgreSQL.",
           "imgSrc": "https://i.imgur.com/49NGDKg.png",
           "area": "backend"
         },
         {
           "id": "awsservices",
           "title": "AWS Services",
-          "description": "Conhecimentos em RDS e EC2, IAM, VPC's, subnets, grupos de segurança e mais.",
+          "description": "Experiência prática com S3 (armazenamento de documentos, uploads multipart), Rekognition/Face Liveness (validação biométrica), EC2, IAM, VPC's, subnets, grupos de segurança e mais.",
           "imgSrc": "https://i.imgur.com/w1sr2tW.png",
           "area": "devops"
         },
@@ -294,6 +273,13 @@
           "area": "frontend"
         },
         {
+          "id": "typescript",
+          "title": "TypeScript",
+          "description": "Uso diário com React e Node.js para melhor controle e gerenciamento dos dados nas aplicações.",
+          "imgSrc": "https://i.imgur.com/2AYM02p.png",
+          "area": "frontend"
+        },
+        {
           "id": "javascript",
           "title": "JavaScript",
           "description": "Funções, classes, loops, condições, destructuring, manipulações de DOM, ES6, requisições axios e outros usos gerais juntamente com os frameworks que utilizo.",
@@ -301,31 +287,17 @@
           "area": "frontend"
         },
         {
+          "id": "vuejs",
+          "title": "VueJS",
+          "description": "Criação e manutenção de componentes, gerenciamento de rotas, requisições HTTP, renderizações condicionais, componentes dinâmicos, estilizações de componentes, propriedades, métodos, diretivas, vuex, e demais integrações com o backend; CompositionAPI e OptionsAPI; Vue2 e Vue3;",
+          "imgSrc": "https://i.imgur.com/hkyOatn.png",
+          "area": "frontend"
+        },
+        {
           "id": "bootstrap",
           "title": "Bootstrap",
           "description": "Utilização de elementos bootstrap, estilizações de elementos únicos, utilização de classes bootstrap para estilização do documento, utilização de bibliotecas conjuntas (vue-bootstrap, angular-bootstrap), etc.",
           "imgSrc": "https://i.imgur.com/yX555KZ.png",
-          "area": "frontend"
-        },
-        {
-          "id": "html",
-          "title": "HTML",
-          "description": "Estruturas com tags semânticas, criações de formulários, acessibilidade, etc.",
-          "imgSrc": "https://i.imgur.com/un10rGr.png",
-          "area": "frontend"
-        },
-        {
-          "id": "css",
-          "title": "CSS",
-          "description": "Estilizações de elementos, animações, pseudo-elementos, seletores avançados, media queries, etc.",
-          "imgSrc": "https://i.imgur.com/TBdHWr3.png",
-          "area": "frontend"
-        },
-        {
-          "id": "typescript",
-          "title": "TypeScript",
-          "description": "Desenvolvimento junto aos frameworks para melhor controle e gerenciamento dos dados nas aplicações.",
-          "imgSrc": "https://i.imgur.com/2AYM02p.png",
           "area": "frontend"
         },
         {
@@ -339,10 +311,10 @@
     },
     "presentation": {
       "introduction": "Olá, eu sou o",
-      "title1": "Fullstack",
+      "title1": "Backend",
       "title2": "Engineer",
-      "description1": "Engenheiro de software com mais",
-      "description2": "de 4 anos de sólida experiência."
+      "description1": "Backend Engineer (.NET) com 4 anos",
+      "description2": "de experiência em sistemas críticos de negócio."
     },
     "projects": {
       "title": "Meus Projetos",
@@ -350,8 +322,8 @@
       "items": [
         {
           "title": "ChitChat App",
-          "description": "Um aplicativo de bate-papo em tempo real",
-          "techs": ["C#", "VueJS", "SignalR"],
+          "description": "Um chat em tempo real construído com .NET e SignalR: conversas privadas, presença online, solicitações de mensagem e autenticação JWT",
+          "techs": ["C#", ".NET 8", "SignalR", "VueJS"],
           "imgs": {
             "laptop": [
               "https://i.imgur.com/IDYHP8o.png",
@@ -375,17 +347,17 @@
         "content": [
           {
             "name": "maisConfianteCom",
-            "value": "\"C Sharp\", \"JavaScript\", \"VueJS\", \"React\", \"SQL\", \"Bootstrap\"",
+            "value": "\"C Sharp\", \".NET\", \"Entity Framework\", \"SQL\", \"React\", \"TypeScript\"",
             "end": "],"
           },
           {
             "name": "bomConhecimento",
-            "value": "\"Angular\", \"Bibliotecas de gerenciamento de estado (Redux e Vuex)\", \"Docker\"",
+            "value": "\"Node.js\", \"VueJS\", \"Redis\", \"Docker\", \"AWS\", \"SignalR\"",
             "end": "],"
           },
           {
             "name": "tenhoConhecimento",
-            "value": "\"Java\", \"Python\", \"AWS\", \"TypeScript\"",
+            "value": "\"Kubernetes\", \"Terraform\", \"Go\", \"Python\"",
             "end": "]"
           }
         ]
@@ -394,15 +366,15 @@
       "skills": [
         {
           "title": "Mais confiante com",
-          "value": "C Sharp, JavaScript, VueJS, React, SQL e Bootstrap."
+          "value": "C Sharp, .NET, Entity Framework, SQL, React e TypeScript."
         },
         {
           "title": "Tenho bons conhecimentos em",
-          "value": "Angular, Bibliotecas de gerenciamento de estado (redux e vuex) e docker."
+          "value": "Node.js, VueJS, Redis, Docker, AWS e SignalR."
         },
         {
           "title": "Tenho algum conhecimento em",
-          "value": "Java, Python, AWS e TypeScript."
+          "value": "Kubernetes, Terraform, Go e Python."
         }
       ]
     }

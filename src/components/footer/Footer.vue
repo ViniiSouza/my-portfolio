@@ -10,7 +10,7 @@
       ><a
         class="footer__icon"
         target="_blank"
-        href="https://www.linkedin.com/in/vin%C3%ADcius-gabriel-de-souza/"
+        href="https://www.linkedin.com/in/vinicius-gabriel-de-souza/"
         ><i class="bi bi-linkedin"></i
       ></a>
       <a
