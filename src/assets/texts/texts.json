@@ -221,7 +221,7 @@
             "end": "],"
           },
           {
-            "name": "canManageWithHelp",
+            "name": "familiarWith",
             "value": "\"Kubernetes\", \"Terraform\", \"Go\", \"Python\"",
             "end": "]"
           }
@@ -238,7 +238,7 @@
           "value": "Node.js, VueJS, Redis, Docker, AWS and SignalR."
         },
         {
-          "title": "I can manage with some help",
+          "title": "Familiar with",
           "value": "Kubernetes, Terraform, Go and Python."
         }
       ]
@@ -466,7 +466,7 @@
             "end": "],"
           },
           {
-            "name": "tenhoConhecimento",
+            "name": "familiaridadeCom",
             "value": "\"Kubernetes\", \"Terraform\", \"Go\", \"Python\"",
             "end": "]"
           }
@@ -483,7 +483,7 @@
           "value": "Node.js, VueJS, Redis, Docker, AWS e SignalR."
         },
         {
-          "title": "Tenho algum conhecimento em",
+          "title": "Tenho familiaridade com",
           "value": "Kubernetes, Terraform, Go e Python."
         }
       ]

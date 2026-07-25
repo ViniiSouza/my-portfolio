@@ -1,7 +1,7 @@
 .project__card {
   width: 35%;
-  height: 560px;
-  margin: 0 2rem 2rem;
+  height: auto;
+  margin: 0 2rem 4rem;
 }
 
 .project__card__wrapper {
@@ -13,7 +13,7 @@
 .project__card__laptop {
   position: relative;
   width: 500px;
-  height: 70%;
+  height: 340px;
   margin: auto;
 }
 
@@ -124,6 +124,7 @@
 
   .project__card__laptop {
     width: 400px;
+    height: 280px;
   }
 
   .project__card__phone {
@@ -152,6 +153,7 @@
 
   .project__card__laptop {
     width: 380px;
+    height: 260px;
   }
 
   .project__card__phone {
