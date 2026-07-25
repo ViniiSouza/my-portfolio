@@ -1,9 +1,9 @@
 :root {
   /* colors */
-  --primary: rebeccapurple;
+  --primary: #4338ca;
   --white: #fff;
   --black: #000;
-  --primary-gradient: radial-gradient(circle at -20.71% 50%, #be50d0 0, #9243b7 25%, #663399 50%, #3c237a 75%, #12165e 100%);
+  --primary-gradient: radial-gradient(circle at -20.71% 50%, #818cf8 0, #6366f1 25%, #4338ca 50%, #3730a3 75%, #1e1b4b 100%);
 
   /* fonts */
   --title-font: "Staatliches", sans-serif;

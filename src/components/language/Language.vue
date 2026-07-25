@@ -2,7 +2,7 @@
   <div>
     <div class="floating-button">
       <div
-        style="border: 2px solid rebeccapurple; border-radius: 5px"
+        style="border: 2px solid var(--primary); border-radius: 5px"
         class="language-option"
         @click="openSelect"
       >
