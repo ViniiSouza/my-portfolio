@@ -7,7 +7,6 @@
     data-tilt-max-glare="0.25"
     data-tilt-glare="true"
     data-tilt-scale="1.05"
-    @click="$emit('selectStack')"
   >
     <img class="stack__image" :src="imgSrc" :alt="`${stackTitle} logo`"/>
     <div class="stack__name">{{ stackTitle }}</div>
@@ -27,10 +26,6 @@ export default {
       type: String,
     },
     stackTitle: {
-      default: 'vazio',
-      type: String,
-    },
-    stackDescription: {
       default: 'vazio',
       type: String,
     },

@@ -25,8 +25,7 @@
       "title": "Knowledge",
       "text": "I'm always looking for learning, improving myself in technologies I already know and learning new technologies necessary for my daily routines. My work today is focused on the backend, with full-stack experience as a differential. Below are the technologies I use the most.",
       "ariaLabels": {
-        "filterBy": "Filter technologies by",
-        "closeInfo": "Close information about"
+        "filterBy": "Filter technologies by"
       },
       "areas": [
         {
@@ -50,71 +49,73 @@
         {
           "id": "csharp",
           "title": "C Sharp",
-          "description": "Knowledge in classes, OOP (objects, encapsulation, inheritance, polymorphism, abstraction, etc.), partial classes, interfaces, exception handling. Use of Entity Framework working code first (or not), inherited classes, with creation and maintenance of CRUD's, tables, link between tables 1:1, N:1, N:N; Use of LINQ, with performative projections in databases and several other uses. SignalR for seamless connections and real-time updates. Use of external libraries in the projects worked on. API projects, class libraries, console applications, etc.",
           "imgSrc": "https://i.imgur.com/S8I0J4D.png",
+          "area": "backend"
+        },
+        {
+          "id": "dotnet",
+          "title": ".NET",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg",
+          "area": "backend"
+        },
+        {
+          "id": "nodejs",
+          "title": "Node.js",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
           "area": "backend"
         },
         {
           "id": "sql",
           "title": "SQL",
-          "description": "Daily work with PostgreSQL and SQL Server: modeling, complex queries, joins, indexing and query optimization. Experience adapting database-specific SQL during a SQL Server to PostgreSQL migration.",
           "imgSrc": "https://i.imgur.com/49NGDKg.png",
+          "area": "backend"
+        },
+        {
+          "id": "postgresql",
+          "title": "PostgreSQL",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+          "area": "backend"
+        },
+        {
+          "id": "redis",
+          "title": "Redis",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
           "area": "backend"
         },
         {
           "id": "awsservices",
           "title": "AWS Services",
-          "description": "Hands-on experience with S3 (document storage, multipart uploads), Rekognition/Face Liveness (biometric validation), EC2, IAM, VPC's, subnets, security groups and more.",
           "imgSrc": "https://i.imgur.com/w1sr2tW.png",
           "area": "devops"
         },
         {
           "id": "docker",
           "title": "Docker",
-          "description": "Knowledge in creating Docker Compose, Dockerfile, shell scripts for container automation, etc.",
           "imgSrc": "https://i.imgur.com/zHfIPsI.png",
           "area": "devops"
         },
         {
           "id": "react",
           "title": "React",
-          "description": "Knowledge in components, props, conditional rendering, events, hooks, contextAPI, react-router-dom, forms with formik, yup, etc. Focus on componentization and component reuse.",
           "imgSrc": "https://i.imgur.com/UiiNh2d.png",
           "area": "frontend"
         },
         {
           "id": "typescript",
           "title": "TypeScript",
-          "description": "Daily use with React and Node.js for better control and management of data in applications.",
           "imgSrc": "https://i.imgur.com/2AYM02p.png",
           "area": "frontend"
         },
         {
           "id": "javascript",
           "title": "JavaScript",
-          "description": "Functions, classes, loops, conditions, destructuring, DOM manipulations, ES6, axios requests and other general uses along with the frameworks I use.",
           "imgSrc": "https://i.imgur.com/N5M2V1h.png",
           "area": "frontend"
         },
         {
           "id": "vuejs",
           "title": "VueJS",
-          "description": "Component creation and maintenance, route management, HTTP requests, conditional rendering, dynamic components, component styling, properties, methods, directives, vuex, and other integrations with the backend; CompositionAPI and OptionsAPI; Vue2 and Vue3;",
           "imgSrc": "https://i.imgur.com/hkyOatn.png",
-          "area": "frontend"
-        },
-        {
-          "id": "bootstrap",
-          "title": "Bootstrap",
-          "description": "Using bootstrap elements, styling single elements, using bootstrap classes for document styling, using joint libraries (vue-bootstrap, angular-bootstrap), etc.",
-          "imgSrc": "https://i.imgur.com/yX555KZ.png",
-          "area": "frontend"
-        },
-        {
-          "id": "angular",
-          "title": "Angular",
-          "description": "Knowledge in component creation and maintenance, route management, SPA, HTTP requests, ngModel, etc.",
-          "imgSrc": "https://i.imgur.com/si2CcC2.png",
           "area": "frontend"
         }
       ]
@@ -124,7 +125,9 @@
       "title1": "Backend",
       "title2": "Engineer",
       "description1": "Backend Engineer (.NET) with 4 years",
-      "description2": "of experience building business-critical systems."
+      "description2": "of experience building business-critical systems.",
+      "ctaProjects": "View projects",
+      "ctaResume": "Download resume"
     },
     "projects": {
       "title": "My projects",
@@ -133,7 +136,13 @@
         {
           "title": "ChitChat App",
           "description": "A real-time chat application built with .NET and SignalR: private conversations, presence tracking, message requests and JWT authentication",
-          "techs": ["C#", ".NET 8", "SignalR", "VueJS"],
+          "techs": [
+            "C#",
+            ".NET 8",
+            "SignalR",
+            "VueJS"
+          ],
+          "repo": "https://github.com/ViniiSouza/ChitChatBackend",
           "imgs": {
             "laptop": [
               "https://i.imgur.com/IDYHP8o.png",
@@ -148,6 +157,51 @@
               "https://i.imgur.com/wrYCvw9.png"
             ]
           }
+        },
+        {
+          "title": "Maritime Flow",
+          "description": "A distributed system simulating maritime traffic control: leader election, fault tolerance, messaging and observability across six services",
+          "techs": [
+            "Go",
+            "C#",
+            "Python",
+            "RabbitMQ",
+            "Kubernetes"
+          ],
+          "repo": "https://github.com/ViniiSouza/maritime_flow",
+          "icon": "bi bi-diagram-3"
+        },
+        {
+          "title": "Face Recognition",
+          "description": "Facial recognition system: register and identify people using Amazon Rekognition, S3 and PostgreSQL, with a camera-enabled Next.js frontend",
+          "techs": [
+            ".NET 8",
+            "AWS Rekognition",
+            "PostgreSQL",
+            "Next.js"
+          ],
+          "repo": "https://github.com/ViniiSouza/FaceRecognitionBackend",
+          "icon": "bi bi-person-bounding-box"
+        },
+        {
+          "title": "Big Data Sweden",
+          "description": "Distributed Machine Learning pipeline built with PySpark during an academic exchange in Sweden, measuring how parallelism affects training time",
+          "techs": [
+            "Python",
+            "PySpark",
+            "Machine Learning"
+          ],
+          "repo": "https://github.com/ViniiSouza/big_data_sweden",
+          "icon": "bi bi-bar-chart-line"
+        },
+        {
+          "title": "Compiler App",
+          "description": "Compiler for a custom language with lexical, syntactic and semantic analysis",
+          "techs": [
+            "Java"
+          ],
+          "repo": "https://github.com/ViniiSouza/compiler-app",
+          "icon": "bi bi-braces"
         }
       ]
     },
@@ -215,8 +269,7 @@
       "title": "Conhecimento",
       "text": "Estou sempre em busca de aprendizado, me aprimorando em tecnologias que já conheço e aprendendo novas tecnologias necessárias para o meu dia a dia. Minha atuação hoje é focada em backend, com a experiência full-stack como diferencial. Abaixo estão as tecnologias que mais utilizo.",
       "ariaLabels": {
-        "filterBy": "Filtrar tecnologias por",
-        "closeInfo": "Fechar informações sobre"
+        "filterBy": "Filtrar tecnologias por"
       },
       "areas": [
         {
@@ -240,71 +293,73 @@
         {
           "id": "csharp",
           "title": "C Sharp",
-          "description": "Conhecimento em classes, POO (objetos, encapsulamento, herança, polimorfismo, abstração, etc), partial classes, interfaces, tratamento de exceções. Uso do Entity Framework trabalhando code first(ou não), classes herdadas, com criação e manutenção de CRUD's, tabelas, vínculo entre tabelas 1:1, N:1, N:N; Uso do LINQ, com projeções performáticas em bancos de dados e diversos outros usos. SignalR para conexões contínuas e atualizações em tempo real. Uso de bibliotecas externas nos projetos trabalhados. Projetos de API, bibliotecas de classes, console, etc.",
           "imgSrc": "https://i.imgur.com/S8I0J4D.png",
+          "area": "backend"
+        },
+        {
+          "id": "dotnet",
+          "title": ".NET",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg",
+          "area": "backend"
+        },
+        {
+          "id": "nodejs",
+          "title": "Node.js",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
           "area": "backend"
         },
         {
           "id": "sql",
           "title": "SQL",
-          "description": "Trabalho diário com PostgreSQL e SQL Server: modelagem, consultas complexas, joins, índices e otimização de consultas. Experiência adaptando SQL específico durante uma migração de SQL Server para PostgreSQL.",
           "imgSrc": "https://i.imgur.com/49NGDKg.png",
+          "area": "backend"
+        },
+        {
+          "id": "postgresql",
+          "title": "PostgreSQL",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+          "area": "backend"
+        },
+        {
+          "id": "redis",
+          "title": "Redis",
+          "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
           "area": "backend"
         },
         {
           "id": "awsservices",
           "title": "AWS Services",
-          "description": "Experiência prática com S3 (armazenamento de documentos, uploads multipart), Rekognition/Face Liveness (validação biométrica), EC2, IAM, VPC's, subnets, grupos de segurança e mais.",
           "imgSrc": "https://i.imgur.com/w1sr2tW.png",
           "area": "devops"
         },
         {
           "id": "docker",
           "title": "Docker",
-          "description": "Conhecimentos em criações de Docker Compose, Dockerfile, scripts shell para automação de containers, etc.",
           "imgSrc": "https://i.imgur.com/zHfIPsI.png",
           "area": "devops"
         },
         {
           "id": "react",
           "title": "React",
-          "description": "Conhecimento em componentes, props, renderização condicional, eventos, hooks, contextAPI, react-router-dom, formulários com formik, yup, etc. Foco em componentização e reutilização dos componentes.",
           "imgSrc": "https://i.imgur.com/UiiNh2d.png",
           "area": "frontend"
         },
         {
           "id": "typescript",
           "title": "TypeScript",
-          "description": "Uso diário com React e Node.js para melhor controle e gerenciamento dos dados nas aplicações.",
           "imgSrc": "https://i.imgur.com/2AYM02p.png",
           "area": "frontend"
         },
         {
           "id": "javascript",
           "title": "JavaScript",
-          "description": "Funções, classes, loops, condições, destructuring, manipulações de DOM, ES6, requisições axios e outros usos gerais juntamente com os frameworks que utilizo.",
           "imgSrc": "https://i.imgur.com/N5M2V1h.png",
           "area": "frontend"
         },
         {
           "id": "vuejs",
           "title": "VueJS",
-          "description": "Criação e manutenção de componentes, gerenciamento de rotas, requisições HTTP, renderizações condicionais, componentes dinâmicos, estilizações de componentes, propriedades, métodos, diretivas, vuex, e demais integrações com o backend; CompositionAPI e OptionsAPI; Vue2 e Vue3;",
           "imgSrc": "https://i.imgur.com/hkyOatn.png",
-          "area": "frontend"
-        },
-        {
-          "id": "bootstrap",
-          "title": "Bootstrap",
-          "description": "Utilização de elementos bootstrap, estilizações de elementos únicos, utilização de classes bootstrap para estilização do documento, utilização de bibliotecas conjuntas (vue-bootstrap, angular-bootstrap), etc.",
-          "imgSrc": "https://i.imgur.com/yX555KZ.png",
-          "area": "frontend"
-        },
-        {
-          "id": "angular",
-          "title": "Angular",
-          "description": "Conhecimento em criação e manutenção de componentes, gerenciamento de rotas, SPA, requisições HTTP, ngModel, etc.",
-          "imgSrc": "https://i.imgur.com/si2CcC2.png",
           "area": "frontend"
         }
       ]
@@ -314,7 +369,9 @@
       "title1": "Backend",
       "title2": "Engineer",
       "description1": "Backend Engineer (.NET) com 4 anos",
-      "description2": "de experiência em sistemas críticos de negócio."
+      "description2": "de experiência em sistemas críticos de negócio.",
+      "ctaProjects": "Ver projetos",
+      "ctaResume": "Baixar currículo"
     },
     "projects": {
       "title": "Meus Projetos",
@@ -323,7 +380,13 @@
         {
           "title": "ChitChat App",
           "description": "Um chat em tempo real construído com .NET e SignalR: conversas privadas, presença online, solicitações de mensagem e autenticação JWT",
-          "techs": ["C#", ".NET 8", "SignalR", "VueJS"],
+          "techs": [
+            "C#",
+            ".NET 8",
+            "SignalR",
+            "VueJS"
+          ],
+          "repo": "https://github.com/ViniiSouza/ChitChatBackend",
           "imgs": {
             "laptop": [
               "https://i.imgur.com/IDYHP8o.png",
@@ -338,6 +401,51 @@
               "https://i.imgur.com/wrYCvw9.png"
             ]
           }
+        },
+        {
+          "title": "Maritime Flow",
+          "description": "Sistema distribuído simulando o controle de tráfego marítimo: eleição de líder, tolerância a falhas, mensageria e observabilidade em seis serviços",
+          "techs": [
+            "Go",
+            "C#",
+            "Python",
+            "RabbitMQ",
+            "Kubernetes"
+          ],
+          "repo": "https://github.com/ViniiSouza/maritime_flow",
+          "icon": "bi bi-diagram-3"
+        },
+        {
+          "title": "Face Recognition",
+          "description": "Sistema de reconhecimento facial: cadastro e identificação de pessoas com Amazon Rekognition, S3 e PostgreSQL, com frontend Next.js usando a câmera",
+          "techs": [
+            ".NET 8",
+            "AWS Rekognition",
+            "PostgreSQL",
+            "Next.js"
+          ],
+          "repo": "https://github.com/ViniiSouza/FaceRecognitionBackend",
+          "icon": "bi bi-person-bounding-box"
+        },
+        {
+          "title": "Big Data Sweden",
+          "description": "Pipeline distribuído de Machine Learning com PySpark, construído durante intercâmbio na Suécia, medindo o impacto do paralelismo no tempo de treino",
+          "techs": [
+            "Python",
+            "PySpark",
+            "Machine Learning"
+          ],
+          "repo": "https://github.com/ViniiSouza/big_data_sweden",
+          "icon": "bi bi-bar-chart-line"
+        },
+        {
+          "title": "Compiler App",
+          "description": "Compilador de uma linguagem própria com análise léxica, sintática e semântica",
+          "techs": [
+            "Java"
+          ],
+          "repo": "https://github.com/ViniiSouza/compiler-app",
+          "icon": "bi bi-braces"
         }
       ]
     },

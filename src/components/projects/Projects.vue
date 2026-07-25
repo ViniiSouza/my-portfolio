@@ -10,11 +10,13 @@
       <ProjectCard
         v-for="project in texts[language].projects.items"
         :key="project.title"
-        :laptop-imgs="project.imgs.laptop"
-        :phone-imgs="project.imgs.cellphone"
+        :laptop-imgs="project.imgs ? project.imgs.laptop : null"
+        :phone-imgs="project.imgs ? project.imgs.cellphone : null"
         :techs="project.techs"
         :short-desc="project.description"
         :title="project.title"
+        :repo-url="project.repo"
+        :icon="project.icon"
       />
     </div>
   </section>

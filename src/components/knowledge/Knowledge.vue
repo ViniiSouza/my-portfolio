@@ -26,25 +26,7 @@
               :key="item.id"
               :imgSrc="item.imgSrc"
               :stackTitle="item.title"
-              :stackDescription="item.description"
-              @selectStack="setStack(item)"
             />
-          </div>
-        </div>
-        <div v-if="showStackInfo" class="knowledge__stack-info-card">
-          <div class="knowledge__stack-info-title">
-            {{ stackInformation.title }}
-          </div>
-          <button 
-            class="knowledge__stack-close-button" 
-            :aria-label="`${texts[language].knowledge.ariaLabels.closeInfo} ${stackInformation.title}`"
-            @click="closeStackInfo"
-          >
-            &times;
-          </button>
-          <hr class="mb-3 mx-50" />
-          <div class="knowledge__stack-info-description">
-            {{ stackInformation.description }}
           </div>
         </div>
       </div>
@@ -62,12 +44,6 @@ export default {
       texts,
       selectedArea: 'all',
       filteredTechs: texts[this.language].knowledge.techs,
-      showStackInfo: false,
-      stackInformation: {
-        imageSource: '',
-        title: '',
-        description: '',
-      },
     }
   },
   mounted() {
@@ -93,27 +69,11 @@ export default {
         this.filteredTechs = texts[this.language].knowledge.techs.filter(
           (item) => item.area == this.selectedArea
         )
-      if (this.showStackInfo && this.stackInformation) {
-        let updatedStack = texts[this.language].knowledge.techs.find(find => find.id == this.stackInformation.id)
-        this.setStack(updatedStack)
-      }
       this.startTiltEffect()
       this.stopTiltEffect()
     },
     filter(area) {
       this.selectedArea = area
-    },
-    setStack(stack) {
-      this.showStackInfo = true
-      this.stackInformation = {
-        id: stack.id,
-        imageSource: stack.imgSrc,
-        title: stack.title,
-        description: stack.description,
-      }
-    },
-    closeStackInfo() {
-      this.showStackInfo = false
     },
     startTiltEffect() {
       const plugin = document.createElement('script')

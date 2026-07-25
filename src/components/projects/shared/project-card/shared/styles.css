@@ -1,7 +1,7 @@
 .project__card {
   width: 35%;
-  height: 500px;
-  margin: 0 2rem;
+  height: 560px;
+  margin: 0 2rem 2rem;
 }
 
 .project__card__wrapper {
@@ -42,6 +42,22 @@
   pointer-events: none;
 }
 
+.project__card__cover {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: var(--primary-gradient);
+  border-radius: 16px;
+}
+
+.project__card__cover i {
+  font-size: 5rem;
+  color: white;
+  opacity: 0.9;
+}
+
 .device-enter-active, .device-leave-active {
   transition: opacity 0.5s;
 }
@@ -72,6 +88,32 @@
 
 .project__card__title {
   text-align: center;
+}
+
+.project__card__links {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.project__card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  font-weight: 500;
+  font-family: var(--text-font);
+  border-radius: 10px;
+  padding: 5px 14px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.project__card__link:hover {
+  background-color: var(--primary);
+  color: white;
 }
 
 /* Laptop L */
@@ -128,11 +170,13 @@
 /* Tablet */
 @media screen and (max-width: 768px) {
   .project__card {
-    height: 450px;
+    height: auto;
+    margin-bottom: 3rem;
   }
 
   .project__card__laptop {
     width: 280px;
+    height: 200px;
   }
 
   .project__card__phone {
@@ -156,12 +200,12 @@
 /* Mobile L */
 @media screen and (max-width: 425px) {
   .project__card {
-    height: 400px;
+    height: auto;
   }
 
   .project__card__laptop {
     width: 250px;
-    height: 55%;
+    height: 180px;
   }
 
   .project__card__phone {
@@ -178,12 +222,12 @@
 /* Mobile M */
 @media screen and (max-width: 375px) {
   .project__card {
-    height: 300px;
+    height: auto;
   }
 
   .project__card__laptop {
     width: 200px;
-    height: 50%;
+    height: 150px;
   }
 
   .project__card__phone {

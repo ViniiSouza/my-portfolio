@@ -2,19 +2,24 @@
   <div class="project__card">
     <div class="project__card__wrapper">
       <div class="project__card__laptop">
-        <img
-          class="project__card__laptop--body"
-          src="https://i.imgur.com/gx1bIyJ.png"
-        />
-        <Transition name="device" mode="out-in">
+        <template v-if="hasImages">
           <img
-            v-if="showImage"
-            class="project__card__laptop--img"
-            :src="currentImage"
+            class="project__card__laptop--body"
+            src="https://i.imgur.com/gx1bIyJ.png"
           />
-        </Transition>
+          <Transition name="device" mode="out-in">
+            <img
+              v-if="showImage"
+              class="project__card__laptop--img"
+              :src="currentImage"
+            />
+          </Transition>
+        </template>
+        <div v-else class="project__card__cover">
+          <i :class="icon"></i>
+        </div>
       </div>
-      <div class="project__card__phone">
+      <div v-if="hasImages" class="project__card__phone">
         <div class="project__card__phone__wrapper">
           <img
             class="project__card__phone--body"
@@ -40,6 +45,17 @@
         </h5>
         <h2 class="project__card__title">{{ title }}</h2>
       </div>
+      <div v-if="repoUrl" class="project__card__links">
+        <a
+          class="project__card__link"
+          :href="repoUrl"
+          target="_blank"
+          rel="noreferrer"
+          :aria-label="`${title} on GitHub`"
+        >
+          <i class="bi bi-github"></i> GitHub
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -60,9 +76,11 @@ export default {
     },
     laptopImgs: {
       type: Array,
+      default: null,
     },
     phoneImgs: {
       type: Array,
+      default: null,
     },
     techs: {
       type: Array,
@@ -76,11 +94,24 @@ export default {
       type: String,
       default: '',
     },
+    repoUrl: {
+      type: String,
+      default: null,
+    },
+    icon: {
+      type: String,
+      default: 'bi bi-code-slash',
+    },
   },
   mounted() {
-    setInterval(this.changeImage, 5000)
+    if (this.hasImages) {
+      setInterval(this.changeImage, 5000)
+    }
   },
   computed: {
+    hasImages() {
+      return !!(this.laptopImgs && this.laptopImgs.length)
+    },
     currentImage() {
       return this.laptopImgs[this.currentIndex]
     },
