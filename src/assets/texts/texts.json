@@ -156,7 +156,8 @@
               "https://i.imgur.com/8HLo6vz.png",
               "https://i.imgur.com/wrYCvw9.png"
             ]
-          }
+          },
+          "icon": "bi bi-chat-dots"
         },
         {
           "title": "Maritime Flow",
@@ -400,7 +401,8 @@
               "https://i.imgur.com/8HLo6vz.png",
               "https://i.imgur.com/wrYCvw9.png"
             ]
-          }
+          },
+          "icon": "bi bi-chat-dots"
         },
         {
           "title": "Maritime Flow",

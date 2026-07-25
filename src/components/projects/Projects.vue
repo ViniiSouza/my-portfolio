@@ -7,11 +7,11 @@
       </p>
     </div>
     <div class="projects__wrapper">
+      <!-- Screenshots dos projetos (project.imgs) desativados por ora;
+           para reativar, volte a passar :laptop-imgs e :phone-imgs -->
       <ProjectCard
         v-for="project in texts[language].projects.items"
         :key="project.title"
-        :laptop-imgs="project.imgs ? project.imgs.laptop : null"
-        :phone-imgs="project.imgs ? project.imgs.cellphone : null"
         :techs="project.techs"
         :short-desc="project.description"
         :title="project.title"
