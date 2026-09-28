@@ -35,6 +35,7 @@ Only these, nowhere else:
 2. The rule above the hero aside sentence.
 3. Project category labels ("Sistemas distribuídos").
 4. Link underlines, nav hover underline, primary button hover, focus ring.
+5. The underline in the favicon.
 
 No magenta fills on large areas, no gradients, no glows.
 
@@ -52,6 +53,10 @@ No magenta fills on large areas, no gradients, no glows.
 - Container 1160px, gutter `clamp(1rem, 4vw, 2.5rem)`, section spacing `clamp(5rem, 11vw, 8.5rem)`.
 - Only the featured project is an elevated surface; project cards are bordered.
 - No big-number tiles: metrics belong inside sentences, with context.
+
+## Favicon
+
+"VS" in Familjen Grotesk 700 (outlined as paths), `#e4edf4` on a navy `#0c2238` rounded square, with a `#ff6fb1` underline that echoes the hero highlight. Files: `public/favicon.svg`, `public/favicon.ico` (16, 32, 48) and `public/apple-touch-icon.png` (180, full bleed).
 
 ## Motion
 
