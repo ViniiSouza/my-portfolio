@@ -1,0 +1,23 @@
+                        ┌──────────────────────────┐
+  Admin UI (React) ───► │ resource_manager (Node)  │──► PostgreSQL (shared state)
+                        │  + GitOps push ──────────┼──► cluster repo ──► K8s reconcile
+                        └──────────────────────────┘         (new tower pods)
+                                                      PostgreSQL
+                                                         ▲  leader writes: towers,
+                                                         │  structures, slots, lock
+ ┌──────────────┐  REST: /towers /structures /slots  ┌───┴──────────────────────┐
+ │ mobility_core│ ─────────────────────────────────► │ com_tower (minions)      │
+ │  vehicles    │                                    │  ├─ heartbeat ──► LEADER │
+ │  (C#/.NET)   │                                    │  ├─ acquire/release-slot │
+ └──────┬───────┘                                    │  └─ election ◄─► peers   │
+        │ AMQP (metrics, arrived/departed)           └──────┬───────────────────┘
+        ▼                                                   │ REST: /slots
+  ┌──────────── RabbitMQ ────────────┐               ┌──────▼────────┐
+  │ metrics · audit · towers queues  │               │ station_core  │
+  └───┬──────────────┬───────────────┘               │ (FastAPI)     │
+      ▼              ▼                               └───────────────┘
+ metrics_consumer  audit_manager
+      │              │
+      ▼              ▼
+ Prometheus       OpenSearch
+ (Pushgateway)    (audit trail)
