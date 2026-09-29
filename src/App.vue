@@ -1,54 +1,53 @@
 <template>
-  <div id="app">
-    <Language @languageChanged="changeLanguage" />
-    <Presentation :language="language" />
-    <About :language="language" />
-    <Projects :language="language" />
-    <Knowledge :language="language" />
-    <Skills :language="language" />
-    <Contact :language="language" />
-    <Footer :language="language" />
-  </div>
+  <a class="skip-link" href="#main">{{ t.nav.skip }}</a>
+  <SiteHeader />
+  <main id="main" tabindex="-1">
+    <HeroSection />
+    <ProjectsSection />
+    <StackSection />
+    <AboutSection />
+    <ContactSection />
+  </main>
+  <SiteFooter />
 </template>
 
-<script>
-import About from './components/about/About.vue'
-import Contact from './components/contact/Contact.vue'
-import Footer from './components/footer/Footer.vue'
-import Knowledge from './components/knowledge/Knowledge.vue'
-import Language from './components/language/Language.vue'
-import Presentation from './components/presentation/Presentation.vue'
-import Projects from './components/projects/Projects.vue'
-import Skills from './components/skills/Skills.vue'
+<script setup>
+import { watchEffect } from 'vue'
+import { useI18n } from './i18n/useI18n'
+import SiteHeader from './components/SiteHeader.vue'
+import HeroSection from './components/HeroSection.vue'
+import ProjectsSection from './components/ProjectsSection.vue'
+import StackSection from './components/StackSection.vue'
+import AboutSection from './components/AboutSection.vue'
+import ContactSection from './components/ContactSection.vue'
+import SiteFooter from './components/SiteFooter.vue'
 
-export default {
-  name: 'App',
-  data() {
-    return {
-      language: localStorage.language,
-    }
-  },
-  components: {
-    Presentation,
-    Knowledge,
-    Skills,
-    About,
-    Language,
-    Projects,
-    Contact,
-    Footer,
-  },
-  methods: {
-    changeLanguage() {
-      this.language = localStorage.language
-    },
-  },
-}
+const { t } = useI18n()
+
+watchEffect(() => {
+  document.documentElement.lang = t.value.meta.htmlLang
+})
 </script>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
-@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css');
+<style scoped>
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 100;
+  padding: 0.5rem 0.875rem;
+  border-radius: var(--radius-control);
+  background: var(--ink);
+  color: var(--bg);
+  font-weight: 500;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus-visible {
+  transform: none;
+}
+
+main:focus {
+  outline: none;
+}
 </style>
